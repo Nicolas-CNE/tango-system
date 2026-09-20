@@ -1,0 +1,25 @@
+pkgname="gpm"
+pkgver="1.20.7.r38.ge82d1a6"
+pkgrel="7"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://archive.archlinux.org/packages/g/gpm/gpm-1.20.7.r38.ge82d1a6-7-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    ARCHIVE_FILE="${SRC_DIR}/gpm-1.20.7.r38.ge82d1a6-7-x86_64.pkg.tar.zst"
+    if [ ! -f "$ARCHIVE_FILE" ]; then
+        curl -f -sL "https://archive.archlinux.org/packages/g/gpm/gpm-1.20.7.r38.ge82d1a6-7-x86_64.pkg.tar.zst" -o "$ARCHIVE_FILE"
+        if [ $? -ne 0 ]; then
+            echo "Error al descargar la fuente desde https://archive.archlinux.org/packages/g/gpm/gpm-1.20.7.r38.ge82d1a6-7-x86_64.pkg.tar.zst"
+            exit 1
+        fi
+    fi
+    tar -I zstd -xf "$ARCHIVE_FILE" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

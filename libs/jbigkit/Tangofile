@@ -1,0 +1,21 @@
+pkgname="jbigkit"
+pkgver="2.1"
+pkgrel="7"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://archive.archlinux.org/packages/j/jbigkit/jbigkit-2.1-7-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    ARCHIVE_FILE="${SRC_DIR}/jbigkit-2.1-7-x86_64.pkg.tar.zst"
+    if [ ! -f "$ARCHIVE_FILE" ]; then
+        curl -sL "https://archive.archlinux.org/packages/j/jbigkit/jbigkit-2.1-7-x86_64.pkg.tar.zst" -o "$ARCHIVE_FILE"
+    fi
+    tar -I zstd -xf "$ARCHIVE_FILE" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

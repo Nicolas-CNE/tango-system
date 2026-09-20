@@ -1,0 +1,4 @@
+pkgname: libxext
+version: 1.3.6-1
+arch: x86_64
+depends: glibc

@@ -1,0 +1,15 @@
+./usr
+./usr/bin
+./usr/bin/otfdump
+./usr/bin/libotf-config
+./usr/bin/otfview
+./usr/bin/otftobdf
+./usr/bin/otflist
+./usr/include
+./usr/include/otf.h
+./usr/lib
+./usr/lib/libotf.so.1.0.0
+./usr/lib/libotf.so
+./usr/lib/pkgconfig
+./usr/lib/pkgconfig/libotf.pc
+./usr/lib/libotf.so.1

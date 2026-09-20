@@ -1,0 +1,4 @@
+pkgname: gtk3
+version: 3.24.43-1
+arch: x86_64
+depends: glibc

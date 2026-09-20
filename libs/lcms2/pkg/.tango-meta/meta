@@ -1,0 +1,4 @@
+pkgname: lcms2
+version: 2.16-1
+arch: x86_64
+depends: glibc

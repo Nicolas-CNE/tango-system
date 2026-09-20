@@ -1,11 +1,47 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 09:50:42 PM UTC 2026
+# Generado automáticamente: Sun Sep 20 09:59:17 PM UTC 2026
 
 pkgname: emacs
 version: 29.1-1
 arch: x86_64
 depends: glibc,ncurses,gnutls,gmp,nettle
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-29.1-1-x86_64.tango.tar.zst
+
+pkgname: alsa-lib
+version: lib-1.2.12-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/alsa-lib/alsa-lib-lib-1.2.12-1-x86_64.tango.tar.zst
+
+pkgname: cairo
+version: 1.18.2-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/cairo/cairo-1.18.2-1-x86_64.tango.tar.zst
+
+pkgname: dav1d
+version: 1.4.3-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/dav1d/dav1d-1.4.3-1-x86_64.tango.tar.zst
+
+pkgname: fontconfig
+version: 2.15.0-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/fontconfig/fontconfig-2.15.0-1-x86_64.tango.tar.zst
+
+pkgname: freetype2
+version: 2.13.3-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/freetype2/freetype2-2.13.3-1-x86_64.tango.tar.zst
+
+pkgname: gdk-pixbuf2
+version: pixbuf2-2.42.12-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gdk-pixbuf2/gdk-pixbuf2-pixbuf2-2.42.12-1-x86_64.tango.tar.zst
 
 pkgname: giflib
 version: 5.2.1-2
@@ -30,11 +66,47 @@ arch: x86_64
 depends: glibc,nettle,gmp
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gnutls/gnutls-3.8.3-1-x86_64.tango.tar.zst
 
+pkgname: gpm
+version: 1.20.7.r38.ge82d1a6-7
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gpm/gpm-1.20.7.r38.ge82d1a6-7-x86_64.tango.tar.zst
+
+pkgname: gtk3
+version: 3.24.43-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gtk3/gtk3-3.24.43-1-x86_64.tango.tar.zst
+
+pkgname: harfbuzz
+version: 9.0.0-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/harfbuzz/harfbuzz-9.0.0-1-x86_64.tango.tar.zst
+
+pkgname: jbigkit
+version: 2.1-7
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/jbigkit/jbigkit-2.1-7-x86_64.tango.tar.zst
+
+pkgname: lcms2
+version: 2.16-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/lcms2/lcms2-2.16-1-x86_64.tango.tar.zst
+
 pkgname: libjpeg-turbo
 version: 3.0.0-1
 arch: x86_64
 depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libjpeg-turbo/libjpeg-turbo-3.0.0-1-x86_64.tango.tar.zst
+
+pkgname: libotf
+version: 0.9.16-4
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libotf/libotf-0.9.16-4-x86_64.tango.tar.zst
 
 pkgname: libpng
 version: 1.6.40-1
@@ -48,6 +120,12 @@ arch: x86_64
 depends: glibc,libpng
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/librsvg/librsvg-2.63.0-1-x86_64.tango.tar.zst
 
+pkgname: libsm
+version: 1.2.4-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libsm/libsm-1.2.4-1-x86_64.tango.tar.zst
+
 pkgname: libtiff
 version: 4.6.0-1
 arch: x86_64
@@ -60,6 +138,66 @@ arch: x86_64
 depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libwebp/libwebp-1.3.2-1-x86_64.tango.tar.zst
 
+pkgname: libx11
+version: 1.8.10-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libx11/libx11-1.8.10-1-x86_64.tango.tar.zst
+
+pkgname: libxcomposite
+version: 0.4.6-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxcomposite/libxcomposite-0.4.6-1-x86_64.tango.tar.zst
+
+pkgname: libxext
+version: 1.3.6-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxext/libxext-1.3.6-1-x86_64.tango.tar.zst
+
+pkgname: libxfixes
+version: 6.0.1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxfixes/libxfixes-6.0.1-1-x86_64.tango.tar.zst
+
+pkgname: libxi
+version: 1.8.1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxi/libxi-1.8.1-1-x86_64.tango.tar.zst
+
+pkgname: libxinerama
+version: 1.1.5-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxinerama/libxinerama-1.1.5-1-x86_64.tango.tar.zst
+
+pkgname: libxml2
+version: 2.13.3-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxml2/libxml2-2.13.3-1-x86_64.tango.tar.zst
+
+pkgname: libxrandr
+version: 1.5.4-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxrandr/libxrandr-1.5.4-1-x86_64.tango.tar.zst
+
+pkgname: libxrender
+version: 0.9.11-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxrender/libxrender-0.9.11-1-x86_64.tango.tar.zst
+
+pkgname: m17n-lib
+version: lib-1.8.4-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/m17n-lib/m17n-lib-lib-1.8.4-1-x86_64.tango.tar.zst
+
 pkgname: ncurses
 version: 6.4-1
 arch: x86_64
@@ -71,4 +209,10 @@ version: 3.9.1-1
 arch: x86_64
 depends: glibc,gmp
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/nettle/nettle-3.9.1-1-x86_64.tango.tar.zst
+
+pkgname: pango
+version: 1.54.0-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/pango/pango-1.54.0-1-x86_64.tango.tar.zst
 

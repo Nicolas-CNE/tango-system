@@ -1,0 +1,4 @@
+pkgname: pango
+version: 1.54.0-1
+arch: x86_64
+depends: glibc
