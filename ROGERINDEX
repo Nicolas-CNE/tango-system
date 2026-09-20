@@ -1,5 +1,5 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 09:29:42 PM UTC 2026
+# Generado automáticamente: Sun Sep 20 09:36:55 PM UTC 2026
 
 pkgname: emacs
 version: 29.1-1
@@ -10,34 +10,47 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emac
 pkgname: glibc
 version: 2.38-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/glibc/glibc-2.38-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/glibc/glibc-2.38-1-x86_64.tango.tar.zst
 
 pkgname: gmp
 version: 6.3.0-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gmp/gmp-6.3.0-1-x86_64.tango.tar.zst
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gmp/gmp-6.3.0-1-x86_64.tango.tar.zst
 
 pkgname: gnutls
 version: 3.8.3-1
 arch: x86_64
-depends: glibc,gmp,nettle
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gnutls/gnutls-3.8.3-1-x86_64.tango.tar.zst
+depends: glibc,nettle,gmp
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gnutls/gnutls-3.8.3-1-x86_64.tango.tar.zst
+
+pkgname: libjpeg-turbo
+version: 3.0.0-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libjpeg-turbo/libjpeg-turbo-3.0.0-1-x86_64.tango.tar.zst
+
+pkgname: libpng
+version: 1.6.40-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libpng/libpng-1.6.40-1-x86_64.tango.tar.zst
 
 pkgname: libtiff
 version: 4.6.0-1
 arch: x86_64
 depends: glibc,libjpeg-turbo
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/libtiff/libtiff-4.6.0-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtiff/libtiff-4.6.0-1-x86_64.tango.tar.zst
 
 pkgname: ncurses
 version: 6.4-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/ncurses/ncurses-6.4-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/ncurses/ncurses-6.4-1-x86_64.tango.tar.zst
 
 pkgname: nettle
 version: 3.9.1-1
 arch: x86_64
-depends: gmp
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/nettle/nettle-3.9.1-1-x86_64.tango.tar.zst
+depends: glibc,gmp
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/nettle/nettle-3.9.1-1-x86_64.tango.tar.zst
 

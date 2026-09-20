@@ -8,7 +8,8 @@ echo "# ROGERINDEX - Repositorio Oficial de Tango Linux" > "$INDEX_FILE"
 echo "# Generado automáticamente: $(date)" >> "$INDEX_FILE"
 echo "" >> "$INDEX_FILE"
 
-for dir in pkgs/*/; do
+# Iterar tanto sobre aplicaciones (pkgs/) como sobre librerías (libs/)
+for dir in pkgs/*/ libs/*/; do
     if [ -f "${dir}Tangofile" ]; then
         # Cargar variables de la receta
         unset pkgname pkgver pkgrel arch depends
@@ -24,10 +25,12 @@ for dir in pkgs/*/; do
             echo "depends: $deps" >> "$INDEX_FILE"
         fi
 
-        echo "url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/${pkgname}/${pkgname}-${pkgver}-${pkgrel}-${arch}.tango.tar.zst" >> "$INDEX_FILE"
+        # $dir ya incluye 'pkgs/nombre/' o 'libs/nombre/' con la barra final limpia
+        clean_dir="${dir%/}"
+        echo "url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/${clean_dir}/${pkgname}-${pkgver}-${pkgrel}-${arch}.tango.tar.zst" >> "$INDEX_FILE"
         echo "" >> "$INDEX_FILE"
 
-        echo "[+] Registrado en índice: $pkgname ($pkgver-$pkgrel)"
+        echo "[+] Registrado en índice: $pkgname ($pkgver-$pkgrel) desde $clean_dir"
     fi
 done
 

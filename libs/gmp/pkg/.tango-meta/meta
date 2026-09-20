@@ -1,0 +1,4 @@
+pkgname: gmp
+version: 6.3.0-1
+arch: x86_64
+depends: glibc

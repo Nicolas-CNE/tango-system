@@ -1,0 +1,17 @@
+pkgname="gnutls"
+pkgver="3.8.3"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "nettle" "gmp")
+sources=(
+    "https://archive.archlinux.org/packages/g/gnutls/gnutls-3.8.3-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/gnutls-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

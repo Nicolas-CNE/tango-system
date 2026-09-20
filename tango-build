@@ -10,8 +10,9 @@ fi
 
 source Tangofile
 
-BUILD_DIR="$(pwd)/src"
-PKG_DIR="$(pwd)/pkg"
+ROOT_DIR="$(pwd)"
+BUILD_DIR="${ROOT_DIR}/src"
+PKG_DIR="${ROOT_DIR}/pkg"
 
 echo "==> Armando paquete: ${pkgname}-${pkgver}-${pkgrel} (${arch})"
 
@@ -23,8 +24,15 @@ for src in "${sources[@]}"; do
     curl -sL "$src" -o "$BUILD_DIR/$(basename "$src")"
 done
 
+# Exportar variables para que la funcion package() en los Tangofiles las use directamente
+export SRC_DIR="$BUILD_DIR"
+export PKG_DIR="$PKG_DIR"
+
 cd "$BUILD_DIR"
 build
+
+cd "$ROOT_DIR"
+package
 
 cd "$PKG_DIR"
 mkdir -p .tango-meta
@@ -39,6 +47,6 @@ EOF
 find . -mindepth 1 -not -path './.tango-meta*' > .tango-meta/files.list
 
 OUTPUT_PKG="../${pkgname}-${pkgver}-${pkgrel}-${arch}.tango.tar.zst"
-tar -cf - . | zstd -z -q -o "$OUTPUT_PKG"
+tar -cf - . | zstd -z -f -q -o "$OUTPUT_PKG"
 
 echo "==> Paquete generado exitosamente: $OUTPUT_PKG"
