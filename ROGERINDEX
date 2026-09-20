@@ -1,9 +1,26 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 08:24:28 PM UTC 2026
+# Generado automáticamente: Sun Sep 20 09:00:33 PM UTC 2026
 
 pkgname: emacs
 version: 29.1-1
 arch: x86_64
 depends: glibc,ncurses,gnutls
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-29.1-1-x86_64.tango.tar.zst
+
+pkgname: glibc
+version: 2.38-1
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/glibc/glibc-2.38-1-x86_64.tango.tar.zst
+
+pkgname: gnutls
+version: 3.8.3-1
+arch: x86_64
+depends: glibc,gmp,nettle
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gnutls/gnutls-3.8.3-1-x86_64.tango.tar.zst
+
+pkgname: ncurses
+version: 6.4-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/ncurses/ncurses-6.4-1-x86_64.tango.tar.zst
 

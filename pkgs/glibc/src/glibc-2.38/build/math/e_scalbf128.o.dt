@@ -1,0 +1,12 @@
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/math/e_scalbf128.o: \
+ ../sysdeps/ieee754/float128/e_scalbf128.c ../include/stdc-predef.h \
+ /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/libc-modules.h \
+ ../include/libc-symbols.h \
+ /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/config.h \
+ ../sysdeps/generic/libc-symver.h ../sysdeps/generic/symbol-hacks.h
+../include/stdc-predef.h:
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/libc-modules.h:
+../include/libc-symbols.h:
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/config.h:
+../sysdeps/generic/libc-symver.h:
+../sysdeps/generic/symbol-hacks.h:

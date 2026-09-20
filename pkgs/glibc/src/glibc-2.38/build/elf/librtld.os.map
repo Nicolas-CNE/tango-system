@@ -1,0 +1,1978 @@
+Archive member included to satisfy reference by file (symbol)
+
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__libc_check_standard_fds)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (rtld_errno)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__closedir)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__rewinddir)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__readdir64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__fdopendir)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os) (__getdents64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (_dl_addr_inside_object)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__profil)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__profile_frequency)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__access)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___fstat64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___fstatat64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__lseek)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___lstat64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__openat64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___stat64)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___close_nocancel)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___fcntl64_nocancel)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___open64_nocancel)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___pread64_nocancel)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___read_nocancel)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI___write_nocancel)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__libc_scratch_buffer_set_array_size)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__mmap)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__mprotect)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__munmap)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__lll_lock_wait_private)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__GI__exit)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__getpid)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__uname)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__environ)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__sigsetjmp)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__longjmp)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os) (__sigaction)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os) (__libc_sigaction)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (memchr)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (memcmp)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__mempcpy)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (memset)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__stpcpy)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strchr)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strcmp)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strcspn)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (__strdup)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strerrorname_np)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strlen)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strncmp)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (strnlen)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os) (__strchrnul)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os) (__setitimer)
+/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+                              /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os) (__get_errname)
+
+Merging program properties
+
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os) (0x0)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os) (0x0)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os) (0x9)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os) (0x1)
+Updated property 0xc0010001 (0x2f9) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0x2f9) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os) (0x1)
+Updated property 0xc0010002 (0xd) to merge /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os (0xd) and /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os) (0x1)
+
+Discarded input sections
+
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+START GROUP
+LOAD /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+LOAD /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a
+END GROUP
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.interp
+ *(.interp)
+
+.note.gnu.property
+                0x0000000000000000       0x30
+ .note.gnu.property
+                0x0000000000000000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rela.init
+ *(.rela.init)
+
+.rela.text
+ *(.rela.text)
+
+.rela.fini
+ *(.rela.fini)
+
+.rela.rodata
+ *(.rela.rodata)
+
+.rela.data.rel.ro
+ *(.rela.data.rel.ro)
+
+.rela.data
+ *(.rela.data)
+
+.rela.tdata
+ *(.rela.tdata)
+
+.rela.tbss
+ *(.rela.tbss)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rela.got
+ *(.rela.got)
+
+.rela.tls
+ *(.rela.tls)
+
+.rela.bss
+ *(.rela.bss)
+
+.rela.ldata
+ *(.rela.ldata)
+
+.rela.lbss
+ *(.rela.lbss)
+
+.rela.lrodata
+ *(.rela.lrodata)
+
+.rela.ifunc
+ *(.rela.ifunc)
+
+.rela.plt
+ *(.rela.plt)
+
+.relr.dyn
+ *(.relr.dyn)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt
+ *(.plt)
+
+.plt.got
+ *(.plt.got)
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000000000    0x25913
+ *(.text .stub)
+ .text          0x0000000000000000    0x205d0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000000                _dl_call_libc_early_init
+                0x0000000000000090                _dl_call_fini
+                0x0000000000000200                _dl_signal_exception
+                0x0000000000000200                __GI__dl_signal_exception
+                0x0000000000000260                __GI__dl_signal_error
+                0x0000000000000260                _dl_signal_error
+                0x00000000000002d0                _dl_signal_cexception
+                0x0000000000000370                _dl_signal_cerror
+                0x0000000000000400                _dl_receive_error
+                0x0000000000000490                _dl_catch_exception
+                0x0000000000000490                __GI__dl_catch_exception
+                0x0000000000000620                _dl_catch_error
+                0x00000000000007b0                _dl_close_worker
+                0x0000000000001560                _dl_close
+                0x00000000000015d0                _dl_debug_state
+                0x00000000000015d0                __GI__dl_debug_state
+                0x00000000000015e0                _dl_debug_update
+                0x0000000000001620                _dl_debug_initialize
+                0x00000000000017c0                _dl_map_object_deps
+                0x0000000000002720                _dl_error_free
+                0x0000000000002740                _dl_exception_create
+                0x0000000000002740                __GI__dl_exception_create
+                0x0000000000002830                __GI__dl_exception_create_format
+                0x0000000000002830                _dl_exception_create_format
+                0x0000000000002d10                _dl_exception_free
+                0x0000000000002d10                __GI__dl_exception_free
+                0x0000000000002d30                _dl_make_stacks_executable
+                0x0000000000002eb0                __GI___nptl_change_stack_perm
+                0x0000000000002eb0                __nptl_change_stack_perm
+                0x0000000000003120                __GI__dl_find_object
+                0x0000000000003120                _dl_find_object
+                0x00000000000034d0                _dlfo_sort_mappings
+                0x0000000000003590                _dl_find_object_init
+                0x0000000000003760                _dl_find_object_update
+                0x0000000000003cf0                _dl_find_object_dlclose
+                0x0000000000003db0                _dl_find_object_freeres
+                0x0000000000003e00                _dl_fini
+                0x00000000000041f0                _dl_init
+                0x0000000000005160                _dl_dst_count
+                0x0000000000005210                _dl_dst_substitute
+                0x0000000000005a60                _dl_init_paths
+                0x0000000000005e40                _dl_process_pt_gnu_property
+                0x0000000000007670                _dl_map_object
+                0x0000000000008170                _dl_rtld_di_serinfo
+                0x0000000000009260                _dl_lookup_symbol_x
+                0x0000000000009fc0                _dl_lookup_direct
+                0x000000000000a1b0                __minimal_malloc
+                0x000000000000a2d0                __minimal_calloc
+                0x000000000000a300                __minimal_free
+                0x000000000000a340                __minimal_realloc
+                0x000000000000a400                _dl_sysdep_read_whole_file
+                0x000000000000a4b0                _dl_name_match_p
+                0x000000000000a510                _dl_higher_prime_number
+                0x000000000000a580                _dl_strtoul
+                0x000000000000a700                _dl_add_to_namespace_list
+                0x000000000000a7a0                _dl_new_object
+                0x000000000000b070                __GI__dl_find_dso_for_object
+                0x000000000000b070                _dl_find_dso_for_object
+                0x000000000000b180                _dl_open
+                0x000000000000b490                _dl_show_scope
+                0x000000000000c0c0                _dl_get_origin
+                0x000000000000ca20                _dl_debug_printf
+                0x000000000000cad0                _dl_debug_printf_c
+                0x000000000000cb80                _dl_dprintf
+                0x000000000000cc20                _dl_printf
+                0x000000000000ccc0                _dl_error_printf
+                0x000000000000cd60                _dl_fatal_printf
+                0x000000000000cd60                __GI__dl_fatal_printf
+                0x000000000000ce00                _dl_start_profile
+                0x000000000000d550                __GI__dl_mcount
+                0x000000000000d550                _dl_mcount
+                0x000000000000d780                _dl_try_allocate_static_tls
+                0x000000000000d8b0                _dl_allocate_static_tls
+                0x000000000000d8e0                _dl_protect_relro
+                0x000000000000d950                _dl_reloc_bad_type
+                0x000000000000da10                _dl_relocate_object
+                0x000000000000fbd0                _dl_fixup
+                0x000000000000fea0                _dl_profile_fixup
+                0x0000000000010210                _dl_scope_free
+                0x00000000000102f0                _dl_setup_hash
+                0x00000000000104d0                _dl_sort_maps_init
+                0x0000000000010500                _dl_sort_maps
+                0x00000000000109a0                __thread_gscope_wait
+                0x0000000000010ea0                _dl_tls_static_surplus_init
+                0x0000000000010f30                _dl_assign_tls_modid
+                0x0000000000011050                _dl_count_modids
+                0x00000000000110d0                _dl_determine_tlsoffset
+                0x00000000000112f0                _dl_get_tls_static_info
+                0x0000000000011310                _dl_allocate_tls_storage
+                0x00000000000113e0                __GI__dl_allocate_tls_init
+                0x00000000000113e0                _dl_allocate_tls_init
+                0x0000000000011690                __GI__dl_allocate_tls
+                0x0000000000011690                _dl_allocate_tls
+                0x00000000000116d0                _dl_deallocate_tls
+                0x00000000000116d0                __GI__dl_deallocate_tls
+                0x0000000000011780                _dl_update_slotinfo
+                0x00000000000119d0                __GI___tls_get_addr
+                0x00000000000119d0                ___tls_get_addr
+                0x0000000000011a10                _dl_tls_get_addr_soft
+                0x0000000000011a90                _dl_add_to_slotinfo
+                0x0000000000011ba0                _dl_init_static_tls
+                0x0000000000011d00                __tls_get_addr_slow
+                0x0000000000011d40                __tls_pre_init_tp
+                0x0000000000011d90                __tls_init_tp
+                0x0000000000011ec0                _dl_runtime_profile_sse
+                0x0000000000012050                _dl_runtime_resolve_fxsave
+                0x00000000000120d0                _dl_runtime_resolve_xsave
+                0x00000000000121a0                _dl_runtime_resolve_xsavec
+                0x0000000000012380                __GI___tunable_set_val
+                0x00000000000123a0                __GI___tunables_init
+                0x0000000000012990                __GI___tunables_print
+                0x0000000000012a80                __tunable_get_val
+                0x0000000000012a80                __GI___tunable_get_val
+                0x0000000000012b00                _dl_check_map_versions
+                0x0000000000013510                _dl_check_all_versions
+                0x00000000000135a0                _dl_write
+                0x00000000000135c0                _dl_cache_libcmp
+                0x0000000000013e40                _dl_load_cache_lookup
+                0x00000000000141a0                _dl_unload_cache
+                0x0000000000014200                _dl_make_tlsdesc_dynamic
+                0x0000000000014540                _dl_unmap
+                0x00000000000145e0                _dl_tlsdesc_return
+                0x00000000000145f0                _dl_tlsdesc_undefweak
+                0x0000000000014600                _dl_tlsdesc_dynamic
+                0x00000000000146a0                __tls_get_addr
+                0x0000000000016800                __x86_cpu_features
+                0x0000000000016820                _dl_x86_init_cpu_features
+                0x0000000000016840                _dl_x86_get_cpu_features
+                0x0000000000016850                _dl_audit_activity_map
+                0x00000000000168f0                _dl_audit_activity_nsid
+                0x0000000000016930                _dl_audit_objsearch
+                0x0000000000016a00                _dl_audit_objopen
+                0x0000000000016ad0                _dl_audit_objclose
+                0x0000000000016b90                _dl_audit_preinit
+                0x0000000000016c20                _dl_audit_symbind_alt
+                0x0000000000016c20                __GI__dl_audit_symbind_alt
+                0x0000000000016e00                _dl_audit_symbind
+                0x00000000000170a0                _dl_audit_pltenter
+                0x0000000000017300                _dl_audit_pltexit
+                0x0000000000017520                _dl_diagnostics_print_string
+                0x00000000000175a0                _dl_diagnostics_print_labeled_string
+                0x00000000000175e0                _dl_diagnostics_print_labeled_value
+                0x0000000000017600                _dl_print_diagnostics
+                0x0000000000017ed0                _dl_diagnostics_cpu
+                0x0000000000018640                _dl_diagnostics_kernel
+                0x0000000000018700                _dl_next_ld_env_entry
+                0x0000000000018760                unsetenv
+                0x00000000000188a0                _dl_important_hwcaps
+                0x0000000000018c30                _dl_hwcaps_subdirs_active
+                0x0000000000018cb0                _dl_hwcaps_split
+                0x0000000000018d40                _dl_hwcaps_contains
+                0x0000000000018df0                _dl_hwcaps_split_masked
+                0x0000000000018e30                __rtld_libc_freeres
+                0x0000000000018e40                __rtld_malloc_init_stubs
+                0x0000000000018e80                __sigjmp_save
+                0x0000000000018e90                __strerror_r
+                0x0000000000018f90                __GI___libc_fatal
+                0x0000000000018f90                __libc_fatal
+                0x0000000000018fb0                __GI___chk_fail
+                0x0000000000018fb0                __chk_fail
+                0x0000000000018fc0                __GI___assert_fail
+                0x0000000000018fc0                __assert_fail
+                0x0000000000018ff0                __rtld_malloc_is_complete
+                0x0000000000019110                __rtld_malloc_init_real
+                0x0000000000019230                __GI___assert_perror_fail
+                0x0000000000019230                __assert_perror_fail
+                0x0000000000019290                _itoa
+                0x00000000000192e0                __strsep
+                0x00000000000192e0                strsep
+                0x00000000000192e0                __strsep_g
+                0x0000000000019360                __rtld_mutex_init
+                0x0000000000019620                _dl_tunable_set_hwcaps
+                0x000000000001a130                _dl_sysdep_start
+                0x000000000001a1f0                _dl_sysdep_start_cleanup
+                0x000000000001a200                _dl_show_auxv
+                0x000000000001a460                _dl_usage
+                0x000000000001a4b0                _dl_version
+                0x000000000001a4d0                _dl_help
+                0x000000000001a780                _start
+                0x000000000001a788                _dl_start_user
+                0x000000000001bc40                handle_preload_list
+                0x000000000001fb10                __brk
+                0x000000000001fb10                brk
+                0x000000000001fb40                __getcwd
+                0x000000000001fb40                getcwd
+                0x00000000000202e0                openat64
+                0x0000000000020330                __opendir
+                0x0000000000020330                opendir
+                0x0000000000020450                __alloc_dir
+                0x0000000000020530                sbrk
+                0x0000000000020530                __sbrk
+ .text          0x00000000000205d0       0xe2 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+                0x0000000000020680                __libc_check_standard_fds
+ .text          0x00000000000206b2        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ *fill*         0x00000000000206b2        0xe 
+ .text          0x00000000000206c0       0x26 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+                0x00000000000206c0                __closedir
+                0x00000000000206c0                closedir
+ *fill*         0x00000000000206e6        0xa 
+ .text          0x00000000000206f0       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+                0x00000000000206f0                rewinddir
+                0x00000000000206f0                __rewinddir
+ *fill*         0x0000000000020718        0x8 
+ .text          0x0000000000020720       0xa0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+                0x0000000000020720                readdir
+                0x0000000000020720                __readdir64
+                0x0000000000020720                __readdir
+                0x0000000000020720                readdir64
+ .text          0x00000000000207c0       0x86 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+                0x00000000000207c0                fdopendir
+                0x00000000000207c0                __fdopendir
+ *fill*         0x0000000000020846        0xa 
+ .text          0x0000000000020850       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+                0x0000000000020850                __getdents
+                0x0000000000020850                getdents64
+                0x0000000000020850                __getdents64
+ .text          0x0000000000020880       0x6b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+                0x0000000000020880                _dl_addr_inside_object
+ *fill*         0x00000000000208eb        0x5 
+ .text          0x00000000000208f0       0xf7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+                0x0000000000020940                __profil
+                0x0000000000020940                profil
+ *fill*         0x00000000000209e7        0x9 
+ .text          0x00000000000209f0        0x7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+                0x00000000000209f0                __profile_frequency
+ *fill*         0x00000000000209f7        0x9 
+ .text          0x0000000000020a00       0x1e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+                0x0000000000020a00                access
+                0x0000000000020a00                __access
+ *fill*         0x0000000000020a1e        0x2 
+ .text          0x0000000000020a20       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+                0x0000000000020a20                __GI___fstat64
+                0x0000000000020a20                fstat64
+                0x0000000000020a20                fstat
+                0x0000000000020a20                __fstat64
+                0x0000000000020a20                __fstat
+ .text          0x0000000000020a50       0x26 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+                0x0000000000020a50                fstatat
+                0x0000000000020a50                __fstatat
+                0x0000000000020a50                fstatat64
+                0x0000000000020a50                __fstatat64
+                0x0000000000020a50                __GI___fstatat
+                0x0000000000020a50                __GI___fstatat64
+ *fill*         0x0000000000020a76        0xa 
+ .text          0x0000000000020a80       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+                0x0000000000020a80                __lseek64
+                0x0000000000020a80                lseek
+                0x0000000000020a80                __libc_lseek64
+                0x0000000000020a80                __lseek
+                0x0000000000020a80                __libc_lseek
+                0x0000000000020a80                lseek64
+ .text          0x0000000000020aa0       0x15 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+                0x0000000000020aa0                __lstat64
+                0x0000000000020aa0                lstat
+                0x0000000000020aa0                lstat64
+                0x0000000000020aa0                __GI___lstat64
+                0x0000000000020aa0                __lstat
+ *fill*         0x0000000000020ab5        0xb 
+ .text          0x0000000000020ac0       0x66 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+                0x0000000000020ac0                __openat64
+                0x0000000000020ac0                __libc_openat64
+                0x0000000000020ac0                __openat
+                0x0000000000020ac0                openat
+ *fill*         0x0000000000020b26        0xa 
+ .text          0x0000000000020b30       0x12 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+                0x0000000000020b30                stat64
+                0x0000000000020b30                __stat
+                0x0000000000020b30                __stat64
+                0x0000000000020b30                stat
+                0x0000000000020b30                __GI___stat64
+ *fill*         0x0000000000020b42        0xe 
+ .text          0x0000000000020b50       0x1e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+                0x0000000000020b50                __GI___close_nocancel
+ *fill*         0x0000000000020b6e        0x2 
+ .text          0x0000000000020b70       0xe1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+                0x0000000000020b70                __fcntl64_nocancel
+                0x0000000000020b70                __GI___fcntl64_nocancel
+                0x0000000000020c00                __fcntl64_nocancel_adjusted
+ *fill*         0x0000000000020c51        0xf 
+ .text          0x0000000000020c60       0x6e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+                0x0000000000020c60                __GI___open_nocancel
+                0x0000000000020c60                __open_nocancel
+                0x0000000000020c60                __GI___open64_nocancel
+                0x0000000000020c60                __open64_nocancel
+ *fill*         0x0000000000020cce        0x2 
+ .text          0x0000000000020cd0       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+                0x0000000000020cd0                __GI___pread64_nocancel
+                0x0000000000020cd0                __pread64_nocancel
+ *fill*         0x0000000000020cf8        0x8 
+ .text          0x0000000000020d00       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+                0x0000000000020d00                __read_nocancel
+                0x0000000000020d00                __GI___read_nocancel
+ .text          0x0000000000020d20       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+                0x0000000000020d20                __GI___write_nocancel
+                0x0000000000020d20                __write_nocancel
+ .text          0x0000000000020d40       0xd4 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+                0x0000000000020d40                __libc_scratch_buffer_set_array_size
+ *fill*         0x0000000000020e14        0xc 
+ .text          0x0000000000020e20       0xa0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+                0x0000000000020e20                __mmap
+                0x0000000000020e20                mmap
+                0x0000000000020e20                __mmap64
+                0x0000000000020e20                mmap64
+ .text          0x0000000000020ec0       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+                0x0000000000020ec0                __mprotect
+                0x0000000000020ec0                __GI___mprotect
+                0x0000000000020ec0                __GI_mprotect
+                0x0000000000020ec0                mprotect
+ .text          0x0000000000020ee0       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+                0x0000000000020ee0                munmap
+                0x0000000000020ee0                __GI___munmap
+                0x0000000000020ee0                __GI_munmap
+                0x0000000000020ee0                __munmap
+ .text          0x0000000000020f00       0xe4 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+                0x0000000000020f00                __lll_lock_wait_private
+                0x0000000000020f50                __lll_lock_wait
+                0x0000000000020fb0                __lll_lock_wake_private
+                0x0000000000020fd0                __lll_lock_wake
+ *fill*         0x0000000000020fe4        0xc 
+ .text          0x0000000000020ff0       0x22 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+                0x0000000000020ff0                _Exit
+                0x0000000000020ff0                __GI__exit
+                0x0000000000020ff0                _exit
+ *fill*         0x0000000000021012        0xe 
+ .text          0x0000000000021020        0x8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+                0x0000000000021020                __getpid
+                0x0000000000021020                getpid
+                0x0000000000021020                __GI_getpid
+                0x0000000000021020                __GI___getpid
+ *fill*         0x0000000000021028        0x8 
+ .text          0x0000000000021030       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+                0x0000000000021030                uname
+                0x0000000000021030                __GI_uname
+                0x0000000000021030                __uname
+                0x0000000000021030                __GI___uname
+ .text          0x0000000000021050        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .text          0x0000000000021050       0x4f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+                0x0000000000021050                __sigsetjmp
+                0x0000000000021050                __GI___sigsetjmp
+ *fill*         0x000000000002109f        0x1 
+ .text          0x00000000000210a0       0x4a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+                0x00000000000210a0                __longjmp
+ *fill*         0x00000000000210ea        0x6 
+ .text          0x00000000000210f0       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+                0x00000000000210f0                sigaction
+                0x00000000000210f0                __sigaction
+ *fill*         0x0000000000021118        0x8 
+ .text          0x0000000000021120      0x1a7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+                0x0000000000021140                __libc_sigaction
+ *fill*         0x00000000000212c7        0x9 
+ .text          0x00000000000212d0      0x323 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+                0x00000000000212d0                memchr
+                0x00000000000212d0                __memchr
+ *fill*         0x00000000000215f3        0xd 
+ .text          0x0000000000021600      0x2d0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+                0x0000000000021600                bcmp
+                0x0000000000021600                memcmp
+ .text          0x00000000000218d0      0x1e1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+                0x00000000000218d0                mempcpy
+                0x00000000000218d0                __mempcpy
+                0x00000000000218e0                memmove
+                0x00000000000218e0                memcpy
+ *fill*         0x0000000000021ab1        0xf 
+ .text          0x0000000000021ac0       0xc9 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+                0x0000000000021ac0                memset
+ *fill*         0x0000000000021b89        0x7 
+ .text          0x0000000000021b90      0x6b0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+                0x0000000000021b90                stpcpy
+                0x0000000000021b90                __stpcpy
+ .text          0x0000000000022240      0x21a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+                0x0000000000022240                index
+                0x0000000000022240                strchr
+ *fill*         0x000000000002245a        0x6 
+ .text          0x0000000000022460     0x1439 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+                0x0000000000022460                strcmp
+ *fill*         0x0000000000023899       0x27 
+ .text          0x00000000000238c0      0x175 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+                0x00000000000238c0                strcspn
+ *fill*         0x0000000000023a35        0xb 
+ .text          0x0000000000023a40       0x41 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+                0x0000000000023a40                __strdup
+                0x0000000000023a40                strdup
+ *fill*         0x0000000000023a81        0xf 
+ .text          0x0000000000023a90        0x5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+                0x0000000000023a90                strerrorname_np
+ *fill*         0x0000000000023a95        0xb 
+ .text          0x0000000000023aa0      0x19c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+                0x0000000000023aa0                strlen
+ *fill*         0x0000000000023c3c        0x4 
+ .text          0x0000000000023c40     0x1849 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+                0x0000000000023c40                strncmp
+ *fill*         0x0000000000025489        0x7 
+ .text          0x0000000000025490      0x218 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+                0x0000000000025490                __strnlen
+                0x0000000000025490                strnlen
+ *fill*         0x00000000000256a8        0x8 
+ .text          0x00000000000256b0      0x20a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+                0x00000000000256b0                __strchrnul
+                0x00000000000256b0                strchrnul
+ *fill*         0x00000000000258ba        0x6 
+ .text          0x00000000000258c0       0x1e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+                0x00000000000258c0                setitimer
+                0x00000000000258c0                __setitimer
+ *fill*         0x00000000000258de        0x2 
+ .text          0x00000000000258e0       0x33 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+                0x00000000000258e0                __get_errname
+ *(.gnu.warning)
+
+.text.evex512   0x0000000000000000      0x3f9
+ .text.evex512  0x0000000000000000      0x3f9 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000000                _dl_runtime_profile_avx512
+
+.text.avx       0x0000000000000000      0x3eb
+ .text.avx      0x0000000000000000      0x3eb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000000                _dl_runtime_profile_avx
+
+.text.compat    0x0000000000000000        0x1
+ .text.compat   0x0000000000000000        0x1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000000                __rtld_version_placeholder_1
+                0x0000000000000000                __rtld_version_placeholder@GLIBC_2.34
+
+.fini
+ *(SORT_NONE(.fini))
+
+.rodata         0x0000000000000000     0x183c
+ *(.rodata)
+ .rodata        0x0000000000000000     0x11b2 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .rodata        0x00000000000011b2       0x80 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ *fill*         0x0000000000001232        0x6 
+ .rodata        0x0000000000001238       0x40 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .rodata        0x0000000000001278       0x40 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ *fill*         0x00000000000012b8        0x8 
+ .rodata        0x00000000000012c0      0x57c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.rodata.str1.1  0x0000000000000000     0x17f2
+ .rodata.str1.1
+                0x0000000000000000     0x17dd /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .rodata.str1.1
+                0x00000000000017dd       0x14 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .rodata.str1.1
+                0x00000000000017f1        0x1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+
+.rodata.str1.16
+                0x0000000000000000      0x525
+ .rodata.str1.16
+                0x0000000000000000      0x525 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000390                _dl_hwcaps_subdirs
+                0x00000000000003f0                __GI__itoa_lower_digits
+                0x00000000000003f0                _itoa_lower_digits
+
+.rodata.str1.8  0x0000000000000000     0x2d77
+ .rodata.str1.8
+                0x0000000000000000     0x2d39 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ *fill*         0x0000000000002d39        0x7 
+ .rodata.str1.8
+                0x0000000000002d40       0x37 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+
+.rodata.str1.32
+                0x0000000000000000       0x5b
+ .rodata.str1.32
+                0x0000000000000000       0x5b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+
+.rodata.cst4    0x0000000000000000        0x8
+ .rodata.cst4   0x0000000000000000        0x8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000004                __rseq_flags
+
+.rodata.cst16   0x0000000000000000       0x40
+ .rodata.cst16  0x0000000000000000       0x40 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+
+.rodata.cst8    0x0000000000000000        0x8
+ .rodata.cst8   0x0000000000000000        0x8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x0000000000000000     0x3a74
+ *(.eh_frame)
+ .eh_frame      0x0000000000000000     0x2f28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                                       0x2fa4 (size before relaxing)
+ *fill*         0x0000000000002f28        0x0 
+ .eh_frame      0x0000000000002f28       0x60 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .eh_frame      0x0000000000002f88       0x38 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .eh_frame      0x0000000000002fc0       0x38 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .eh_frame      0x0000000000002ff8       0x40 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .eh_frame      0x0000000000003038       0x48 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .eh_frame      0x0000000000003080       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .eh_frame      0x00000000000030b0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .eh_frame      0x00000000000030e0       0x48 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .eh_frame      0x0000000000003128       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .eh_frame      0x0000000000003158       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .eh_frame      0x0000000000003188       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .eh_frame      0x00000000000031b8       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .eh_frame      0x00000000000031e8       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .eh_frame      0x0000000000003218       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .eh_frame      0x0000000000003248       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .eh_frame      0x0000000000003278       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .eh_frame      0x00000000000032a8       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .eh_frame      0x00000000000032d8       0x40 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .eh_frame      0x0000000000003318       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .eh_frame      0x0000000000003348       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .eh_frame      0x0000000000003378       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .eh_frame      0x00000000000033a8       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .eh_frame      0x00000000000033d8       0x48 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .eh_frame      0x0000000000003420       0x50 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .eh_frame      0x0000000000003470       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .eh_frame      0x00000000000034a0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .eh_frame      0x00000000000034d0       0x70 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .eh_frame      0x0000000000003540       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .eh_frame      0x0000000000003570       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .eh_frame      0x00000000000035a0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .eh_frame      0x00000000000035d0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .eh_frame      0x0000000000003600       0x48 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .eh_frame      0x0000000000003648       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .eh_frame      0x0000000000003678       0xc8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+                                         0xd0 (size before relaxing)
+ .eh_frame      0x0000000000003740       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .eh_frame      0x0000000000003770       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .eh_frame      0x00000000000037a0       0x40 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .eh_frame      0x00000000000037e0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .eh_frame      0x0000000000003810       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .eh_frame      0x0000000000003840       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .eh_frame      0x0000000000003870       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .eh_frame      0x00000000000038a0       0x38 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .eh_frame      0x00000000000038d8       0x50 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .eh_frame      0x0000000000003928       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .eh_frame      0x0000000000003958       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .eh_frame      0x0000000000003988       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .eh_frame      0x00000000000039b8       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .eh_frame      0x00000000000039e8       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .eh_frame      0x0000000000003a18       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .eh_frame      0x0000000000003a48       0x2c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+                                         0x30 (size before relaxing)
+
+.sframe
+ *(.sframe)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges)
+
+.eh_frame
+ *(.eh_frame)
+
+.sframe
+ *(.sframe)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.exception_ranges
+ *(.exception_ranges)
+
+.tdata
+ *(.tdata)
+
+.tbss
+ *(.tbss)
+
+.jcr
+ *(.jcr)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+
+.got.plt
+ *(.got.plt)
+
+.data           0x0000000000000000     0x10e8
+ *(.data)
+ .data          0x0000000000000000     0x10e8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000000                _rtld_global
+                0x0000000000000000                _rtld_local
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .data          0x00000000000010e8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.data.rel.ro.local
+                0x0000000000000000       0x28
+ .data.rel.ro.local
+                0x0000000000000000       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000008                __x86_cpu_features_p
+
+.data.rel.ro    0x0000000000000000     0x1708
+ .data.rel.ro   0x0000000000000000     0x1708 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000040                __rtld_search_dirs
+                0x0000000000000070                __rtld_env_path_list
+                0x0000000000000080                __stack_prot
+                0x0000000000000088                __rseq_offset
+                0x0000000000000090                __rseq_size
+                0x00000000000012e8                __rtld_realloc
+                0x00000000000012f0                __rtld_malloc
+                0x00000000000012f8                __rtld_free
+                0x0000000000001300                __rtld_calloc
+                0x0000000000001308                ___rtld_mutex_unlock
+                0x0000000000001310                ___rtld_mutex_lock
+                0x0000000000001318                _dl_random
+                0x0000000000001320                __libc_stack_end
+                0x0000000000001320                __GI___libc_stack_end
+                0x0000000000001328                __GI___libc_enable_secure
+                0x0000000000001328                __libc_enable_secure
+                0x0000000000001350                __pointer_chk_guard_local
+                0x0000000000001358                __GI__dl_argv
+                0x0000000000001358                _dl_argv
+                0x0000000000001360                _dl_argc
+                0x0000000000001380                _rtld_global_ro
+                0x0000000000001380                _rtld_local_ro
+
+.data1
+ *(.data1)
+
+.bss            0x0000000000000000      0x1c8
+ *(.bss)
+ .bss           0x0000000000000000      0x190 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+                0x0000000000000018                _r_debug_extended
+                0x0000000000000018                _r_debug
+                0x00000000000000d8                __nptl_initial_report_events
+                0x00000000000000d8                __GI___nptl_initial_report_events
+                0x0000000000000110                _dl_hwcaps_priorities_length
+                0x0000000000000118                _dl_hwcaps_priorities
+                0x0000000000000120                __rtld_tls_init_tp_called
+                0x0000000000000188                __curbrk
+ .bss           0x0000000000000190        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .bss           0x0000000000000190        0x4 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+                0x0000000000000190                rtld_errno
+ .bss           0x0000000000000194        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .bss           0x0000000000000194        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .bss           0x0000000000000194        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .bss           0x0000000000000194        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .bss           0x0000000000000194        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .bss           0x0000000000000194        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ *fill*         0x0000000000000194        0x4 
+ .bss           0x0000000000000198       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .bss           0x00000000000001b8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .bss           0x00000000000001b8        0x4 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+                0x00000000000001b8                __pthread_force_elision
+ .bss           0x00000000000001bc        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .bss           0x00000000000001bc        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .bss           0x00000000000001bc        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ *fill*         0x00000000000001bc        0x4 
+ .bss           0x00000000000001c0        0x8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+                0x00000000000001c0                _environ
+                0x00000000000001c0                __environ
+                0x00000000000001c0                environ
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .bss           0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.lbss
+ *(.lbss)
+
+.lrodata
+ *(.lrodata)
+
+.ldata
+ *(.ldata)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000      0x9d8
+ *(.comment)
+ .comment       0x0000000000000000      0x604 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .comment       0x0000000000000604       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .comment       0x0000000000000620       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .comment       0x000000000000063c       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .comment       0x0000000000000658       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .comment       0x0000000000000674       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .comment       0x0000000000000690       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .comment       0x00000000000006ac       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .comment       0x00000000000006c8       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .comment       0x00000000000006e4       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .comment       0x0000000000000700       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .comment       0x000000000000071c       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .comment       0x0000000000000738       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .comment       0x0000000000000754       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .comment       0x0000000000000770       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .comment       0x000000000000078c       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .comment       0x00000000000007a8       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .comment       0x00000000000007c4       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .comment       0x00000000000007e0       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .comment       0x00000000000007fc       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .comment       0x0000000000000818       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .comment       0x0000000000000834       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .comment       0x0000000000000850       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .comment       0x000000000000086c       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .comment       0x0000000000000888       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .comment       0x00000000000008a4       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .comment       0x00000000000008c0       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .comment       0x00000000000008dc       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .comment       0x00000000000008f8       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .comment       0x0000000000000914       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .comment       0x0000000000000930       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .comment       0x000000000000094c       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .comment       0x0000000000000968       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .comment       0x0000000000000984       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .comment       0x00000000000009a0       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .comment       0x00000000000009bc       0x1c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.gnu.build.attributes
+ *(.gnu.build.attributes)
+
+.note.GNU-stack
+                0x00000000000001c8        0x0
+ *(.note.GNU-stack)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .note.GNU-stack
+                0x00000000000001c8        0x0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000     0x14a0
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000      0xb00 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_aranges
+                0x0000000000000b00       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_aranges
+                0x0000000000000b30       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .debug_aranges
+                0x0000000000000b50       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_aranges
+                0x0000000000000b80       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_aranges
+                0x0000000000000bb0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_aranges
+                0x0000000000000be0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_aranges
+                0x0000000000000c10       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_aranges
+                0x0000000000000c40       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_aranges
+                0x0000000000000c70       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_aranges
+                0x0000000000000ca0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .debug_aranges
+                0x0000000000000cd0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_aranges
+                0x0000000000000d00       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_aranges
+                0x0000000000000d30       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_aranges
+                0x0000000000000d60       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_aranges
+                0x0000000000000d90       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_aranges
+                0x0000000000000dc0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_aranges
+                0x0000000000000df0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_aranges
+                0x0000000000000e20       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_aranges
+                0x0000000000000e50       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_aranges
+                0x0000000000000e80       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_aranges
+                0x0000000000000eb0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_aranges
+                0x0000000000000ee0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_aranges
+                0x0000000000000f10       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_aranges
+                0x0000000000000f40       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_aranges
+                0x0000000000000f70       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_aranges
+                0x0000000000000fa0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .debug_aranges
+                0x0000000000000fd0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .debug_aranges
+                0x0000000000001000       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_aranges
+                0x0000000000001030       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_aranges
+                0x0000000000001060       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .debug_aranges
+                0x0000000000001090       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .debug_aranges
+                0x00000000000010c0       0x20 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .debug_aranges
+                0x00000000000010e0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .debug_aranges
+                0x0000000000001110       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .debug_aranges
+                0x0000000000001140       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_aranges
+                0x0000000000001170       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_aranges
+                0x00000000000011a0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .debug_aranges
+                0x00000000000011d0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .debug_aranges
+                0x0000000000001200       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .debug_aranges
+                0x0000000000001230       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .debug_aranges
+                0x0000000000001260       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .debug_aranges
+                0x0000000000001290       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .debug_aranges
+                0x00000000000012c0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .debug_aranges
+                0x00000000000012f0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_aranges
+                0x0000000000001320       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_aranges
+                0x0000000000001350       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_aranges
+                0x0000000000001380       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .debug_aranges
+                0x00000000000013b0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .debug_aranges
+                0x00000000000013e0       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .debug_aranges
+                0x0000000000001410       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .debug_aranges
+                0x0000000000001440       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_aranges
+                0x0000000000001470       0x30 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000    0x91421
+ *(.debug_info)
+ .debug_info    0x0000000000000000    0x85ff9 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_info    0x0000000000085ff9      0x4c9 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_info    0x00000000000864c2       0x98 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .debug_info    0x000000000008655a      0x242 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_info    0x000000000008679c      0x1b5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_info    0x0000000000086951      0x2a5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_info    0x0000000000086bf6      0x401 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_info    0x0000000000086ff7      0x184 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_info    0x000000000008717b      0xaf2 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_info    0x0000000000087c6d      0xb65 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_info    0x00000000000887d2     0x1dfb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .debug_info    0x000000000008a5cd      0x14a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_info    0x000000000008a717      0x2a8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_info    0x000000000008a9bf      0x3f7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_info    0x000000000008adb6      0x180 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_info    0x000000000008af36      0x29a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_info    0x000000000008b1d0      0x2d1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_info    0x000000000008b4a1      0x298 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_info    0x000000000008b739      0x11f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_info    0x000000000008b858      0x588 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_info    0x000000000008bde0      0x245 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_info    0x000000000008c025      0x1ce /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_info    0x000000000008c1f3      0x192 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_info    0x000000000008c385      0x197 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_info    0x000000000008c51c      0x3ad /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_info    0x000000000008c8c9     0x22ad /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_info    0x000000000008eb76       0x6a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .debug_info    0x000000000008ebe0       0x6a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .debug_info    0x000000000008ec4a      0x5eb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_info    0x000000000008f235      0x122 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_info    0x000000000008f357       0x6a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .debug_info    0x000000000008f3c1       0x6a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .debug_info    0x000000000008f42b       0xb2 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .debug_info    0x000000000008f4dd       0x48 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .debug_info    0x000000000008f525       0x39 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .debug_info    0x000000000008f55e      0x624 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_info    0x000000000008fb82      0x5fb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_info    0x000000000009017d       0x4d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .debug_info    0x00000000000901ca       0x4d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .debug_info    0x0000000000090217       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .debug_info    0x0000000000090284       0x3b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .debug_info    0x00000000000902bf       0x4d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .debug_info    0x000000000009030c       0x4d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .debug_info    0x0000000000090359       0x3b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .debug_info    0x0000000000090394      0x1f5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_info    0x0000000000090589      0x1ec /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_info    0x0000000000090775       0xd7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_info    0x000000000009084c       0x3b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .debug_info    0x0000000000090887       0x3b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .debug_info    0x00000000000908c2       0x4d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .debug_info    0x000000000009090f       0x4d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .debug_info    0x000000000009095c      0x21e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_info    0x0000000000090b7a      0x8a7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_abbrev   0x0000000000000000    0x14327
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000    0x10ffd /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_abbrev  0x0000000000010ffd      0x1bb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_abbrev  0x00000000000111b8       0x48 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .debug_abbrev  0x0000000000011200      0x19c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_abbrev  0x000000000001139c      0x10e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_abbrev  0x00000000000114aa      0x185 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_abbrev  0x000000000001162f      0x194 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_abbrev  0x00000000000117c3       0xc7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_abbrev  0x000000000001188a      0x218 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_abbrev  0x0000000000011aa2      0x2e2 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_abbrev  0x0000000000011d84      0x32a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .debug_abbrev  0x00000000000120ae       0xb6 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_abbrev  0x0000000000012164       0xfb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_abbrev  0x000000000001225f      0x1a2 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_abbrev  0x0000000000012401       0xc6 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_abbrev  0x00000000000124c7       0xfa /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_abbrev  0x00000000000125c1      0x157 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_abbrev  0x0000000000012718       0xfa /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_abbrev  0x0000000000012812       0xa3 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_abbrev  0x00000000000128b5      0x201 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_abbrev  0x0000000000012ab6      0x119 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_abbrev  0x0000000000012bcf       0xda /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_abbrev  0x0000000000012ca9       0xcf /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_abbrev  0x0000000000012d78       0xd6 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_abbrev  0x0000000000012e4e      0x24d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_abbrev  0x000000000001309b      0x428 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_abbrev  0x00000000000134c3       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .debug_abbrev  0x00000000000134eb       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .debug_abbrev  0x0000000000013513      0x1d9 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_abbrev  0x00000000000136ec       0xa7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_abbrev  0x0000000000013793       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .debug_abbrev  0x00000000000137bb       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .debug_abbrev  0x00000000000137e3       0x72 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .debug_abbrev  0x0000000000013855       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .debug_abbrev  0x000000000001387d       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .debug_abbrev  0x00000000000138a5      0x1ca /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_abbrev  0x0000000000013a6f      0x1c6 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_abbrev  0x0000000000013c35       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .debug_abbrev  0x0000000000013c5d       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .debug_abbrev  0x0000000000013c85       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .debug_abbrev  0x0000000000013cad       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .debug_abbrev  0x0000000000013cd5       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .debug_abbrev  0x0000000000013cfd       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .debug_abbrev  0x0000000000013d25       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .debug_abbrev  0x0000000000013d4d      0x113 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_abbrev  0x0000000000013e60      0x15c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_abbrev  0x0000000000013fbc       0x9c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_abbrev  0x0000000000014058       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .debug_abbrev  0x0000000000014080       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .debug_abbrev  0x00000000000140a8       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .debug_abbrev  0x00000000000140d0       0x28 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .debug_abbrev  0x00000000000140f8      0x10f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_abbrev  0x0000000000014207      0x120 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_line     0x0000000000000000    0x2351c
+ *(.debug_line)
+ .debug_line    0x0000000000000000    0x200d7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_line    0x00000000000200d7      0x12c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_line    0x0000000000020203       0x3f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .debug_line    0x0000000000020242       0xd8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_line    0x000000000002031a       0xb6 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_line    0x00000000000203d0      0x11f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_line    0x00000000000204ef      0x11c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_line    0x000000000002060b       0xaf /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_line    0x00000000000206ba       0xff /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_line    0x00000000000207b9      0x228 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_line    0x00000000000209e1      0x10b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .debug_line    0x0000000000020aec       0x8a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_line    0x0000000000020b76       0x95 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_line    0x0000000000020c0b       0xbf /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_line    0x0000000000020cca       0xa0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_line    0x0000000000020d6a       0x7e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_line    0x0000000000020de8      0x122 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_line    0x0000000000020f0a       0x7e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_line    0x0000000000020f88       0x88 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_line    0x0000000000021010      0x189 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_line    0x0000000000021199       0xca /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_line    0x0000000000021263       0xb0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_line    0x0000000000021313       0xa7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_line    0x00000000000213ba       0xa7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_line    0x0000000000021461      0x198 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_line    0x00000000000215f9      0x23e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_line    0x0000000000021837       0x50 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .debug_line    0x0000000000021887       0x50 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .debug_line    0x00000000000218d7      0x1be /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_line    0x0000000000021a95       0x96 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_line    0x0000000000021b2b       0x4f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .debug_line    0x0000000000021b7a       0x50 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .debug_line    0x0000000000021bca       0x3f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .debug_line    0x0000000000021c09       0x60 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .debug_line    0x0000000000021c69       0x5d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .debug_line    0x0000000000021cc6       0xd3 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_line    0x0000000000021d99      0x1d8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_line    0x0000000000021f71      0x118 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .debug_line    0x0000000000022089      0x137 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .debug_line    0x00000000000221c0       0xda /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .debug_line    0x000000000002229a       0x96 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .debug_line    0x0000000000022330      0x1c8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .debug_line    0x00000000000224f8       0xd0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .debug_line    0x00000000000225c8      0x48e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .debug_line    0x0000000000022a56      0x175 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_line    0x0000000000022bcb       0xaf /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_line    0x0000000000022c7a       0x5a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_line    0x0000000000022cd4       0x97 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .debug_line    0x0000000000022d6b      0x524 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .debug_line    0x000000000002328f       0x9a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .debug_line    0x0000000000023329       0xcb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .debug_line    0x00000000000233f4       0xad /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_line    0x00000000000234a1       0x7b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000    0x56f4e
+ *(.debug_str)
+ .debug_str     0x0000000000000000    0x4db61 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_str     0x000000000004db61      0x38d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_str     0x000000000004deee      0x1ac /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .debug_str     0x000000000004e09a      0x254 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_str     0x000000000004e2ee      0x21a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_str     0x000000000004e508      0x296 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_str     0x000000000004e79e      0x380 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_str     0x000000000004eb1e      0x1ff /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_str     0x000000000004ed1d      0x908 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_str     0x000000000004f625      0x6da /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_str     0x000000000004fcff     0x13ff /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .debug_str     0x00000000000510fe      0x1de /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_str     0x00000000000512dc      0x2bd /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_str     0x0000000000051599      0x321 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_str     0x00000000000518ba      0x1fc /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_str     0x0000000000051ab6      0x2b7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_str     0x0000000000051d6d      0x286 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_str     0x0000000000051ff3      0x2b5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_str     0x00000000000522a8      0x1eb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_str     0x0000000000052493      0x2d8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_str     0x000000000005276b      0x27d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_str     0x00000000000529e8      0x23c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_str     0x0000000000052c24      0x217 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_str     0x0000000000052e3b      0x219 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_str     0x0000000000053054      0x2a0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_str     0x00000000000532f4     0x17fe /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_str     0x0000000000054af2       0x95 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .debug_str     0x0000000000054b87       0x8d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .debug_str     0x0000000000054c14      0x293 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_str     0x0000000000054ea7      0x1dc /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_str     0x0000000000055083       0x8e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .debug_str     0x0000000000055111       0x8a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .debug_str     0x000000000005519b      0x19f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .debug_str     0x000000000005533a       0x7a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .debug_str     0x00000000000553b4       0x6a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .debug_str     0x000000000005541e      0x3e5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_str     0x0000000000055803      0x418 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_str     0x0000000000055c1b       0x89 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .debug_str     0x0000000000055ca4       0x85 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .debug_str     0x0000000000055d29       0x9c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .debug_str     0x0000000000055dc5       0x8e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .debug_str     0x0000000000055e53       0x93 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .debug_str     0x0000000000055ee6       0x86 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .debug_str     0x0000000000055f6c       0x80 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .debug_str     0x0000000000055fec      0x1ce /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_str     0x00000000000561ba      0x1e4 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_str     0x000000000005639e      0x18f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_str     0x000000000005652d       0x80 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .debug_str     0x00000000000565ad       0x81 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .debug_str     0x000000000005662e       0x8b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .debug_str     0x00000000000566b9       0x8f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .debug_str     0x0000000000056748      0x28c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_str     0x00000000000569d4      0x57a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x0000000000000000     0xde59
+ *(.debug_line_str)
+ .debug_line_str
+                0x0000000000000000     0xa8c5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_line_str
+                0x000000000000a8c5      0x165 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_line_str
+                0x000000000000aa2a       0x91 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errno.os)
+ .debug_line_str
+                0x000000000000aabb      0x18d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_line_str
+                0x000000000000ac48      0x181 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_line_str
+                0x000000000000adc9      0x1a7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_line_str
+                0x000000000000af70      0x1f8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_line_str
+                0x000000000000b168      0x13c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_line_str
+                0x000000000000b2a4      0x1af /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_line_str
+                0x000000000000b453      0x2e1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_line_str
+                0x000000000000b734      0x2bf /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-prof-freq.os)
+ .debug_line_str
+                0x000000000000b9f3       0xc8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_line_str
+                0x000000000000babb      0x14e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_line_str
+                0x000000000000bc09      0x13e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_line_str
+                0x000000000000bd47       0xf3 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_line_str
+                0x000000000000be3a      0x13b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_line_str
+                0x000000000000bf75      0x132 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_line_str
+                0x000000000000c0a7      0x138 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_line_str
+                0x000000000000c1df       0xe0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_line_str
+                0x000000000000c2bf      0x164 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_line_str
+                0x000000000000c423      0x123 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_line_str
+                0x000000000000c546      0x143 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_line_str
+                0x000000000000c689      0x13a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_line_str
+                0x000000000000c7c3      0x13d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_line_str
+                0x000000000000c900      0x133 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_line_str
+                0x000000000000ca33      0x2d0 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_line_str
+                0x000000000000cd03       0x57 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mprotect.os)
+ .debug_line_str
+                0x000000000000cd5a       0x57 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-munmap.os)
+ .debug_line_str
+                0x000000000000cdb1       0xd8 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_line_str
+                0x000000000000ce89       0xcb /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_line_str
+                0x000000000000cf54       0x58 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getpid.os)
+ .debug_line_str
+                0x000000000000cfac       0x58 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-uname.os)
+ .debug_line_str
+                0x000000000000d004       0x9a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-environ.os)
+ .debug_line_str
+                0x000000000000d09e       0x51 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setjmp.os)
+ .debug_line_str
+                0x000000000000d0ef       0x54 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-__longjmp.os)
+ .debug_line_str
+                0x000000000000d143      0x1ad /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_line_str
+                0x000000000000d2f0      0x1ff /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_line_str
+                0x000000000000d4ef       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memchr.os)
+ .debug_line_str
+                0x000000000000d55c       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memcmp.os)
+ .debug_line_str
+                0x000000000000d5c9       0x6f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memmove.os)
+ .debug_line_str
+                0x000000000000d638       0x7b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-memset.os)
+ .debug_line_str
+                0x000000000000d6b3       0x77 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stpcpy.os)
+ .debug_line_str
+                0x000000000000d72a       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchr.os)
+ .debug_line_str
+                0x000000000000d797       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcmp.os)
+ .debug_line_str
+                0x000000000000d804      0x132 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_line_str
+                0x000000000000d936       0xe9 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_line_str
+                0x000000000000da1f       0xb5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_line_str
+                0x000000000000dad4       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strlen.os)
+ .debug_line_str
+                0x000000000000db41       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strncmp.os)
+ .debug_line_str
+                0x000000000000dbae       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strnlen.os)
+ .debug_line_str
+                0x000000000000dc1b       0x6d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strchrnul.os)
+ .debug_line_str
+                0x000000000000dc88      0x122 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_line_str
+                0x000000000000ddaa       0xaf /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_loclists
+                0x0000000000000000    0x20736
+ *(.debug_loclists)
+ .debug_loclists
+                0x0000000000000000    0x1f48a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_loclists
+                0x000000000001f48a       0xc5 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-check_fds.os)
+ .debug_loclists
+                0x000000000001f54f       0x46 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-closedir.os)
+ .debug_loclists
+                0x000000000001f595       0x25 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-rewinddir.os)
+ .debug_loclists
+                0x000000000001f5ba       0x63 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_loclists
+                0x000000000001f61d       0x4e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fdopendir.os)
+ .debug_loclists
+                0x000000000001f66b      0x119 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_loclists
+                0x000000000001f784       0x83 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-dl-addr-obj.os)
+ .debug_loclists
+                0x000000000001f807      0x14e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_loclists
+                0x000000000001f955       0x2c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_loclists
+                0x000000000001f981       0x45 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstat64.os)
+ .debug_loclists
+                0x000000000001f9c6       0x82 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fstatat64.os)
+ .debug_loclists
+                0x000000000001fa48       0x34 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_loclists
+                0x000000000001fa7c       0x3e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lstat64.os)
+ .debug_loclists
+                0x000000000001faba       0x85 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_loclists
+                0x000000000001fb3f       0x3e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-stat64.os)
+ .debug_loclists
+                0x000000000001fb7d       0x24 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_loclists
+                0x000000000001fba1      0x219 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_loclists
+                0x000000000001fdba       0xd1 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_loclists
+                0x000000000001fe8b       0x52 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_loclists
+                0x000000000001fedd       0x34 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_loclists
+                0x000000000001ff11       0x34 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_loclists
+                0x000000000001ff45      0x119 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_loclists
+                0x000000000002005e      0x201 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_loclists
+                0x000000000002025f      0x188 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_loclists
+                0x00000000000203e7       0x3a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_loclists
+                0x0000000000020421       0x5f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-sigaction.os)
+ .debug_loclists
+                0x0000000000020480       0xd7 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_loclists
+                0x0000000000020557      0x10f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strcspn.os)
+ .debug_loclists
+                0x0000000000020666       0x6a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strdup.os)
+ .debug_loclists
+                0x00000000000206d0       0x1e /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-strerrorname_np.os)
+ .debug_loclists
+                0x00000000000206ee       0x34 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_loclists
+                0x0000000000020722       0x14 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x0000000000000000     0x3fe9
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x0000000000000000     0x3d9b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/dl-allobjs.os
+ .debug_rnglists
+                0x0000000000003d9b       0x14 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-readdir64.os)
+ .debug_rnglists
+                0x0000000000003daf       0x3a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-getdents64.os)
+ .debug_rnglists
+                0x0000000000003de9       0x18 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-profil.os)
+ .debug_rnglists
+                0x0000000000003e01       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-access.os)
+ .debug_rnglists
+                0x0000000000003e14       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lseek64.os)
+ .debug_rnglists
+                0x0000000000003e27       0x1a /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-openat64.os)
+ .debug_rnglists
+                0x0000000000003e41       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-close_nocancel.os)
+ .debug_rnglists
+                0x0000000000003e54       0x3c /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-fcntl_nocancel.os)
+ .debug_rnglists
+                0x0000000000003e90       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-open64_nocancel.os)
+ .debug_rnglists
+                0x0000000000003ea3       0x1d /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-pread64_nocancel.os)
+ .debug_rnglists
+                0x0000000000003ec0       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-read_nocancel.os)
+ .debug_rnglists
+                0x0000000000003ed3       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-write_nocancel.os)
+ .debug_rnglists
+                0x0000000000003ee6       0x29 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-scratch_buffer_set_array_size.os)
+ .debug_rnglists
+                0x0000000000003f0f       0x27 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-mmap64.os)
+ .debug_rnglists
+                0x0000000000003f36       0x2f /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-lowlevellock.os)
+ .debug_rnglists
+                0x0000000000003f65       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-_exit.os)
+ .debug_rnglists
+                0x0000000000003f78       0x4b /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-libc_sigaction.os)
+ .debug_rnglists
+                0x0000000000003fc3       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-setitimer.os)
+ .debug_rnglists
+                0x0000000000003fd6       0x13 /root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/rtld-libc.a(rtld-errname.os)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+OUTPUT(/root/tango-packages/pkgs/glibc/src/glibc-2.38/build/elf/librtld.os elf64-x86-64)
