@@ -15,7 +15,7 @@ title      "Albanian language locale for Macedonia"
 source     "Albanian Language Team"
 address    "465 4th St. 2nd Floor, Palisades Park, NJ 07650, U.S.A."
 contact    ""
-email      "bug-glibc-locales@gnu.org"
+email      "libc-alpha@sourceware.org"
 tel        ""
 fax        ""
 language   "Albanian"
@@ -53,8 +53,8 @@ LC_MONETARY
 int_curr_symbol           "MKD "
 currency_symbol           "den"
 mon_decimal_point         ","
-mon_thousands_sep         "<U202F>"
-mon_grouping              3;3
+mon_thousands_sep         " "
+mon_grouping              3
 positive_sign             ""
 negative_sign             "-"
 int_frac_digits           2

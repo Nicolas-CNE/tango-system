@@ -24,7 +24,7 @@ title      "English locale for Botswana"
 source     "RAP"
 address    ""
 contact    ""
-email      "bug-glibc-locales@gnu.org"
+email      "libc-alpha@sourceware.org"
 tel        ""
 fax        ""
 language   "English"
@@ -59,7 +59,7 @@ int_curr_symbol         "BWP "
 currency_symbol         "P"
 mon_decimal_point       "."
 mon_thousands_sep       ","
-mon_grouping            3;3
+mon_grouping            3
 positive_sign           ""
 negative_sign           "-"
 int_frac_digits         2

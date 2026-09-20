@@ -1,5 +1,5 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 09:41:47 PM UTC 2026
+# Generado automáticamente: Sun Sep 20 09:45:49 PM UTC 2026
 
 pkgname: emacs
 version: 29.1-1
@@ -14,9 +14,9 @@ depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/giflib/giflib-5.2.1-2-x86_64.tango.tar.zst
 
 pkgname: glibc
-version: 2.38-1
+version: 2.44-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/glibc/glibc-2.38-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/glibc/glibc-2.44-1-x86_64.tango.tar.zst
 
 pkgname: gmp
 version: 6.3.0-1

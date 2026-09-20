@@ -1,5 +1,5 @@
 /* Definitions for POSIX spawn interface.
-   Copyright (C) 2000-2023 Free Software Foundation, Inc.
+   Copyright (C) 2000-2026 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -34,7 +34,8 @@ typedef struct
   sigset_t __ss;
   struct sched_param __sp;
   int __policy;
-  int __pad[16];
+  int __cgroup;
+  int __pad[15];
 } posix_spawnattr_t;
 
 
@@ -59,6 +60,7 @@ typedef struct
 #ifdef __USE_GNU
 # define POSIX_SPAWN_USEVFORK		0x40
 # define POSIX_SPAWN_SETSID		0x80
+# define POSIX_SPAWN_SETCGROUP         0x100
 #endif
 
 
@@ -198,6 +200,26 @@ extern int posix_spawn_file_actions_adddup2 (posix_spawn_file_actions_t *
 					     int __fd, int __newfd)
      __THROW __nonnull ((1));
 
+#ifdef __USE_XOPEN2K24XSI
+
+/* Add an action changing the directory to PATH during spawn.  This
+   affects the subsequent file actions.
+   Alias of posix_spawn_file_actions_addchdir_np.  */
+extern int __REDIRECT_NTH (posix_spawn_file_actions_addchdir,
+                            (posix_spawn_file_actions_t * __restrict __actions,
+                             const char *__restrict __path),
+                            posix_spawn_file_actions_addchdir_np);
+
+/* Add an action changing the directory to FD during spawn.  This
+   affects the subsequent file actions.  FD is not duplicated and must
+   be open when the file action is executed.
+   Alias of posix_spawn_file_actions_addfchdir_np.  */
+extern int __REDIRECT_NTH (posix_spawn_file_actions_addfchdir,
+                           (posix_spawn_file_actions_t *, int __fd),
+                           posix_spawn_file_actions_addfchdir_np);
+
+#endif /* __USE_XOPEN2K24XSI */
+
 #ifdef __USE_MISC
 /* Add an action changing the directory to PATH during spawn.  This
    affects the subsequent file actions.  */
@@ -230,5 +252,7 @@ posix_spawn_file_actions_addtcsetpgrp_np (posix_spawn_file_actions_t *,
 #endif /* __USE_MISC */
 
 __END_DECLS
+
+#include <bits/spawn_ext.h>
 
 #endif /* spawn.h */

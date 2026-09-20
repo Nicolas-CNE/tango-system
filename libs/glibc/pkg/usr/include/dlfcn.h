@@ -1,5 +1,5 @@
 /* User functions for run-time dynamic loading.
-   Copyright (C) 1995-2023 Free Software Foundation, Inc.
+   Copyright (C) 1995-2026 Free Software Foundation, Inc.
    This file is part of the GNU C Library.
 
    The GNU C Library is free software; you can redistribute it and/or
@@ -167,7 +167,12 @@ enum
        the number of program headers in the array.  */
     RTLD_DI_PHDR = 11,
 
-    RTLD_DI_MAX = 11
+    /* Treat ARG as `const char **' and at that location, store the address
+       of the directory name used to expand $ORIGIN in this shared object's
+       dependency file names.  */
+    RTLD_DI_ORIGIN_PATH = 12,
+
+    RTLD_DI_MAX = 12
   };
 
 
@@ -217,15 +222,21 @@ struct dl_find_object
   int dlfo_eh_count;		/* Number of exception handling entries.  */
   unsigned int __dlfo_eh_count_pad;
 # endif
-  __extension__ unsigned long long int __dflo_reserved[7];
+  void *dlfo_sframe;		/* SFrame stack trace data of the object.  */
+#if __WORDSIZE == 32
+  unsigned int __dlfo_sframe_pad;
+#endif
+  __extension__ unsigned long long int __dlfo_reserved[6];
 };
 
 /* If ADDRESS is found in an object, fill in *RESULT and return 0.
    Otherwise, return -1.  */
 int _dl_find_object (void *__address, struct dl_find_object *__result) __THROW;
 
-#endif /* __USE_GNU */
+/* SFrame stack trace data is valid.  */
+#define DLFO_FLAG_SFRAME      (1ULL << 0)
 
+#endif /* __USE_GNU */
 
 __END_DECLS
 

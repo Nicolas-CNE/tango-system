@@ -2,10 +2,12 @@
 ./var/db
 ./var/db/Makefile
 ./etc
+./etc/tunables.conf
 ./etc/locale.gen
 ./etc/rpc
 ./etc/gai.conf
-./.INSTALL
+./etc/tunables.conf.d
+./etc/tunables.conf.d/shstk.conf
 ./usr
 ./usr/bin
 ./usr/bin/localedef
@@ -44,11 +46,13 @@
 ./usr/share/info/libc.info-14.gz
 ./usr/share/info/libc.info-16.gz
 ./usr/share/info/libc.info-1.gz
+./usr/share/info/libc.info-20.gz
 ./usr/share/info/libc.info-4.gz
 ./usr/share/info/libc.info-8.gz
 ./usr/share/info/libc.info-5.gz
 ./usr/share/info/libc.info-15.gz
 ./usr/share/info/libc.info-13.gz
+./usr/share/info/libc.info-19.gz
 ./usr/share/info/libc.info-12.gz
 ./usr/share/i18n
 ./usr/share/i18n/charmaps
@@ -330,10 +334,12 @@
 ./usr/share/i18n/locales/de_BE
 ./usr/share/i18n/locales/sq_MK
 ./usr/share/i18n/locales/fur_IT
+./usr/share/i18n/locales/scn_IT
 ./usr/share/i18n/locales/an_ES
 ./usr/share/i18n/locales/yi_US
 ./usr/share/i18n/locales/es_PY
 ./usr/share/i18n/locales/fil_PH
+./usr/share/i18n/locales/hrx_BR
 ./usr/share/i18n/locales/i18n
 ./usr/share/i18n/locales/fr_BE
 ./usr/share/i18n/locales/en_SG
@@ -347,12 +353,14 @@
 ./usr/share/i18n/locales/lv_LV
 ./usr/share/i18n/locales/pt_PT
 ./usr/share/i18n/locales/ti_ET
+./usr/share/i18n/locales/ssy_ER
 ./usr/share/i18n/locales/sq_AL
 ./usr/share/i18n/locales/de_LI
 ./usr/share/i18n/locales/cv_RU
 ./usr/share/i18n/locales/translit_combining
 ./usr/share/i18n/locales/en_AG
 ./usr/share/i18n/locales/gd_GB
+./usr/share/i18n/locales/gbm_IN
 ./usr/share/i18n/locales/en_NG
 ./usr/share/i18n/locales/ab_GE
 ./usr/share/i18n/locales/ia_FR
@@ -361,6 +369,7 @@
 ./usr/share/i18n/locales/nl_BE@euro
 ./usr/share/i18n/locales/wo_SN
 ./usr/share/i18n/locales/az_IR
+./usr/share/i18n/locales/zgh_MA
 ./usr/share/i18n/locales/be_BY@latin
 ./usr/share/i18n/locales/ht_HT
 ./usr/share/i18n/locales/iso14651_t1_pinyin
@@ -382,6 +391,7 @@
 ./usr/share/i18n/locales/es_UY
 ./usr/share/i18n/locales/ss_ZA
 ./usr/share/i18n/locales/es_ES
+./usr/share/i18n/locales/kv_RU
 ./usr/share/i18n/locales/lb_LU
 ./usr/share/i18n/locales/br_FR
 ./usr/share/i18n/locales/en_ZM
@@ -402,6 +412,7 @@
 ./usr/share/i18n/locales/byn_ER
 ./usr/share/i18n/locales/chr_US
 ./usr/share/i18n/locales/es_AR
+./usr/share/i18n/locales/su_ID
 ./usr/share/i18n/locales/kab_DZ
 ./usr/share/i18n/locales/ckb_IQ
 ./usr/share/i18n/locales/so_DJ
@@ -493,6 +504,7 @@
 ./usr/share/i18n/locales/es_BO
 ./usr/share/i18n/locales/gez_ET
 ./usr/share/i18n/locales/ar_SY
+./usr/share/i18n/locales/tok
 ./usr/share/i18n/locales/tg_TJ
 ./usr/share/i18n/locales/et_EE
 ./usr/share/i18n/locales/os_RU
@@ -527,6 +539,7 @@
 ./usr/share/i18n/locales/es_MX
 ./usr/share/i18n/locales/quz_PE
 ./usr/share/i18n/locales/bem_ZM
+./usr/share/i18n/locales/translit_emojis
 ./usr/share/i18n/locales/ayc_PE
 ./usr/share/i18n/locales/es_CR
 ./usr/share/i18n/locales/en_IE
@@ -586,6 +599,7 @@
 ./usr/share/i18n/locales/en_ZW
 ./usr/share/i18n/locales/km_KH
 ./usr/share/i18n/locales/ak_GH
+./usr/share/i18n/locales/crh_RU
 ./usr/share/i18n/locales/as_IN
 ./usr/share/i18n/locales/hu_HU
 ./usr/share/i18n/locales/nl_NL
@@ -601,6 +615,7 @@
 ./usr/share/i18n/locales/mn_MN
 ./usr/share/i18n/locales/it_CH
 ./usr/share/i18n/locales/lij_IT
+./usr/share/i18n/locales/en_SE
 ./usr/share/i18n/locales/pa_IN
 ./usr/share/i18n/locales/ik_CA
 ./usr/share/i18n/locales/or_IN
@@ -626,9 +641,10 @@
 ./usr/share/i18n/locales/translit_circle
 ./usr/share/i18n/locales/es_CO
 ./usr/share/i18n/locales/ca_ES@euro
+./usr/share/i18n/locales/ltg_LV
 ./usr/share/i18n/locales/sw_TZ
+./usr/share/i18n/locales/mdf_RU
 ./usr/share/i18n/locales/lg_UG
-./usr/share/i18n/locales/aa_ER@saaho
 ./usr/share/i18n/locales/br_FR@euro
 ./usr/share/i18n/locales/en_CA
 ./usr/share/i18n/locales/nn_NO
@@ -756,6 +772,9 @@
 ./usr/share/locale/hr
 ./usr/share/locale/hr/LC_MESSAGES
 ./usr/share/locale/hr/LC_MESSAGES/libc.mo
+./usr/share/locale/ar
+./usr/share/locale/ar/LC_MESSAGES
+./usr/share/locale/ar/LC_MESSAGES/libc.mo
 ./usr/share/locale/nl
 ./usr/share/locale/nl/LC_MESSAGES
 ./usr/share/locale/nl/LC_MESSAGES/libc.mo
@@ -765,6 +784,14 @@
 ./usr/share/locale/sr
 ./usr/share/locale/sr/LC_MESSAGES
 ./usr/share/locale/sr/LC_MESSAGES/libc.mo
+./usr/share/libalpm
+./usr/share/libalpm/hooks
+./usr/share/libalpm/hooks/11-glibc-ldconfig.hook
+./usr/share/libalpm/hooks/10-glibc-remove-locale-archive.hook
+./usr/share/libalpm/hooks/12-glibc-iconvconfig.hook
+./usr/share/libalpm/hooks/10-glibc-locale-gen.hook
+./usr/share/libalpm/hooks/12-glibc-remove-iconvconfig-cache.hook
+./usr/share/libalpm/hooks/11-glibc-remove-ldconfig-cache.hook
 ./usr/include
 ./usr/include/glob.h
 ./usr/include/lastlog.h
@@ -828,11 +855,13 @@
 ./usr/include/sgtty.h
 ./usr/include/bits
 ./usr/include/bits/dl_find_object.h
+./usr/include/bits/openat2.h
 ./usr/include/bits/select2.h
 ./usr/include/bits/math-vector.h
 ./usr/include/bits/unistd-decl.h
 ./usr/include/bits/pthreadtypes.h
 ./usr/include/bits/socket.h
+./usr/include/bits/fcntl-linux-fortify.h
 ./usr/include/bits/procfs.h
 ./usr/include/bits/wchar-ldbl.h
 ./usr/include/bits/libc-header-start.h
@@ -849,6 +878,7 @@
 ./usr/include/bits/thread-shared-types.h
 ./usr/include/bits/ptrace-shared.h
 ./usr/include/bits/timesize.h
+./usr/include/bits/spawn_ext.h
 ./usr/include/bits/socket2.h
 ./usr/include/bits/sigevent-consts.h
 ./usr/include/bits/statfs.h
@@ -867,6 +897,7 @@
 ./usr/include/bits/signalfd.h
 ./usr/include/bits/mqueue2.h
 ./usr/include/bits/error.h
+./usr/include/bits/termios-cbaud.h
 ./usr/include/bits/semaphore.h
 ./usr/include/bits/wctype-wchar.h
 ./usr/include/bits/dirent_ext.h
@@ -899,6 +930,7 @@
 ./usr/include/bits/mathcalls-narrow.h
 ./usr/include/bits/termios-c_cflag.h
 ./usr/include/bits/argp-ldbl.h
+./usr/include/bits/stdint-least.h
 ./usr/include/bits/siginfo-consts.h
 ./usr/include/bits/mman-map-flags-generic.h
 ./usr/include/bits/stat.h
@@ -912,6 +944,7 @@
 ./usr/include/bits/procfs-prregset.h
 ./usr/include/bits/platform
 ./usr/include/bits/platform/x86.h
+./usr/include/bits/platform/features.h
 ./usr/include/bits/waitstatus.h
 ./usr/include/bits/termios-misc.h
 ./usr/include/bits/floatn.h
@@ -939,6 +972,7 @@
 ./usr/include/bits/statx-generic.h
 ./usr/include/bits/atomic_wide_counter.h
 ./usr/include/bits/sched.h
+./usr/include/bits/inet-fortified-decl.h
 ./usr/include/bits/uio-ext.h
 ./usr/include/bits/mqueue.h
 ./usr/include/bits/stdio2.h
@@ -949,7 +983,9 @@
 ./usr/include/bits/printf-ldbl.h
 ./usr/include/bits/wchar2-decl.h
 ./usr/include/bits/getopt_posix.h
+./usr/include/bits/inet-fortified.h
 ./usr/include/bits/termios-struct.h
+./usr/include/bits/mathcalls-macros.h
 ./usr/include/bits/stdio-ldbl.h
 ./usr/include/bits/signal_ext.h
 ./usr/include/bits/pthread_stack_min.h
@@ -975,6 +1011,7 @@
 ./usr/include/bits/types/struct_shmid64_ds.h
 ./usr/include/bits/types/struct_sigstack.h
 ./usr/include/bits/types/stack_t.h
+./usr/include/bits/types/once_flag.h
 ./usr/include/bits/types/wint_t.h
 ./usr/include/bits/types/FILE.h
 ./usr/include/bits/types/struct_statx_timestamp.h
@@ -1044,6 +1081,7 @@
 ./usr/include/bits/confname.h
 ./usr/include/bits/mman.h
 ./usr/include/bits/stdint-intn.h
+./usr/include/bits/cloexec.h
 ./usr/include/bits/mman_ext.h
 ./usr/include/bits/uio_lim.h
 ./usr/include/bits/struct_stat.h
@@ -1068,7 +1106,6 @@
 ./usr/include/strings.h
 ./usr/include/wait.h
 ./usr/include/limits.h
-./usr/include/termio.h
 ./usr/include/locale.h
 ./usr/include/dirent.h
 ./usr/include/net
@@ -1154,6 +1191,7 @@
 ./usr/include/stdint.h
 ./usr/include/signal.h
 ./usr/include/sysexits.h
+./usr/include/stdbit.h
 ./usr/include/ftw.h
 ./usr/include/link.h
 ./usr/include/finclude
@@ -1269,9 +1307,8 @@
 ./usr/lib/libc_malloc_debug.so
 ./usr/lib/libnss_db.so.2
 ./usr/lib/librt.so.1
+./usr/lib/libm-2.44.a
 ./usr/lib/libm.a
-./usr/lib/systemd
-./usr/lib/systemd/system
 ./usr/lib/libnss_hesiod.so
 ./usr/lib/librt.a
 ./usr/lib/libutil.so.1
@@ -1574,7 +1611,6 @@
 ./usr/lib/libpthread.so.0
 ./usr/lib/libmvec.so
 ./usr/lib/libutil.a
-./usr/lib/tmpfiles.d
 ./usr/lib/libmvec.so.1
 ./usr/lib/libnss_hesiod.so.2
 ./usr/lib/libc.so
@@ -1583,7 +1619,6 @@
 ./usr/lib/libpcprofile.so
 ./usr/lib/libm.so.6
 ./usr/lib/grcrt1.o
-./usr/lib/libm-2.38.a
 ./usr/lib/libnss_compat.so
 ./usr/lib/libnss_dns.so.2
 ./usr/lib/libthread_db.so
