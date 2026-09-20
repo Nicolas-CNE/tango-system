@@ -1,5 +1,5 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 09:00:33 PM UTC 2026
+# Generado automáticamente: Sun Sep 20 09:04:36 PM UTC 2026
 
 pkgname: emacs
 version: 29.1-1
@@ -11,6 +11,11 @@ pkgname: glibc
 version: 2.38-1
 arch: x86_64
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/glibc/glibc-2.38-1-x86_64.tango.tar.zst
+
+pkgname: gmp
+version: 6.3.0-1
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gmp/gmp-6.3.0-1-x86_64.tango.tar.zst
 
 pkgname: gnutls
 version: 3.8.3-1

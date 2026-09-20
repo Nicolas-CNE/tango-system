@@ -1,0 +1,17 @@
+pkgname="gmp"
+pkgver="6.3.0"
+pkgrel="1"
+arch="x86_64"
+depends=()
+sources=(
+    "https://archive.archlinux.org/packages/g/gmp/gmp-${pkgver}-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "gmp-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}
