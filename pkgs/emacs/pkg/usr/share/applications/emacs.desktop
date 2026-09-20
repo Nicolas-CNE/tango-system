@@ -8,5 +8,4 @@ Icon=emacs
 Type=Application
 Terminal=false
 Categories=Development;TextEditor;
-StartupNotify=true
 StartupWMClass=Emacs

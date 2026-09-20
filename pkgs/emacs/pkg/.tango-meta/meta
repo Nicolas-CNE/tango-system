@@ -1,4 +1,4 @@
 pkgname: emacs
 version: 29.1-1
 arch: x86_64
-depends: glibc,ncurses,gnutls,gmp,nettle,libtiff,libpng,giflib,libjpeg-turbo,librsvg,libwebp
+depends: glibc,ncurses,gnutls,gmp,nettle

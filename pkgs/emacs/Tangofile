@@ -2,9 +2,9 @@ pkgname="emacs"
 pkgver="29.1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "ncurses" "gnutls" "gmp" "nettle" "libtiff" "libpng" "giflib" "libjpeg-turbo" "librsvg" "libwebp")
+depends=("glibc" "ncurses" "gnutls" "gmp" "nettle")
 sources=(
-    "https://archive.archlinux.org/packages/e/emacs/emacs-29.1-1-x86_64.pkg.tar.zst"
+    "https://archive.archlinux.org/packages/e/emacs-nox/emacs-nox-29.1-1-x86_64.pkg.tar.zst"
 )
 
 build() {
@@ -12,6 +12,6 @@ build() {
 }
 
 package() {
-    tar -I zstd -xf "${SRC_DIR}/emacs-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    tar -I zstd -xf "${SRC_DIR}/emacs-nox-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
     rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
 }

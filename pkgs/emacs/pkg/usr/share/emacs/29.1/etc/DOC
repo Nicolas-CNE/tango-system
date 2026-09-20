@@ -8264,8 +8264,7 @@ If the value is nil, candidate fonts might be rejected if the don't
 have exactly the same values of attributes as the face requests.
 
 This variable exists for debugging of the font-selection process,
-and we advise not to change it otherwise.Semacsgtkfixed.o
-Semacs.o
+and we advise not to change it otherwise.Semacs.o
 Finvocation-name
 Return the program name that was used to run Emacs.
 Any directory names are omitted.
@@ -20147,7 +20146,6 @@ When trying to load a tree-sitter language definition,
 Emacs first looks in the directories mentioned in this variable,
 then in the `tree-sitter' subdirectory of `user-emacs-directory', and
 then in the system default locations for dynamic libraries, in that order.Sitree.o
-Sftcrfont.o
 Sjson.o
 Fjson--available-p
 Return non-nil if libjansson is available (internal use only).
