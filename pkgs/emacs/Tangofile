@@ -1,0 +1,27 @@
+pkgname="emacs"
+pkgver="29.1"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "ncurses" "gnutls")
+sources=("https://ftp.gnu.org/gnu/emacs/emacs-29.1.tar.gz")
+
+build() {
+    tar -xf "emacs-${pkgver}.tar.gz"
+    cd "emacs-${pkgver}"
+
+    ./configure \
+        --prefix=/usr \
+        --sysconfdir=/etc \
+        --localstatedir=/var \
+        --without-x \
+        --without-sound \
+        --without-compress-install \
+        --with-gnutls=ifavailable
+
+    make -j$(nproc)
+}
+
+package() {
+    cd "emacs-${pkgver}"
+    make DESTDIR="${PKG_DIR}" install
+}

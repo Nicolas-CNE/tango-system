@@ -1,0 +1,44 @@
+#!/bin/bash
+# tango-build - Generador de paquetes .tango.tar.zst para Tango Linux
+
+set -e
+
+if [ ! -f "Tangofile" ]; then
+    echo "[ERROR] No se encontró el archivo Tangofile en el directorio actual."
+    exit 1
+fi
+
+source Tangofile
+
+BUILD_DIR="$(pwd)/src"
+PKG_DIR="$(pwd)/pkg"
+
+echo "==> Armando paquete: ${pkgname}-${pkgver}-${pkgrel} (${arch})"
+
+rm -rf "$BUILD_DIR" "$PKG_DIR"
+mkdir -p "$BUILD_DIR" "$PKG_DIR"
+
+for src in "${sources[@]}"; do
+    echo "==> Descargando fuente: $src"
+    curl -sL "$src" -o "$BUILD_DIR/$(basename "$src")"
+done
+
+cd "$BUILD_DIR"
+build
+
+cd "$PKG_DIR"
+mkdir -p .tango-meta
+
+cat << EOF > .tango-meta/meta
+pkgname: ${pkgname}
+version: ${pkgver}-${pkgrel}
+arch: ${arch}
+depends: $(IFS=, ; echo "${depends[*]}")
+EOF
+
+find . -mindepth 1 -not -path './.tango-meta*' > .tango-meta/files.list
+
+OUTPUT_PKG="../${pkgname}-${pkgver}-${pkgrel}-${arch}.tango.tar.zst"
+tar -cf - . | zstd -z -q -o "$OUTPUT_PKG"
+
+echo "==> Paquete generado exitosamente: $OUTPUT_PKG"
