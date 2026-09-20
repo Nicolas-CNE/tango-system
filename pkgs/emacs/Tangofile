@@ -2,7 +2,7 @@ pkgname="emacs"
 pkgver="29.1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "ncurses" "gnutls")
+depends=("glibc" "ncurses" "gnutls" "gmp" "nettle" "libtiff" "libpng" "giflib" "libjpeg-turbo" "librsvg")
 sources=(
     "https://archive.archlinux.org/packages/e/emacs/emacs-29.1-1-x86_64.pkg.tar.zst"
 )

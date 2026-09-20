@@ -1,0 +1,17 @@
+pkgname="libtiff"
+pkgver="4.6.0"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "libjpeg-turbo")
+sources=(
+    "https://archive.archlinux.org/packages/l/libtiff/libtiff-4.6.0-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "src/libtiff-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}
