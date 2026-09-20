@@ -1,0 +1,4 @@
+pkgname: librsvg
+version: 2.63.0-1
+arch: x86_64
+depends: glibc,libpng

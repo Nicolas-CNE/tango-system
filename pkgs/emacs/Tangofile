@@ -12,6 +12,6 @@ build() {
 }
 
 package() {
-    tar -I zstd -xf "src/emacs-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    tar -I zstd -xf "${SRC_DIR}/emacs-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
     rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
 }

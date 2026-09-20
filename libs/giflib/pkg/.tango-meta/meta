@@ -1,0 +1,4 @@
+pkgname: giflib
+version: 5.2.1-2
+arch: x86_64
+depends: glibc
