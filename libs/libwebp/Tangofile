@@ -1,0 +1,17 @@
+pkgname="libwebp"
+pkgver="1.3.2"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://archive.archlinux.org/packages/l/libwebp/libwebp-1.3.2-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/libwebp-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

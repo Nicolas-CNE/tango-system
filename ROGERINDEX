@@ -1,10 +1,10 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 09:45:49 PM UTC 2026
+# Generado automáticamente: Sun Sep 20 09:47:53 PM UTC 2026
 
 pkgname: emacs
 version: 29.1-1
 arch: x86_64
-depends: glibc,ncurses,gnutls,gmp,nettle,libtiff,libpng,giflib,libjpeg-turbo,librsvg
+depends: glibc,ncurses,gnutls,gmp,nettle,libtiff,libpng,giflib,libjpeg-turbo,librsvg,libwebp
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-29.1-1-x86_64.tango.tar.zst
 
 pkgname: giflib
@@ -53,6 +53,12 @@ version: 4.6.0-1
 arch: x86_64
 depends: glibc,libjpeg-turbo
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtiff/libtiff-4.6.0-1-x86_64.tango.tar.zst
+
+pkgname: libwebp
+version: 1.3.2-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libwebp/libwebp-1.3.2-1-x86_64.tango.tar.zst
 
 pkgname: ncurses
 version: 6.4-1
