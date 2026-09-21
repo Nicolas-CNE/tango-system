@@ -1,0 +1,21 @@
+pkgname="libxcomposite"
+pkgver="0.4.6"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://archive.archlinux.org/packages/l/libxcomposite/libxcomposite-0.4.6-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    ARCHIVE_FILE="${SRC_DIR}/libxcomposite-0.4.6-1-x86_64.pkg.tar.zst"
+    if [ ! -f "$ARCHIVE_FILE" ]; then
+        curl -sL "https://archive.archlinux.org/packages/l/libxcomposite/libxcomposite-0.4.6-1-x86_64.pkg.tar.zst" -o "$ARCHIVE_FILE"
+    fi
+    tar -I zstd -xf "$ARCHIVE_FILE" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

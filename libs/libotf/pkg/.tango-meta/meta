@@ -1,0 +1,4 @@
+pkgname: libotf
+version: 0.9.16-4
+arch: x86_64
+depends: glibc

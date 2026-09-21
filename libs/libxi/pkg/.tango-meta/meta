@@ -1,0 +1,4 @@
+pkgname: libxi
+version: 1.8.1-1
+arch: x86_64
+depends: glibc

@@ -1,0 +1,21 @@
+pkgname="icu"
+pkgver="75.1"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://archive.archlinux.org/packages/i/icu/icu-75.1-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    ARCHIVE_FILE="${SRC_DIR}/icu-75.1-1-x86_64.pkg.tar.zst"
+    if [ ! -f "$ARCHIVE_FILE" ]; then
+        curl -f -sL "https://archive.archlinux.org/packages/i/icu/icu-75.1-1-x86_64.pkg.tar.zst" -o "$ARCHIVE_FILE"
+    fi
+    tar -I zstd -xf "$ARCHIVE_FILE" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

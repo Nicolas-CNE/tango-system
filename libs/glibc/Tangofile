@@ -1,0 +1,18 @@
+pkgname="glibc"
+pkgver="2.44"
+pkgrel="1"
+arch="x86_64"
+depends=()
+sources=(
+    "https://archive.archlinux.org/packages/g/glibc/glibc-2.44%2Br24%2Bg16be1518495f-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/glibc-2.44+r24+g16be1518495f-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}" 2>/dev/null || \
+    tar -I zstd -xf "${SRC_DIR}/glibc-2.44%2Br24%2Bg16be1518495f-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

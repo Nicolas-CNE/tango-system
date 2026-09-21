@@ -1,0 +1,4 @@
+pkgname: libxrandr
+version: 1.5.4-1
+arch: x86_64
+depends: glibc

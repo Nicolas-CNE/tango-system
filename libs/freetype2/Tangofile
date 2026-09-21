@@ -1,0 +1,17 @@
+pkgname="freetype2"
+pkgver="2.13.3"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://archive.archlinux.org/packages/f/freetype2/freetype2-2.13.3-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/freetype2-2.13.3-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}" 2>/dev/null ||     tar -I zstd -xf "${SRC_DIR}/$(echo freetype2-2.13.3-1-x86_64.pkg.tar.zst | sed 's/%3A/:/g')" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

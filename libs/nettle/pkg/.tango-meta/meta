@@ -1,0 +1,4 @@
+pkgname: nettle
+version: 3.9.1-1
+arch: x86_64
+depends: glibc,gmp
