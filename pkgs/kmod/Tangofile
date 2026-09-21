@@ -1,0 +1,17 @@
+pkgname="kmod"
+pkgver="32"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "zstd" "openssl")
+sources=(
+    "https://archive.archlinux.org/packages/k/kmod/kmod-32-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/kmod-32-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

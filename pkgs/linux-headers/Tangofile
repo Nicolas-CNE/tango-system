@@ -1,0 +1,22 @@
+pkgname="linux-headers"
+pkgver="7.2.7"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc")
+sources=(
+    "https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.7.tar.xz"
+)
+
+build() {
+    cd /root/kernel-build/linux-7.2.7
+    make mrproper
+    make headers
+}
+
+package() {
+    cd /root/kernel-build/linux-7.2.7
+    mkdir -p "${PKG_DIR}/usr"
+    make INSTALL_HDR_PATH="${PKG_DIR}/usr" headers_install
+    find "${PKG_DIR}/usr/include" -name '..install.cmd' -delete
+    find "${PKG_DIR}/usr/include" -name '.install' -delete
+}

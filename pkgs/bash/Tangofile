@@ -1,0 +1,17 @@
+pkgname="bash"
+pkgver="5.2.26"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "ncurses" "readline")
+sources=(
+    "https://archive.archlinux.org/packages/b/bash/bash-5.2.26-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/bash-5.2.26-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

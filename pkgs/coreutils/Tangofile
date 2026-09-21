@@ -1,0 +1,17 @@
+pkgname="coreutils"
+pkgver="9.5"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "gmp" "libcap" "openssl")
+sources=(
+    "https://archive.archlinux.org/packages/c/coreutils/coreutils-9.5-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/coreutils-9.5-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}

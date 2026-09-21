@@ -1,0 +1,17 @@
+pkgname="gcc"
+pkgver="14.1.1"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "binutils" "gmp" "mpfr" "mpc" "zstd")
+sources=(
+    "https://archive.archlinux.org/packages/g/gcc/gcc-14.1.1-1-x86_64.pkg.tar.zst"
+)
+
+build() {
+    :
+}
+
+package() {
+    tar -I zstd -xf "${SRC_DIR}/gcc-14.1.1-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
+    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+}
