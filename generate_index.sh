@@ -21,7 +21,7 @@ for dir in pkgs/*/ libs/*/; do
 
         # Formatear dependencias separadas por coma
         if [ ${#depends[@]} -gt 0 ]; then
-            deps=$(IFS=, ; echo "${depends[*]}")
+            deps=$(IFS=' ' ; echo "${depends[*]}")
             echo "depends: $deps" >> "$INDEX_FILE"
         fi
 

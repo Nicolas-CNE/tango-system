@@ -1,10 +1,10 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Mon Sep 21 14:15:13 UTC 2026
+# Generado automáticamente: Mon Sep 21 14:16:51 UTC 2026
 
 pkgname: emacs
 version: 29.1-1
 arch: x86_64
-depends: glibc,ncurses,gnutls,gmp,nettle,libxml2,gpm,lcms2,icu
+depends: glibc ncurses gnutls gmp nettle libxml2 gpm lcms2 icu
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-29.1-1-x86_64.tango.tar.zst
 
 pkgname: alsa-lib
@@ -63,7 +63,7 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gmp/
 pkgname: gnutls
 version: 3.8.3-1
 arch: x86_64
-depends: glibc,nettle,gmp
+depends: glibc nettle gmp
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gnutls/gnutls-3.8.3-1-x86_64.tango.tar.zst
 
 pkgname: gpm
@@ -123,7 +123,7 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libp
 pkgname: librsvg
 version: 2.63.0-1
 arch: x86_64
-depends: glibc,libpng
+depends: glibc libpng
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/librsvg/librsvg-2.63.0-1-x86_64.tango.tar.zst
 
 pkgname: libsm
@@ -135,7 +135,7 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libs
 pkgname: libtiff
 version: 4.6.0-1
 arch: x86_64
-depends: glibc,libjpeg-turbo
+depends: glibc libjpeg-turbo
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtiff/libtiff-4.6.0-1-x86_64.tango.tar.zst
 
 pkgname: libwebp
@@ -213,7 +213,7 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/ncur
 pkgname: nettle
 version: 3.9.1-1
 arch: x86_64
-depends: glibc,gmp
+depends: glibc gmp
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/nettle/nettle-3.9.1-1-x86_64.tango.tar.zst
 
 pkgname: pango
