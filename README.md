@@ -5,4 +5,6 @@ Official Tango Linux package repository.
 
 Tango linux is an independent distribution made by me.
 
-# more coming soon..
+# The Roger package manager
+
+A simple C++ Binary package manager that fetches ROGERINDEX, not much more to say, check it out!!
