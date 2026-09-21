@@ -1,10 +1,10 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sun Sep 20 09:59:17 PM UTC 2026
+# Generado automáticamente: Mon Sep 21 14:15:13 UTC 2026
 
 pkgname: emacs
 version: 29.1-1
 arch: x86_64
-depends: glibc,ncurses,gnutls,gmp,nettle
+depends: glibc,ncurses,gnutls,gmp,nettle,libxml2,gpm,lcms2,icu
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-29.1-1-x86_64.tango.tar.zst
 
 pkgname: alsa-lib
@@ -83,6 +83,12 @@ version: 9.0.0-1
 arch: x86_64
 depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/harfbuzz/harfbuzz-9.0.0-1-x86_64.tango.tar.zst
+
+pkgname: icu
+version: 75.1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/icu/icu-75.1-1-x86_64.tango.tar.zst
 
 pkgname: jbigkit
 version: 2.1-7
