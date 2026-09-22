@@ -1,4 +1,4 @@
 pkgname: jbigkit
-version: 2.1-7
+version: 2.1-8
 arch: x86_64
 depends: glibc

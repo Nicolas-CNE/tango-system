@@ -1,4 +1,4 @@
 pkgname: libpng
-version: 1.6.40-1
+version: 1.6.58-2
 arch: x86_64
 depends: glibc

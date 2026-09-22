@@ -1,21 +1,20 @@
 pkgname="libxfixes"
-pkgver="6.0.1"
+pkgver="6.0.2"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc")
-sources=(
-    "https://archive.archlinux.org/packages/l/libxfixes/libxfixes-6.0.1-1-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/libxfixes-6.0.2-1-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    ARCHIVE_FILE="${SRC_DIR}/libxfixes-6.0.1-1-x86_64.pkg.tar.zst"
-    if [ ! -f "$ARCHIVE_FILE" ]; then
-        curl -sL "https://archive.archlinux.org/packages/l/libxfixes/libxfixes-6.0.1-1-x86_64.pkg.tar.zst" -o "$ARCHIVE_FILE"
-    fi
-    tar -I zstd -xf "$ARCHIVE_FILE" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

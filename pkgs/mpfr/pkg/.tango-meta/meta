@@ -1,0 +1,4 @@
+pkgname: mpfr
+version: 4.2.2-1
+arch: x86_64
+depends: glibc

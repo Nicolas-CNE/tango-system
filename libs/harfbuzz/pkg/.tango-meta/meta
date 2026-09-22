@@ -1,4 +1,4 @@
 pkgname: harfbuzz
-version: 9.0.0-1
+version: 14.5.0-1
 arch: x86_64
 depends: glibc

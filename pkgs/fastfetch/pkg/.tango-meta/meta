@@ -1,0 +1,4 @@
+pkgname: fastfetch
+version: 2.68.1-1
+arch: x86_64
+depends: glibc,zlib

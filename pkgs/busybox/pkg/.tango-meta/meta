@@ -1,0 +1,4 @@
+pkgname: busybox
+version: 1.36.1-4
+arch: x86_64
+depends: glibc

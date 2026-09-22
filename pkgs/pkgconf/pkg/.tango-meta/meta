@@ -1,0 +1,4 @@
+pkgname: pkgconf
+version: 3.0.7-1
+arch: x86_64
+depends: glibc

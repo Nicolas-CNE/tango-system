@@ -20,7 +20,7 @@
 ./usr/include/librsvg-2.0/librsvg/rsvg-version.h
 ./usr/include/librsvg-2.0/librsvg/rsvg.h
 ./usr/lib
-./usr/lib/librsvg-2.so.2.63.0
+./usr/lib/librsvg-2.so.2.62.3
 ./usr/lib/girepository-1.0
 ./usr/lib/girepository-1.0/Rsvg-2.0.typelib
 ./usr/lib/pkgconfig

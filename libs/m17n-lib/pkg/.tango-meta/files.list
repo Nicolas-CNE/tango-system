@@ -2,6 +2,7 @@
 ./usr/bin
 ./usr/bin/m17n-conv
 ./usr/bin/m17n-dump
+./usr/bin/m17n-input-test
 ./usr/bin/m17n-view
 ./usr/bin/m17n-edit
 ./usr/bin/m17n-date

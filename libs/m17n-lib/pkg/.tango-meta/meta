@@ -1,4 +1,4 @@
 pkgname: m17n-lib
-version: lib-1.8.4-1
+version: 1.8.6-1
 arch: x86_64
 depends: glibc

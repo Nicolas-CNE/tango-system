@@ -1,0 +1,4 @@
+pkgname: base-devel
+version: 1.0-1
+arch: x86_64
+depends: gcc,make,binutils,patch,flex,bison,m4,gawk,pkgconf,sed,grep,bc

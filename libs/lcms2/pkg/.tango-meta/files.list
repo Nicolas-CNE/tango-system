@@ -20,7 +20,7 @@
 ./usr/include/lcms2.h
 ./usr/include/lcms2_plugin.h
 ./usr/lib
-./usr/lib/liblcms2.so.2.0.16
+./usr/lib/liblcms2.so.2.0.19
 ./usr/lib/liblcms2.so.2
 ./usr/lib/pkgconfig
 ./usr/lib/pkgconfig/lcms2.pc

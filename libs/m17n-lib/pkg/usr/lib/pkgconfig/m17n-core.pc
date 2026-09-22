@@ -29,6 +29,6 @@ moduledir=${libdir}/m17n/1.0
 
 Name: m17n-core
 Description: Core API suport of the m17n library.
-Version: 1.8.4
+Version: 1.8.6
 Libs: -L${libdir} -lm17n-core
 Cflags: -I${includedir}

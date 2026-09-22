@@ -1,0 +1,4 @@
+pkgname: patch
+version: 2.8-1
+arch: x86_64
+depends: glibc

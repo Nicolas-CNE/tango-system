@@ -17,8 +17,8 @@ includedir=${prefix}/include
 Name: GnuTLS
 Description: Transport Security Layer implementation for the GNU system
 URL: https://www.gnutls.org/
-Version: 3.8.3
+Version: 3.8.13
 Libs: -L${libdir} -lgnutls
-Libs.private:        -lgmp -lunistring -latomic 
-Requires.private: nettle, hogweed, libtasn1, libidn2, p11-kit-1, zlib, libbrotlienc, libbrotlidec, libzstd
+Libs.private:       -lgmp -lunistring  
+Requires.private: nettle, hogweed, libtasn1, libidn2, p11-kit-1, leancrypto
 Cflags: -I${includedir}

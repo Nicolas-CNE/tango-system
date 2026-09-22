@@ -1,12 +1,18 @@
 pkgname="grep"
-pkgver="1.0"
-pkgrel="1"
+pkgver="3.12"
+pkgrel="2"
 arch="x86_64"
 depends=("glibc")
-sources=()
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/grep-3.12-2-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {

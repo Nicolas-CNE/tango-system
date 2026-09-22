@@ -1,12 +1,13 @@
 prefix=/usr
 exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
 includedir=${prefix}/include
+libdir=${exec_prefix}/lib
 
 Name: Xinerama
 Description: The Xinerama Library
-Version: 1.1.5
+URL: https://gitlab.freedesktop.org/xorg/lib/libxinerama/
+Version: 1.1.6
 Requires: xineramaproto
 Requires.private: x11 xext
-Cflags: -I${includedir}
 Libs: -L${libdir} -lXinerama
+Cflags: -I${includedir}

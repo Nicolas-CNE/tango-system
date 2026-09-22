@@ -5,8 +5,8 @@ includedir=${prefix}/include
 
 Name: libtiff
 Description:  Tag Image File Format (TIFF) library.
-Version: 4.6.0
+Version: 4.7.2
 Libs: -L${libdir} -ltiff
-Libs.private: -lzstd -llzma -ljbig -ljpeg -lz -lm 
+Libs.private:  -ljbig -lm
 Cflags: -I${includedir}
-Requires.private: libzstd liblzma libjpeg zlib 
+Requires.private:  zlib libdeflate libjpeg liblzma libzstd libwebp

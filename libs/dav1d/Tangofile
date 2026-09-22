@@ -1,17 +1,20 @@
 pkgname="dav1d"
-pkgver="1.4.3"
+pkgver="1.5.4"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc")
-sources=(
-    "https://archive.archlinux.org/packages/d/dav1d/dav1d-1.4.3-1-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/dav1d-1.5.4-1-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    tar -I zstd -xf "${SRC_DIR}/dav1d-1.4.3-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}" 2>/dev/null ||     tar -I zstd -xf "${SRC_DIR}/$(echo dav1d-1.4.3-1-x86_64.pkg.tar.zst | sed 's/%3A/:/g')" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

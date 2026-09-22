@@ -1,17 +1,20 @@
 pkgname="kmod"
-pkgver="32"
+pkgver="34.2"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc" "zstd" "openssl")
-sources=(
-    "https://archive.archlinux.org/packages/k/kmod/kmod-32-1-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/kmod-34.2-1-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    tar -I zstd -xf "${SRC_DIR}/kmod-32-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

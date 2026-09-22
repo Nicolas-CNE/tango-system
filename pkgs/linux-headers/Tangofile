@@ -1,22 +1,20 @@
 pkgname="linux-headers"
-pkgver="7.2.7"
+pkgver="7.2.6.arch2"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc")
-sources=(
-    "https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.7.tar.xz"
-)
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/linux-headers-7.2.6.arch2-1-x86_64.pkg.tar.zst")
 
 build() {
-    cd /root/kernel-build/linux-7.2.7
-    make mrproper
-    make headers
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    cd /root/kernel-build/linux-7.2.7
-    mkdir -p "${PKG_DIR}/usr"
-    make INSTALL_HDR_PATH="${PKG_DIR}/usr" headers_install
-    find "${PKG_DIR}/usr/include" -name '..install.cmd' -delete
-    find "${PKG_DIR}/usr/include" -name '.install' -delete
+    :
 }

@@ -1,0 +1,4 @@
+pkgname: base
+version: 1.0-1
+arch: x86_64
+depends: bash,coreutils,glibc,busybox,iproute2,procps-ng,tar,zstd,kmod,shadow,util-linux

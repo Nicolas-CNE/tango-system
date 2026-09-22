@@ -1,0 +1,4 @@
+pkgname: iproute2
+version: 7.2.0-1
+arch: x86_64
+depends: glibc

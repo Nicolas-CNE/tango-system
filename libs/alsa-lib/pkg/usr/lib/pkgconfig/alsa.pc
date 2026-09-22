@@ -5,7 +5,7 @@ includedir=${prefix}/include
 
 Name: alsa
 Description: Advanced Linux Sound Architecture (ALSA) - Library
-Version: 1.2.12
+Version: 1.2.16.1
 Requires: 
 Libs: -L${libdir} -lasound
 Libs.private: -lm -lpthread -lrt

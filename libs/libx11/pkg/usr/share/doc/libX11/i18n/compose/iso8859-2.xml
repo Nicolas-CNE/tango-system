@@ -464,7 +464,7 @@
 <row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>a</keysym></keycombo></entry><entry>"&#226;"        acircumflex</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>i</keysym></keycombo></entry><entry>"&#238;"        icircumflex</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>o</keysym></keycombo></entry><entry>"&#244;"        ocircumflex</entry></row>
-<row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>u</keysym></keycombo></entry><entry>"&#251;"        ucircumflex      </entry></row>
+<row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>u</keysym></keycombo></entry><entry>"&#251;"        ucircumflex</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>dead_circumflex</keysym></keycombo></entry><entry>"&#94;"	asciicircum</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>asciicircum</keysym></keycombo></entry><entry>"&#94;"	asciicircum</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_circumflex</keysym><keysym>space</keysym></keycombo></entry><entry>"&#94;"	asciicircum</entry></row>
@@ -484,7 +484,7 @@
 <row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>a</keysym></keycombo></entry><entry>"&#177;"        aogonek</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>i</keysym></keycombo></entry><entry>"&#231;"        iogonek</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>e</keysym></keycombo></entry><entry>"&#234;"        eogonek</entry></row>
-<row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>u</keysym></keycombo></entry><entry>"&#249;"        uogonek          </entry></row>
+<row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>u</keysym></keycombo></entry><entry>"&#249;"        uogonek</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>dead_ogonek</keysym></keycombo></entry><entry>"&#434;"	ogonek</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>ogonek</keysym></keycombo></entry><entry>"&#434;"	ogonek</entry></row>
 <row><entry><keycombo action='seq'><keysym>dead_ogonek</keysym><keysym>space</keysym></keycombo></entry><entry>"&#434;"	ogonek</entry></row>

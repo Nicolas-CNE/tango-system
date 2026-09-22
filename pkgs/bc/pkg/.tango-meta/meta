@@ -1,0 +1,4 @@
+pkgname: bc
+version: 1.08.2-1
+arch: x86_64
+depends: glibc

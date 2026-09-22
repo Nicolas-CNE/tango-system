@@ -1,4 +1,3 @@
-/* libtiff/tiffconf.h.  Generated from tiffconf.h.in by configure.  */
 /*
   Configuration defines for installed libtiff.
   This file maintained for backward compatibility. Do not use definitions
@@ -7,7 +6,7 @@
 
 /* clang-format off */
 /* clang-format disabled because CMake scripts are very sensitive to the
- * formatting of this file. configure_file variables of type "@VAR@" are
+ * formatting of this file. configure_file variables of type "" are
  * modified by clang-format and won't be substituted.
  */
 
@@ -21,28 +20,28 @@
 
 
 /* Signed 16-bit type */
-/* #undef TIFF_INT16_T */
+#define TIFF_INT16_T int16_t
 
 /* Signed 32-bit type */
-/* #undef TIFF_INT32_T */
+#define TIFF_INT32_T int32_t
 
 /* Signed 64-bit type */
-/* #undef TIFF_INT64_T */
+#define TIFF_INT64_T int64_t
 
 /* Signed 8-bit type */
-/* #undef TIFF_INT8_T */
+#define TIFF_INT8_T int8_t
 
 /* Unsigned 16-bit type */
-/* #undef TIFF_UINT16_T */
+#define TIFF_UINT16_T uint16_t
 
 /* Unsigned 32-bit type */
-/* #undef TIFF_UINT32_T */
+#define TIFF_UINT32_T uint32_t
 
 /* Unsigned 64-bit type */
-/* #undef TIFF_UINT64_T */
+#define TIFF_UINT64_T uint64_t
 
 /* Unsigned 8-bit type */
-/* #undef TIFF_UINT8_T */
+#define TIFF_UINT8_T uint8_t
 
 /* Signed size type */
 #define TIFF_SSIZE_T int64_t
@@ -76,7 +75,7 @@
 #define JPEG_SUPPORT 1
 
 /* Support JBIG compression (requires JBIG-KIT library) */
-#define JBIG_SUPPORT 1
+#define JBIG_SUPPORT
 
 /* Support LERC compression */
 /* #undef LERC_SUPPORT */
@@ -90,7 +89,7 @@
 /* Support NeXT 2-bit RLE algorithm */
 #define NEXT_SUPPORT 1
 
-/* Support Old JPEG compresson (read contrib/ojpeg/README first! Compilation
+/* Support Old JPEG compression (read contrib/ojpeg/README first! Compilation
    fails with unpatched IJG JPEG library) */
 #define OJPEG_SUPPORT 1
 
@@ -107,7 +106,7 @@
 #define ZIP_SUPPORT 1
 
 /* Support libdeflate enhanced compression */
-/* #undef LIBDEFLATE_SUPPORT */
+#define LIBDEFLATE_SUPPORT 1
 
 /* Support strip chopping (whether or not to convert single-strip uncompressed
    images to multiple strips of ~8Kb to reduce memory usage) */

@@ -21,31 +21,42 @@ endmacro()
 
 set_and_check(HARFBUZZ_INCLUDE_DIR "${PACKAGE_PREFIX_DIR}/include/harfbuzz")
 
+set(HARFBUZZ_VERSION "14.5.0")
+
+function(_harfbuzz_set_imported_library target library_name)
+  set_target_properties("${target}" PROPERTIES
+    IMPORTED_LOCATION "${PACKAGE_PREFIX_DIR}/lib/${CMAKE_SHARED_LIBRARY_PREFIX}${library_name}${CMAKE_SHARED_LIBRARY_SUFFIX}.0.61450.0")
+  if (NO)
+    set_target_properties("${target}" PROPERTIES
+      IMPORTED_IMPLIB "${PACKAGE_PREFIX_DIR}/lib/${library_name}")
+  endif ()
+endfunction()
+
 # Add the libraries.
 add_library(harfbuzz::harfbuzz SHARED IMPORTED)
 set_target_properties(harfbuzz::harfbuzz PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "${PACKAGE_PREFIX_DIR}/include/harfbuzz"
-  IMPORTED_LOCATION "${PACKAGE_PREFIX_DIR}/lib/${CMAKE_SHARED_LIBRARY_PREFIX}harfbuzz${CMAKE_SHARED_LIBRARY_SUFFIX}.0.60900.0")
+  INTERFACE_INCLUDE_DIRECTORIES "${PACKAGE_PREFIX_DIR}/include/harfbuzz")
+_harfbuzz_set_imported_library(harfbuzz::harfbuzz harfbuzz)
 
 add_library(harfbuzz::icu SHARED IMPORTED)
 set_target_properties(harfbuzz::icu PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${PACKAGE_PREFIX_DIR}/include/harfbuzz"
-  INTERFACE_LINK_LIBRARIES "harfbuzz::harfbuzz"
-  IMPORTED_LOCATION "${PACKAGE_PREFIX_DIR}/lib/${CMAKE_SHARED_LIBRARY_PREFIX}harfbuzz-icu${CMAKE_SHARED_LIBRARY_SUFFIX}.0.60900.0")
+  INTERFACE_LINK_LIBRARIES "harfbuzz::harfbuzz")
+_harfbuzz_set_imported_library(harfbuzz::icu harfbuzz-icu)
 
 add_library(harfbuzz::subset SHARED IMPORTED)
 set_target_properties(harfbuzz::subset PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${PACKAGE_PREFIX_DIR}/include/harfbuzz"
-  INTERFACE_LINK_LIBRARIES "harfbuzz::harfbuzz"
-  IMPORTED_LOCATION "${PACKAGE_PREFIX_DIR}/lib/${CMAKE_SHARED_LIBRARY_PREFIX}harfbuzz-subset${CMAKE_SHARED_LIBRARY_SUFFIX}.0.60900.0")
+  INTERFACE_LINK_LIBRARIES "harfbuzz::harfbuzz")
+_harfbuzz_set_imported_library(harfbuzz::subset harfbuzz-subset)
 
 # Only add the gobject library if it was built.
 if (YES)
   add_library(harfbuzz::gobject SHARED IMPORTED)
   set_target_properties(harfbuzz::gobject PROPERTIES
     INTERFACE_INCLUDE_DIRECTORIES "${PACKAGE_PREFIX_DIR}/include/harfbuzz"
-    INTERFACE_LINK_LIBRARIES "harfbuzz::harfbuzz"
-    IMPORTED_LOCATION "${PACKAGE_PREFIX_DIR}/lib/${CMAKE_SHARED_LIBRARY_PREFIX}harfbuzz-gobject${CMAKE_SHARED_LIBRARY_SUFFIX}.0.60900.0")
+    INTERFACE_LINK_LIBRARIES "harfbuzz::harfbuzz")
+  _harfbuzz_set_imported_library(harfbuzz::gobject harfbuzz-gobject)
 endif ()
 
 check_required_components(harfbuzz)

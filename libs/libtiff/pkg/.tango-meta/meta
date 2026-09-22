@@ -1,4 +1,4 @@
 pkgname: libtiff
-version: 4.6.0-1
+version: 4.7.2-1
 arch: x86_64
 depends: glibc,libjpeg-turbo

@@ -1,17 +1,20 @@
 pkgname="emacs"
-pkgver="29.1"
-pkgrel="1"
+pkgver="31.1"
+pkgrel="2"
 arch="x86_64"
 depends=("glibc" "ncurses" "gnutls" "gmp" "nettle" "libxml2" "gpm" "lcms2" "icu")
-sources=(
-    "https://archive.archlinux.org/packages/e/emacs-nox/emacs-nox-29.1-1-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/emacs-31.1-2-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    tar -I zstd -xf "${SRC_DIR}/emacs-nox-${pkgver}-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

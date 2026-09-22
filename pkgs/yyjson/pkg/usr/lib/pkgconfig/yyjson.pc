@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: yyjson
+Description: Fastest JSON library in C
+Version: 0.13.0
+Libs: -L${libdir} -lyyjson
+Cflags: -I${includedir}

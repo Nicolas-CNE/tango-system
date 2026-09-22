@@ -1,17 +1,20 @@
 pkgname="giflib"
-pkgver="5.2.1"
+pkgver="6.1.3"
 pkgrel="2"
 arch="x86_64"
 depends=("glibc")
-sources=(
-    "https://archive.archlinux.org/packages/g/giflib/giflib-5.2.1-2-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/giflib-6.1.3-2-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    tar -I zstd -xf "${SRC_DIR}/giflib-5.2.1-2-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

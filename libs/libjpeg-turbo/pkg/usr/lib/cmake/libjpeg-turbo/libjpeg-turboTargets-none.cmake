@@ -18,12 +18,12 @@ list(APPEND _cmake_import_check_files_for_libjpeg-turbo::jpeg "/usr/lib/libjpeg.
 # Import target "libjpeg-turbo::turbojpeg" for configuration "None"
 set_property(TARGET libjpeg-turbo::turbojpeg APPEND PROPERTY IMPORTED_CONFIGURATIONS NONE)
 set_target_properties(libjpeg-turbo::turbojpeg PROPERTIES
-  IMPORTED_LOCATION_NONE "/usr/lib/libturbojpeg.so.0.3.0"
+  IMPORTED_LOCATION_NONE "/usr/lib/libturbojpeg.so.0.5.0"
   IMPORTED_SONAME_NONE "libturbojpeg.so.0"
   )
 
 list(APPEND _cmake_import_check_targets libjpeg-turbo::turbojpeg )
-list(APPEND _cmake_import_check_files_for_libjpeg-turbo::turbojpeg "/usr/lib/libturbojpeg.so.0.3.0" )
+list(APPEND _cmake_import_check_files_for_libjpeg-turbo::turbojpeg "/usr/lib/libturbojpeg.so.0.5.0" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

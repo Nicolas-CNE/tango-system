@@ -1,4 +1,0 @@
-pkgname: icu
-version: 75.1-1
-arch: x86_64
-depends: glibc

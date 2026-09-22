@@ -24,7 +24,7 @@ prefix=/usr
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-version=1.8.4
+version=1.8.6
 
 moduledir=${libdir}/m17n/1.0
 

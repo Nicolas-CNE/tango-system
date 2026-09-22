@@ -24,16 +24,16 @@ case $1 in
 
 --libs)
   if test "${exec_prefix}/lib" != "/usr/lib"; then
-    echo "-lfreetype  -L${exec_prefix}/lib -lotf"
+    echo "-lfreetype -L${exec_prefix}/lib -lotf"
   else
-    echo "-lfreetype  -lotf"
+    echo "-lfreetype -lotf"
   fi;;
 
 --cflags)
   if test "${prefix}/include" != "/usr/include"; then
-    echo "-I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread  -I${prefix}/include"
+    echo "-I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread -I${prefix}/include"
   else
-    echo "-I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-4 -pthread "
+    echo "-I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/sysprof-6 -pthread"
   fi;;
 
 *)

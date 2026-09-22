@@ -1,19 +1,20 @@
 pkgname="librsvg"
-pkgver="2.63.0"
+pkgver="2:2.62.3"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc" "libpng")
-sources=(
-    "https://archive.archlinux.org/packages/l/librsvg/librsvg-2%3A2.63.0-1-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/librsvg-2%3A2.62.3-1-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    # Probar extrae con el nombre decodificado o codificado
-    tar -I zstd -xf "${SRC_DIR}/librsvg-2:2.63.0-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}" 2>/dev/null || \
-    tar -I zstd -xf "${SRC_DIR}/librsvg-2%3A2.63.0-1-x86_64.pkg.tar.zst" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

@@ -1,22 +1,20 @@
 pkgname="libsm"
-pkgver="1.2.4"
+pkgver="1.2.6"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc")
-sources=(
-    "https://archive.archlinux.org/packages/l/libsm/libsm-1.2.4-1-x86_64.pkg.tar.zst"
-)
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/libsm-1.2.6-1-x86_64.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {
-    # Descarga directa con curl -L para asegurar seguir redirecciones HTTP
-    ARCHIVE_FILE="${SRC_DIR}/libsm-1.2.4-1-x86_64.pkg.tar.zst"
-    if [ ! -f "$ARCHIVE_FILE" ]; then
-        curl -sL "https://archive.archlinux.org/packages/l/libsm/libsm-1.2.4-1-x86_64.pkg.tar.zst" -o "$ARCHIVE_FILE"
-    fi
-    tar -I zstd -xf "$ARCHIVE_FILE" -C "${PKG_DIR}"
-    rm -f "${PKG_DIR}/.PKGINFO" "${PKG_DIR}/.BUILDINFO" "${PKG_DIR}/.MTREE"
+    :
 }

@@ -1,0 +1,4 @@
+pkgname: gcc
+version: 16.2.1+r23+gd564253eb6c8-1
+arch: x86_64
+depends: glibc,binutils,gmp,mpfr,mpc,zstd

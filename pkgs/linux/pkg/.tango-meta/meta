@@ -1,0 +1,4 @@
+pkgname: linux
+version: 7.2.7-1
+arch: x86_64
+depends: kmod,initramfs-tools

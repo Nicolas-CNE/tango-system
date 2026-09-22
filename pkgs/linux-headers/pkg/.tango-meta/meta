@@ -1,0 +1,4 @@
+pkgname: linux-headers
+version: 7.2.6.arch2-1
+arch: x86_64
+depends: glibc

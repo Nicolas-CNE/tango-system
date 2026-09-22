@@ -1,4 +1,4 @@
 pkgname: gnutls
-version: 3.8.3-1
+version: 3.8.13-3
 arch: x86_64
 depends: glibc,nettle,gmp

@@ -1,0 +1,4 @@
+pkgname: grep
+version: 3.12-2
+arch: x86_64
+depends: glibc

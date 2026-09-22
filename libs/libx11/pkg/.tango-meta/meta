@@ -1,4 +1,4 @@
 pkgname: libx11
-version: 1.8.10-1
+version: 1.8.13-1
 arch: x86_64
 depends: glibc

@@ -1,4 +1,4 @@
 pkgname: libxrender
-version: 0.9.11-1
+version: 0.9.12-1
 arch: x86_64
 depends: glibc

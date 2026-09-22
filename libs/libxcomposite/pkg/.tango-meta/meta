@@ -1,4 +1,4 @@
 pkgname: libxcomposite
-version: 0.4.6-1
+version: 0.4.7-1
 arch: x86_64
 depends: glibc

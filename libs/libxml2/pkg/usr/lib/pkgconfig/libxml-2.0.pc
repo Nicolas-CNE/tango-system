@@ -1,13 +1,13 @@
 prefix=/usr
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
 includedir=${prefix}/include
+libdir=${prefix}/lib
+
 modules=1
 
 Name: libXML
-Version: 2.13.3
 Description: libXML library version2.
-Requires.private:  zlib liblzma icu-i18n
-Libs: -L${libdir} -lxml2 
-Libs.private:    -lm   
-Cflags: -I${includedir}/libxml2 
+Version: 2.15.4
+Requires.private: zlib, icu-uc
+Libs: -L${libdir} -lxml2
+Libs.private: -lm -pthread
+Cflags: -I${includedir}/libxml2
