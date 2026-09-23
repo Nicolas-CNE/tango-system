@@ -248,7 +248,7 @@ depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/tar/tar-1.35-5-x86_64.tango.tar.zst
 
 pkgname: util-linux
-version: 2.42.4-1
+version: 2.42.3-1
 arch: x86_64
 depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.4-1-x86_64.tango.tar.zst
