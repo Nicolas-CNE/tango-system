@@ -1,0 +1,4 @@
+pkgname: attr
+version: 2.6.0-1
+arch: x86_64
+depends: glibc

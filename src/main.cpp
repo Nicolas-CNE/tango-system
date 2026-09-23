@@ -106,15 +106,19 @@ DependencyResolverSAT load_index(const std::string& filepath) {
 
     std::string line;
     PackageSpec current_pkg;
-    bool building = false;
+
+    auto push_current = [&]() {
+        if (!current_pkg.name.empty()) {
+            sat.addPackage(current_pkg);
+            current_pkg = PackageSpec();
+        }
+    };
 
     while (std::getline(file, line)) {
+        if (!line.empty() && line.back() == '\r') line.pop_back();
+
         if (line.empty() || line[0] == '#') {
-            if (building && !current_pkg.name.empty()) {
-                sat.addPackage(current_pkg);
-                current_pkg = PackageSpec();
-                building = false;
-            }
+            push_current();
             continue;
         }
 
@@ -122,36 +126,33 @@ DependencyResolverSAT load_index(const std::string& filepath) {
         if (colon != std::string::npos) {
             std::string key = line.substr(0, colon);
             std::string val = line.substr(colon + 1);
+
             key.erase(0, key.find_first_not_of(" \t"));
-            key.erase(key.find_last_not_of(" \t\r\n") + 1);
+            key.erase(key.find_last_not_of(" \t") + 1);
             val.erase(0, val.find_first_not_of(" \t"));
-            val.erase(val.find_last_not_of(" \t\r\n") + 1);
+            val.erase(val.find_last_not_of(" \t") + 1);
 
             if (key == "pkgname") {
-                if (building && !current_pkg.name.empty()) {
-                    sat.addPackage(current_pkg);
-                    current_pkg = PackageSpec();
-                }
+                push_current();
                 current_pkg.name = val;
-                building = true;
             }
             else if (key == "version") current_pkg.version = val;
             else if (key == "url") current_pkg.url = val;
             else if (key == "sha256") current_pkg.sha256 = val;
             else if (key == "depends") {
+                current_pkg.depends.clear();
                 std::stringstream ss(val);
                 std::string dep;
                 while (ss >> dep) {
-                    if (!dep.empty() && dep.back() == ',') dep.pop_back();
-                    if (!dep.empty()) current_pkg.depends.push_back(dep);
+                    dep.erase(std::remove(dep.begin(), dep.end(), ','), dep.end());
+                    if (!dep.empty()) {
+                        current_pkg.depends.push_back(dep);
+                    }
                 }
             }
         }
     }
-
-    if (building && !current_pkg.name.empty()) {
-        sat.addPackage(current_pkg);
-    }
+    push_current();
 
     return sat;
 }
@@ -169,7 +170,6 @@ bool verify_checksum(const std::string& filepath, const std::string& expected_sh
     if (expected_sha.empty()) return true;
     std::string check_spec = expected_sha + "  " + filepath;
     
-    // Pasamos el string directamente vía tubería en fork sin invocar shell
     int pipefd[2];
     if (pipe(pipefd) == -1) return false;
 
@@ -189,6 +189,50 @@ bool verify_checksum(const std::string& filepath, const std::string& expected_sh
     int status;
     waitpid(pid, &status, 0);
     return WIFEXITED(status) && WEXITSTATUS(status) == 0;
+}
+
+// NUEVA FUNCIÓN: Descarga únicamente el tarball del paquete y sus dependencias hacia /tmp/ sin instalar
+void cmd_download(const std::string& pkg) {
+    DependencyResolverSAT sat = load_index(INDEX_PATH);
+    std::vector<std::string> to_download;
+
+    log_verbose("Llamando a MiniSAT para resolver dependencias de descarga: " + pkg);
+    if (!sat.resolveInstall(pkg, to_download)) {
+        std::cout << "[ERROR] No se pudo resolver el paquete (UNSATISFIABLE o dependencias faltantes).\n";
+        return;
+    }
+
+    std::cout << "Plan de descarga (" << to_download.size() << " paquetes):\n";
+    for (const auto& p : to_download) {
+        std::cout << "  - " << p << "\n";
+    }
+
+    std::cout << "\nDescargando paquetes a /tmp/...\n";
+    for (const auto& p : to_download) {
+        PackageSpec spec = sat.getPackageSpec(p);
+
+        // Si la URL está vacía (meta-paquetes o virtuales), omitir la descarga de archivo
+        if (spec.url.empty()) {
+            log_verbose("El paquete '" + p + "' no tiene URL definida (es virtual o meta-paquete). Omitiendo descarga.");
+            continue;
+        }
+
+        std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
+
+        std::cout << "  Downloading " << p << "...\n";
+        if (!exec_safe({"curl", "-f", "-sL", spec.url, "-o", archive_name})) {
+            std::cerr << "[ERROR CRÍTICO] Falló la descarga de " << p << ".\n";
+            return;
+        }
+
+        if (!verify_checksum(archive_name, spec.sha256)) {
+            std::cerr << "[ERROR CRÍTICO] Checksum SHA256 inválido para " << p << ".\n";
+            fs::remove(archive_name);
+            return;
+        }
+    }
+
+    std::cout << "\n¡Descarga completada con éxito! Todos los paquetes están guardados en /tmp/\n";
 }
 
 void cmd_install(const std::string& pkg) {
@@ -227,6 +271,11 @@ void cmd_install(const std::string& pkg) {
     std::cout << "\n[1/2] Descargando paquetes...\n";
     for (const auto& p : pending_execution) {
         PackageSpec spec = sat.getPackageSpec(p);
+        
+        if (spec.url.empty()) {
+            continue;
+        }
+
         std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
 
         std::cout << "  Downloading " << p << "...\n";
@@ -251,6 +300,27 @@ void cmd_install(const std::string& pkg) {
         std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
         std::string meta_path = DB_PATH + p + ".meta";
         std::string file_list = DB_PATH + p + ".files";
+
+        // Si no hay archivo descargado (paquetes virtuales/meta-paquetes), crear solo metadata
+        if (!fs::exists(archive_name)) {
+            std::ofstream meta(meta_path);
+            meta << "pkgname: " << p << "\n";
+            meta << "version: " << spec.version << "\n";
+            meta << "explicit: " << (p == pkg ? "1" : "0") << "\n";
+            meta << "depends: ";
+            for (size_t i = 0; i < spec.depends.size(); ++i) {
+                meta << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
+            }
+            meta << "\n";
+            meta.close();
+
+            std::ofstream files(file_list); // Archivo de lista vacío
+            files.close();
+
+            std::cout << "  -> " << p << " (meta-paquete) registrado correctamente.\n";
+            installed_any = true;
+            continue;
+        }
 
         // Indexar archivos de forma segura redireccionando la salida
         int out_fd = fileno(fopen(file_list.c_str(), "w"));
@@ -328,7 +398,6 @@ void cmd_delete(const std::string& pkg) {
         std::string full_path = (file_to_remove[0] == '/') ? file_to_remove : "/" + file_to_remove;
         fs::path p(full_path);
 
-        // Usar symlink_status en lugar de exists para eliminar symlinks rotos de forma segura
         std::error_code ec;
         auto status = fs::symlink_status(p, ec);
         if (!ec && fs::exists(status) && !fs::is_directory(status)) {
@@ -413,13 +482,14 @@ int main(int argc, char* argv[]) {
     }
 
     if (arg_start >= argc) {
-        std::cout << "Uso: roger [--verbose] <sync|install|delete|bomb|update> [paquete]\n";
+        std::cout << "Uso: roger [--verbose] <sync|download|install|delete|bomb|update> [paquete]\n";
         return 1;
     }
 
     std::string command = argv[arg_start];
 
     if (command == "sync") cmd_sync();
+    else if (command == "download" && arg_start + 1 < argc) cmd_download(argv[arg_start + 1]);
     else if (command == "install" && arg_start + 1 < argc) cmd_install(argv[arg_start + 1]);
     else if (command == "delete" && arg_start + 1 < argc) cmd_delete(argv[arg_start + 1]);
     else if (command == "bomb") cmd_bomb();

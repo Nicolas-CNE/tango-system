@@ -1,0 +1,4 @@
+pkgname: dbus
+version: 1.16.2-1
+arch: x86_64
+depends: glibc,expat

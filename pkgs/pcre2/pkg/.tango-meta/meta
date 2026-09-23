@@ -1,0 +1,4 @@
+pkgname: pcre2
+version: 10.48-1
+arch: x86_64
+depends: glibc

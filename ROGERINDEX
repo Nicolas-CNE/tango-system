@@ -1,5 +1,5 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Tue Sep 22 10:16:34 PM UTC 2026
+# Generado automáticamente: Wed Sep 23 01:38:31 AM UTC 2026
 
 pkgname: base
 version: 1.0-1
@@ -49,11 +49,23 @@ arch: x86_64
 depends: glibc gmp libcap openssl
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/coreutils/coreutils-9.11-2-x86_64.tango.tar.zst
 
+pkgname: curl
+version: 8.22.0-1
+arch: x86_64
+depends: glibc openssl zlib
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/curl/curl-8.22.0-1-x86_64.tango.tar.zst
+
 pkgname: emacs
 version: 31.1-2
 arch: x86_64
 depends: glibc ncurses gnutls gmp nettle libxml2 gpm lcms2 icu
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-31.1-2-x86_64.tango.tar.zst
+
+pkgname: expat
+version: 2.8.5-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/expat/expat-2.8.5-1-x86_64.tango.tar.zst
 
 pkgname: fastfetch
 version: 2.68.1-1
@@ -78,6 +90,12 @@ version: 16.2.1+r23+gd564253eb6c8-1
 arch: x86_64
 depends: glibc binutils gmp mpfr mpc zstd
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gcc/gcc-16.2.1+r23+gd564253eb6c8-1-x86_64.tango.tar.zst
+
+pkgname: git
+version: 2.55.0-1
+arch: x86_64
+depends: glibc curl openssl zlib-ng expat pcre2
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/git/git-2.55.0-1-x86_64.tango.tar.zst
 
 pkgname: grep
 version: 3.12-2
@@ -157,6 +175,12 @@ arch: x86_64
 depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/patch/patch-2.8-1-x86_64.tango.tar.zst
 
+pkgname: pcre2
+version: 10.48-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/pcre2/pcre2-10.48-1-x86_64.tango.tar.zst
+
 pkgname: pkgconf
 version: 3.0.7-1
 arch: x86_64
@@ -200,10 +224,10 @@ depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.3-1-x86_64.tango.tar.zst
 
 pkgname: yyjson
-version: 0.13.0-1-1
+version: 0.13.0-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/yyjson/yyjson-0.13.0-1-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/yyjson/yyjson-0.13.0-1-x86_64.tango.tar.zst
 
 pkgname: zlib-ng
 version: 2.3.3-1
