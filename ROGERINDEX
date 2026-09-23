@@ -1,5 +1,11 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Wed Sep 23 01:38:31 AM UTC 2026
+# Generado automáticamente: Wed Sep 23 01:55:48 PM UTC 2026
+
+pkgname: attr
+version: 2.6.0-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/attr/attr-2.6.0-1-x86_64.tango.tar.zst
 
 pkgname: base
 version: 1.0-1
@@ -52,8 +58,14 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/core
 pkgname: curl
 version: 8.22.0-1
 arch: x86_64
-depends: glibc openssl zlib
+depends: glibc openssl zlib-ng
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/curl/curl-8.22.0-1-x86_64.tango.tar.zst
+
+pkgname: dbus
+version: 1.16.2-1
+arch: x86_64
+depends: glibc expat
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus/dbus-1.16.2-1-x86_64.tango.tar.zst
 
 pkgname: emacs
 version: 31.1-2
@@ -211,6 +223,24 @@ arch: x86_64
 depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/shadow/shadow-4.20.0.arch1-1-x86_64.tango.tar.zst
 
+pkgname: systemd
+version: 261.3-1
+arch: x86_64
+depends: glibc systemd-libs libcap kmod util-linux dbus attr
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd/systemd-261.3-1-x86_64.tango.tar.zst
+
+pkgname: systemd-libs
+version: 261.3-1
+arch: x86_64
+depends: glibc libcap
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd-libs/systemd-libs-261.3-1-x86_64.tango.tar.zst
+
+pkgname: systemd-resolvconf
+version: 261.3-1
+arch: x86_64
+depends: systemd
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd-resolvconf/systemd-resolvconf-261.3-1-x86_64.tango.tar.zst
+
 pkgname: tar
 version: 1.35-5
 arch: x86_64
@@ -218,10 +248,10 @@ depends: glibc
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/tar/tar-1.35-5-x86_64.tango.tar.zst
 
 pkgname: util-linux
-version: 2.42.3-1
+version: 2.42.4-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.3-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.4-1-x86_64.tango.tar.zst
 
 pkgname: yyjson
 version: 0.13.0-1
