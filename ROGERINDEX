@@ -1,5 +1,5 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Wed Sep 23 01:55:48 PM UTC 2026
+# Generado automáticamente: Wed Sep 23 11:03:23 PM UTC 2026
 
 pkgname: attr
 version: 2.6.0-1
@@ -251,7 +251,7 @@ pkgname: util-linux
 version: 2.42.3-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.4-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.3-1-x86_64.tango.tar.zst
 
 pkgname: yyjson
 version: 0.13.0-1
