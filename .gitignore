@@ -1,1 +1,20 @@
-*.tar.xz
+# Ignorar archivos comprimidos temporales
+*.iso
+*.img
+*.sfs
+*.o
+*.tar.zst
+
+# PERMITIR explícitamente los paquetes de Roger (.tango.tar.zst)
+!*.tango.tar.zst
+
+# Ignorar binarios/ejecutables locales de compilación (salvo fuentes)
+/roger-deploy
+/rogerstr
+
+# Ignorar temporales
+tmp/
+*.tmp
+
+# Ignorar fuentes pesadas descomprimidas/tarballs dentro de pkgs
+pkgs/**/src/
