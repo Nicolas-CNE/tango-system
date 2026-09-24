@@ -1,10 +1,21 @@
 # tango-packages
-Official Tango Linux package repository.
+Official Roger package repository
 
-# Whats this all about?
+# The roger package manager
 
-Tango linux is an independent distribution made by me.
+A simple, zypper-like package manager written in C++ that implements MiniSAT to resolve dependencies
 
-# The Roger package manager
+# NEEDED PACKAGES
 
-A simple C++ Binary package manager that fetches ROGERINDEX, not much more to say, check it out!!
+--g++
+--zstd
+--C++17
+
+i think thats all
+
+# HOW TO COMPILE
+
+when cloning the repository, go to src/ (tango-packages/src) and run:
+
+ ```bash
+g++ -std=c++17 main.cpp -lzstd -lminisat -o roger
