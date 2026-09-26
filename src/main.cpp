@@ -12,6 +12,7 @@
 #include <sys/wait.h>
 #include "RogerSAT.hpp"
 #include "cli.hpp"
+#include "list.hpp"
 
 namespace fs = std::filesystem;
 
@@ -53,10 +54,17 @@ bool is_meta_or_dir(const std::string& path) {
 
 bool is_base_system_pkg(const std::string& pkg) {
     static const std::set<std::string> base_pkgs = {
-        "glibc", "zstd", "bash", "coreutils", "gcc-libs", "linux-api-headers", "shadow"
+        "glibc", "zstd", "bash", "coreutils", "gcc-libs", 
+        "linux-api-headers", "shadow", "linux", "base", "base-devel",
+        "systemd", "systemd-libs", "util-linux"
     };
+    
+    if (pkg == "linux" || pkg.rfind("linux-", 0) == 0) {
+        return true;
+    }
+
     DependencyResolverSAT sat;
-    return base_pkgs.count(pkg) > 0 || sat.isProtected(pkg);
+    return base_pkgs.count(pkg) > 0 || sat.isProtected(pkg) || CLI::PROTECTED_PACKAGES.count(pkg) > 0;
 }
 
 bool exec_safe(const std::vector<std::string>& args) {
@@ -359,14 +367,12 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         return;
     }
 
-    // RESUMEN Y CONFIRMACIÓN
     CLI::printTransactionSummary(pkgs, deps_list, 0, 0);
     if (!CLI::confirm("¿Desea proceder con la instalación?")) {
         CLI::printWarning("Operación cancelada por el usuario.");
         return;
     }
 
-    // FASE 1: DESCARGA
     std::cout << "\n[1/3] Descargando paquetes...\n";
     size_t curr = 0;
     for (const auto& p : pending_execution) {
@@ -389,7 +395,6 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         }
     }
 
-    // FASE 2: VERIFICACIÓN
     std::cout << "\n[2/3] Verificando colisiones e integridad de archivos...\n";
     std::map<std::string, std::vector<std::string>> pkg_file_map;
 
@@ -407,7 +412,6 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         return;
     }
 
-    // FASE 3: EXTRACCIÓN
     std::cout << "\n[3/3] Extrayendo e instalando paquetes en el sistema...\n";
     curr = 0;
     for (const auto& p : pending_execution) {
@@ -462,25 +466,78 @@ void cmd_delete(const std::vector<std::string>& pkgs) {
     DependencyResolverSAT sat;
     std::string db_path = get_db_path();
 
+    std::vector<std::string> valid_targets;
+    std::vector<std::string> orphan_deps;
+    size_t total_freed_bytes = 0;
+
+    for (const auto& pkg : pkgs) {
+        if (is_base_system_pkg(pkg)) {
+            CLI::printError("El paquete '" + pkg + "' es un componente crítico del sistema y no se puede eliminar.");
+            return;
+        }
+
+        std::string meta_path = db_path + pkg + ".meta";
+        if (!fs::exists(meta_path)) {
+            CLI::printError("El paquete '" + pkg + "' no está instalado.");
+            return;
+        }
+
+        valid_targets.push_back(pkg);
+
+        std::string files_path = db_path + pkg + ".files";
+        std::ifstream f_stream(files_path);
+        std::string line;
+        while (std::getline(f_stream, line)) {
+            std::string cleaned = clean_path(line);
+            if (is_meta_or_dir(cleaned)) continue;
+
+            fs::path p = fs::path(root_dir) / cleaned;
+            std::error_code ec;
+            if (fs::exists(p, ec) && !fs::is_directory(p, ec)) {
+                total_freed_bytes += fs::file_size(p, ec);
+            }
+        }
+    }
+
+    auto installed = load_installed_packages();
+    for (const auto& pkg : valid_targets) {
+        installed.erase(pkg);
+    }
+    auto detected_orphans = sat.findOrphans(installed);
+    for (const auto& orphan : detected_orphans) {
+        if (CLI::PROTECTED_PACKAGES.find(orphan) == CLI::PROTECTED_PACKAGES.end()) {
+            orphan_deps.push_back(orphan);
+
+            std::string orphan_files_path = db_path + orphan + ".files";
+            std::ifstream f_stream(orphan_files_path);
+            std::string line;
+            while (std::getline(f_stream, line)) {
+                std::string cleaned = clean_path(line);
+                if (is_meta_or_dir(cleaned)) continue;
+
+                fs::path p = fs::path(root_dir) / cleaned;
+                std::error_code ec;
+                if (fs::exists(p, ec) && !fs::is_directory(p, ec)) {
+                    total_freed_bytes += fs::file_size(p, ec);
+                }
+            }
+        }
+    }
+
+    CLI::printDeleteSummary(valid_targets, orphan_deps, total_freed_bytes);
+
     if (!CLI::confirm("¿Está seguro de que desea eliminar los paquetes seleccionados?")) {
         CLI::printWarning("Operación cancelada.");
         return;
     }
 
-    for (const auto& pkg : pkgs) {
+    std::vector<std::string> all_to_remove = valid_targets;
+    all_to_remove.insert(all_to_remove.end(), orphan_deps.begin(), orphan_deps.end());
+
+    for (const auto& pkg : all_to_remove) {
         std::string files_path = db_path + pkg + ".files";
         std::string meta_path = db_path + pkg + ".meta";
         std::string manifest_path = db_path + pkg + ".manifest";
-
-        if (sat.isProtected(pkg)) {
-            CLI::printError("El paquete '" + pkg + "' está protegido por el sistema y no se puede eliminar.");
-            continue;
-        }
-
-        if (!fs::exists(meta_path)) {
-            CLI::printError("El paquete '" + pkg + "' no está instalado.");
-            continue;
-        }
 
         std::ifstream files_file(files_path);
         std::string file_to_remove;
@@ -489,7 +546,7 @@ void cmd_delete(const std::vector<std::string>& pkgs) {
         while (std::getline(files_file, file_to_remove)) {
             std::string cleaned = clean_path(file_to_remove);
             if (is_meta_or_dir(cleaned)) continue;
-            
+
             fs::path p = fs::path(root_dir) / cleaned;
             std::error_code ec;
             auto status = fs::symlink_status(p, ec);
@@ -509,7 +566,7 @@ void cmd_delete(const std::vector<std::string>& pkgs) {
         fs::remove(files_path);
         fs::remove(meta_path);
         fs::remove(manifest_path);
-        CLI::printSuccess("Paquete '" + pkg + "' eliminado correctamente.");
+        CLI::printSuccess("Paquete '" + pkg + "' eliminado.");
     }
 
     update_ldconfig();
@@ -575,20 +632,31 @@ int main(int argc, char* argv[]) {
     if (!root_dir.empty() && root_dir.back() != '/') root_dir += "/";
 
     if (arg_start >= argc) {
-        std::cout << "Uso: roger [--verbose] [--root <ruta>] <sync|install|delete|bomb|update> [paquetes...]\n";
+        std::cout << "Uso: roger [--verbose] [--root <ruta>] <sync|install|delete|bomb|update|list> [paquetes...]\n";
         return 1;
     }
 
     std::string command = argv[arg_start];
     std::vector<std::string> targets;
-    for (int i = arg_start + 1; i < argc; ++i) targets.push_back(argv[i]);
+    for (int i = arg_start + 1; i < argc; ++i) {
+        targets.push_back(argv[i]);
+    }
 
-    if (command == "sync") cmd_sync();
-    else if (command == "install" && !targets.empty()) cmd_install(targets);
-    else if (command == "delete" && !targets.empty()) cmd_delete(targets);
-    else if (command == "bomb") cmd_bomb();
-    else if (command == "update") cmd_update();
-    else std::cout << "Comando o parámetros no válidos: " << command << "\n";
+    if (command == "sync") {
+        cmd_sync();
+    } else if (command == "install" && !targets.empty()) {
+        cmd_install(targets);
+    } else if (command == "delete" && !targets.empty()) {
+        cmd_delete(targets);
+    } else if (command == "bomb") {
+        cmd_bomb();
+    } else if (command == "update") {
+        cmd_update();
+    } else if (command == "list") {
+        cmd_list(root_dir);
+    } else {
+        std::cout << "Comando o parámetros no válidos: " << command << "\n";
+    }
 
     return 0;
 }

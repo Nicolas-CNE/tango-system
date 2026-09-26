@@ -60,7 +60,7 @@ void printTransactionSummary(
     std::cout << "=========================================\n";
 
     if (!explicit_pkgs.empty()) {
-        std::cout << "Paquetes explicitamente solicitados (" << explicit_pkgs.size() << "):\n  ";
+        std::cout << "Paquetes explícitamente solicitados (" << explicit_pkgs.size() << "):\n  ";
         for (const auto& pkg : explicit_pkgs) std::cout << pkg << " ";
         std::cout << "\n\n";
     }
@@ -71,13 +71,39 @@ void printTransactionSummary(
         std::cout << "\n\n";
     }
 
-    std::cout << "Paquetes totales:       " << (explicit_pkgs.size() + deps_pkgs.size()) << "\n";
+    std::cout << "Paquetes totales:        " << (explicit_pkgs.size() + deps_pkgs.size()) << "\n";
     if (total_download_bytes > 0) {
         std::cout << "Descarga estimada:      " << formatSize(total_download_bytes) << "\n";
     }
     if (total_install_bytes > 0) {
         std::cout << "Espacio en disco extra: " << formatSize(total_install_bytes) << "\n";
     }
+    std::cout << "=========================================\n\n";
+}
+
+void printDeleteSummary(
+    const std::vector<std::string>& explicit_pkgs,
+    const std::vector<std::string>& orphan_deps_pkgs,
+    size_t total_freed_bytes
+) {
+    std::cout << "\n=========================================\n";
+    std::cout << "     RESUMEN DE ELIMINACIÓN DE PAQUETES  \n";
+    std::cout << "=========================================\n";
+
+    if (!explicit_pkgs.empty()) {
+        std::cout << "Paquetes a eliminar (" << explicit_pkgs.size() << "):\n  ";
+        for (const auto& pkg : explicit_pkgs) std::cout << pkg << " ";
+        std::cout << "\n\n";
+    }
+
+    if (!orphan_deps_pkgs.empty()) {
+        std::cout << "Dependencias huérfanas a remover (" << orphan_deps_pkgs.size() << "):\n  ";
+        for (const auto& pkg : orphan_deps_pkgs) std::cout << pkg << " ";
+        std::cout << "\n\n";
+    }
+
+    std::cout << "Paquetes totales:           " << (explicit_pkgs.size() + orphan_deps_pkgs.size()) << "\n";
+    std::cout << "Espacio en disco a liberar: " << formatSize(total_freed_bytes) << "\n";
     std::cout << "=========================================\n\n";
 }
 
