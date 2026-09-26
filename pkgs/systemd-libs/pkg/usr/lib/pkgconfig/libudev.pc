@@ -14,6 +14,6 @@ includedir=/usr/include
 
 Name: libudev
 Description: Library to access udev device information
-Version: 261
+Version: 262
 Libs: -L${libdir} -ludev
 Cflags: -I${includedir}

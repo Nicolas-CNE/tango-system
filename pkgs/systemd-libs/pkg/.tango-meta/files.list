@@ -104,6 +104,7 @@
 ./usr/share/man/man3/sd_bus_message_new_method_errno.3.gz
 ./usr/share/man/man3/sd_device_unref.3.gz
 ./usr/share/man/man3/sd_device_enumerator_allow_uninitialized.3.gz
+./usr/share/man/man3/sd_varlink_reply_and_upgrade.3.gz
 ./usr/share/man/man3/sd_bus_message_set_auto_start.3.gz
 ./usr/share/man/man3/sd_bus_set_propertyv.3.gz
 ./usr/share/man/man3/sd_bus_set_property.3.gz
@@ -286,6 +287,7 @@
 ./usr/share/man/man3/sd_journal_perror.3.gz
 ./usr/share/man/man3/sd_event_child_handler_t.3.gz
 ./usr/share/man/man3/udev_device_get_sysattr_list_entry.3.gz
+./usr/share/man/man3/sd_varlink_server_listen_name.3.gz
 ./usr/share/man/man3/udev_device_get_udev.3.gz
 ./usr/share/man/man3/SD_BUS_ERROR_DISCONNECTED.3.gz
 ./usr/share/man/man3/sd_is_socket.3.gz
@@ -374,9 +376,11 @@
 ./usr/share/man/man3/sd_bus_message_copy.3.gz
 ./usr/share/man/man3/sd_bus_message_get_reply_cookie.3.gz
 ./usr/share/man/man3/udev_device_get_devtype.3.gz
+./usr/share/man/man3/sd_varlink_server_listen_auto.3.gz
 ./usr/share/man/man3/sd-login.3.gz
 ./usr/share/man/man3/sd_bus_slot_set_userdata.3.gz
 ./usr/share/man/man3/sd_bus_creds_unrefp.3.gz
+./usr/share/man/man3/sd_varlink_bind_upgrade.3.gz
 ./usr/share/man/man3/sd_pid_notifyf_with_fds.3.gz
 ./usr/share/man/man3/sd_session_get_vt.3.gz
 ./usr/share/man/man3/sd_peer_get_user_slice.3.gz
@@ -411,6 +415,7 @@
 ./usr/share/man/man3/sd_event_unrefp.3.gz
 ./usr/share/man/man3/udev_new.3.gz
 ./usr/share/man/man3/sd_bus_message_get_error.3.gz
+./usr/share/man/man3/sd_varlink_respond_and_upgradebo.3.gz
 ./usr/share/man/man3/sd_event_add_post.3.gz
 ./usr/share/man/man3/sd-hwdb.3.gz
 ./usr/share/man/man3/sd_uid_get_sessions.3.gz
@@ -446,6 +451,7 @@
 ./usr/share/man/man3/SD_ID128_FORMAT_STR.3.gz
 ./usr/share/man/man3/sd_device_get_devname.3.gz
 ./usr/share/man/man3/sd_event_signal_handler_t.3.gz
+./usr/share/man/man3/sd_varlink_upgrade_t.3.gz
 ./usr/share/man/man3/SD_ID128_MAKE.3.gz
 ./usr/share/man/man3/SD_INFO.3.gz
 ./usr/share/man/man3/sd_uid_get_seats.3.gz
@@ -521,6 +527,7 @@
 ./usr/share/man/man3/sd_bus_message_enter_container.3.gz
 ./usr/share/man/man3/sd_bus_error_has_names_sentinel.3.gz
 ./usr/share/man/man3/SD_BUS_ERROR_ADDRESS_IN_USE.3.gz
+./usr/share/man/man3/sd_varlink_call_and_upgradebo.3.gz
 ./usr/share/man/man3/udev_enumerate_get_udev.3.gz
 ./usr/share/man/man3/sd_bus_error_copy.3.gz
 ./usr/share/man/man3/sd_bus_get_fd.3.gz
@@ -531,6 +538,7 @@
 ./usr/share/man/man3/SD_EVENT_ON.3.gz
 ./usr/share/man/man3/sd_event_source_get_enabled.3.gz
 ./usr/share/man/man3/sd_journal_restart_unique.3.gz
+./usr/share/man/man3/sd_varlink_server_listen_address.3.gz
 ./usr/share/man/man3/sd_pid_get_user_unit.3.gz
 ./usr/share/man/man3/sd_bus_get_exit_on_disconnect.3.gz
 ./usr/share/man/man3/sd_journal_restart_fields.3.gz
@@ -552,6 +560,7 @@
 ./usr/share/man/man3/sd_json_dispatch_strv.3.gz
 ./usr/share/man/man3/sd_bus_set_fd.3.gz
 ./usr/share/man/man3/sd_hwdb_unref.3.gz
+./usr/share/man/man3/sd_varlink_call_and_upgradeb.3.gz
 ./usr/share/man/man3/sd_seat_get_active.3.gz
 ./usr/share/man/man3/sd_peer_get_owner_uid.3.gz
 ./usr/share/man/man3/udev_monitor_receive_device.3.gz
@@ -676,6 +685,7 @@
 ./usr/share/man/man3/sd_event_exit.3.gz
 ./usr/share/man/man3/sd_bus_get_property_strv.3.gz
 ./usr/share/man/man3/sd_journal_send.3.gz
+./usr/share/man/man3/sd_varlink_call_and_upgrade.3.gz
 ./usr/share/man/man3/SD_EVENT_SIGNAL_PROCMASK.3.gz
 ./usr/share/man/man3/sd_json_dispatch_const_string.3.gz
 ./usr/share/man/man3/sd_journal_has_runtime_files.3.gz
@@ -718,6 +728,8 @@
 ./usr/share/man/man3/sd_device_get_subsystem.3.gz
 ./usr/share/man/man3/udev_monitor_set_receive_buffer_size.3.gz
 ./usr/share/man/man3/sd_event_source_get_child_pidfd.3.gz
+./usr/share/man/man3/sd_varlink_server_listen_fd.3.gz
+./usr/share/man/man3/sd_varlink_respond_and_upgrade.3.gz
 ./usr/share/man/man3/sd_bus_start.3.gz
 ./usr/share/man/man3/SD_JOURNAL_FOREACH_DATA.3.gz
 ./usr/share/man/man3/SD_BUS_MESSAGE_METHOD_RETURN.3.gz
@@ -813,6 +825,7 @@
 ./usr/share/man/man3/sd_event_source_set_memory_pressure_type.3.gz
 ./usr/share/man/man3/sd_bus_message_read_array.3.gz
 ./usr/share/man/man3/SD_JOURNAL_OS_ROOT.3.gz
+./usr/share/man/man3/sd_varlink_respond_and_upgradeb.3.gz
 ./usr/share/man/man3/sd_id128_get_invocation.3.gz
 ./usr/share/man/man3/sd_bus_detach_event.3.gz
 ./usr/share/man/man3/sd_bus_set_allow_interactive_authorization.3.gz
@@ -907,16 +920,16 @@
 ./usr/include/systemd/sd-path.h
 ./usr/include/libudev.h
 ./usr/lib
+./usr/lib/libsystemd.so.0.45.0
 ./usr/lib/libnss_myhostname.so.2
 ./usr/lib/libudev.so.1
 ./usr/lib/libnss_resolve.so.2
 ./usr/lib/libnss_systemd.so.2
 ./usr/lib/libsystemd.so
-./usr/lib/libsystemd.so.0.44.0
 ./usr/lib/pkgconfig
 ./usr/lib/pkgconfig/libsystemd.pc
 ./usr/lib/pkgconfig/libudev.pc
 ./usr/lib/libnss_mymachines.so.2
+./usr/lib/libudev.so.1.7.15
 ./usr/lib/libudev.so
 ./usr/lib/libsystemd.so.0
-./usr/lib/libudev.so.1.7.14

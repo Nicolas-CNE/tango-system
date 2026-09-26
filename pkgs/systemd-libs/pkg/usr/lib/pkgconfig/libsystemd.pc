@@ -15,6 +15,6 @@ includedir=/usr/include
 Name: systemd
 Description: systemd Library
 URL: https://systemd.io/
-Version: 261
+Version: 262
 Libs: -L${libdir} -lsystemd
 Cflags: -I${includedir}
