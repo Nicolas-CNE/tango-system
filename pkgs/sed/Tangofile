@@ -1,8 +1,8 @@
 pkgname="sed"
-pkgver="4.10"
-pkgrel="2"
+pkgver="4.10-2"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "acl")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/sed-4.10-2-x86_64.pkg.tar.zst")
 
 build() {

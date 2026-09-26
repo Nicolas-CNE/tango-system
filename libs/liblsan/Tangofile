@@ -1,0 +1,20 @@
+pkgname="liblsan"
+pkgver="16.2.1+r23+gd564253eb6c8-1"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "libgcc" "libstdc++")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/liblsan-16.2.1+r23+gd564253eb6c8-1-x86_64.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

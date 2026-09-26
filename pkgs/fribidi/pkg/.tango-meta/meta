@@ -1,4 +1,0 @@
-pkgname: fribidi
-version: 1.0.17-1
-arch: x86_64
-depends: glibc

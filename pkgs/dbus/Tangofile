@@ -1,8 +1,8 @@
 pkgname="dbus"
-pkgver="1.16.2"
+pkgver="1.16.2-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "expat")
+depends=("audit" "expat" "glibc" "libcap-ng" "systemd-libs" "libaudit.so" "libcap-ng.so" "libexpat.so" "libsystemd.so")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/dbus-1.16.2-1-x86_64.pkg.tar.zst")
 
 build() {

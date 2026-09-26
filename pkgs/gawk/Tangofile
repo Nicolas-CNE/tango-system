@@ -1,8 +1,8 @@
 pkgname="gawk"
-pkgver="5.4.1"
+pkgver="5.4.1-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("sh" "glibc" "mpfr")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/gawk-5.4.1-1-x86_64.pkg.tar.zst")
 
 build() {

@@ -1,0 +1,20 @@
+pkgname="file"
+pkgver="5.48-1"
+pkgrel="1"
+arch="x86_64"
+depends=("glibc" "bzip2" "libbz2.so" "libseccomp" "libseccomp.so" "xz" "liblzma.so" "zlib" "libz.so" "zstd" "libzstd.so")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/file-5.48-1-x86_64.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

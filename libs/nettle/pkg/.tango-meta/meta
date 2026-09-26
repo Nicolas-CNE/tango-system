@@ -1,4 +1,0 @@
-pkgname: nettle
-version: 4.0-1
-arch: x86_64
-depends: glibc,gmp

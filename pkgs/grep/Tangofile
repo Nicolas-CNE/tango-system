@@ -1,8 +1,8 @@
 pkgname="grep"
-pkgver="3.12"
-pkgrel="2"
+pkgver="3.12-2"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "pcre2")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/grep-3.12-2-x86_64.pkg.tar.zst")
 
 build() {

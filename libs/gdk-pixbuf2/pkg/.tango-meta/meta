@@ -1,4 +1,0 @@
-pkgname: gdk-pixbuf2
-version: 2.44.7-1
-arch: x86_64
-depends: glibc

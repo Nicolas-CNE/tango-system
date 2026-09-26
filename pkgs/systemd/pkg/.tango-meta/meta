@@ -1,4 +1,0 @@
-pkgname: systemd
-version: 261.3-1
-arch: x86_64
-depends: glibc,systemd-libs,libcap,kmod,util-linux

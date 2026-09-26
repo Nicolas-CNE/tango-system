@@ -1,8 +1,8 @@
 pkgname="curl"
-pkgver="8.22.0"
+pkgver="8.22.0-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "openssl" "zlib-ng")
+depends=("ca-certificates" "brotli" "libbrotlidec.so" "krb5" "libgssapi_krb5.so" "libidn2" "libidn2.so" "libnghttp2" "libnghttp2.so" "libnghttp3" "libnghttp3.so" "libngtcp2" "libngtcp2.so" "libpsl" "libpsl.so" "libssh2" "libssh2.so" "openssl" "libcrypto.so" "libssl.so" "zlib" "libz.so" "zstd" "libzstd.so")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/curl-8.22.0-1-x86_64.pkg.tar.zst")
 
 build() {

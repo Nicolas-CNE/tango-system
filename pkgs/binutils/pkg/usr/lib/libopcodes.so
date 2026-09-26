@@ -1,3 +1,0 @@
-/* GNU ld script */
-
-INPUT( /usr/lib/libopcodes.a -lbfd )

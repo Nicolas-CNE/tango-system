@@ -1,8 +1,8 @@
 pkgname="gnutls"
-pkgver="3.8.13"
-pkgrel="3"
+pkgver="3.8.13-3"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc" "nettle" "gmp")
+depends=("glibc" "gmp" "libtasn1" "zlib" "nettle" "leancrypto" "libstdc++" "libgcc" "libp11-kit" "libidn2" "zstd" "libidn2.so" "libunistring" "brotli")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/gnutls-3.8.13-3-x86_64.pkg.tar.zst")
 
 build() {

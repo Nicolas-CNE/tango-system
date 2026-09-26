@@ -1,8 +1,8 @@
 pkgname="shadow"
-pkgver="4.20.0.arch1"
+pkgver="4.20.0.arch1-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "acl" "libacl.so" "audit" "libaudit.so" "libxcrypt" "libcrypt.so" "pam" "libpam.so" "libpam_misc.so")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/shadow-4.20.0.arch1-1-x86_64.pkg.tar.zst")
 
 build() {

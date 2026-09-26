@@ -1,4 +1,0 @@
-pkgname: glibc
-version: 2.44+r24+g16be1518495f-1
-arch: x86_64
-depends: 

@@ -1,554 +1,661 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sat Sep 26 02:51:08 PM UTC 2026
+# Generado automáticamente: Sat Sep 26 06:01:42 PM UTC 2026
 
 pkgname: acl
-version: 2.4.0-1
+version: 2.4.0-1-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/acl/acl-2.4.0-1-x86_64.tango.tar.zst
-
-pkgname: at-spi2-core
-version: 2.60.7-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/at-spi2-core/at-spi2-core-2.60.7-1-x86_64.tango.tar.zst
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/acl/acl-2.4.0-1-1-x86_64.tango.tar.zst
 
 pkgname: attr
-version: 2.6.0-1
+version: 2.6.0-1-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/attr/attr-2.6.0-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/attr/attr-2.6.0-1-1-x86_64.tango.tar.zst
+
+pkgname: audit
+version: 4.2.1-1-1
+arch: x86_64
+depends: bash glibc krb5 libkrb5.so libgssapi_krb5.so libcap-ng libcap-ng.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/audit/audit-4.2.1-1-1-x86_64.tango.tar.zst
 
 pkgname: base
-version: 1.0-1
+version: 3-3-1
 arch: x86_64
-depends: bash coreutils glibc busybox iproute2 procps-ng tar zstd kmod shadow util-linux
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/base/base-1.0-1-x86_64.tango.tar.zst
-
-pkgname: base-devel
-version: 1.0-1
-arch: x86_64
-depends: gcc make binutils patch flex bison m4 gawk pkgconf sed grep bc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/base-devel/base-devel-1.0-1-x86_64.tango.tar.zst
+depends: filesystem gcc-libs glibc bash coreutils file findutils gawk grep procps-ng sed tar gettext pciutils psmisc shadow util-linux bzip2 gzip xz licenses systemd systemd-sysvcompat iputils iproute2
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/base/base-3-3-1-x86_64.tango.tar.zst
 
 pkgname: bash
-version: 5.3.20-1
+version: 5.3.20-1-1
 arch: x86_64
-depends: glibc ncurses readline
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/bash/bash-5.3.20-1-x86_64.tango.tar.zst
+depends: readline libreadline.so glibc ncurses
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/bash/bash-5.3.20-1-1-x86_64.tango.tar.zst
 
-pkgname: bc
-version: 1.08.2-1
+pkgname: brotli
+version: 1.2.0-1-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/bc/bc-1.08.2-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/brotli/brotli-1.2.0-1-1-x86_64.tango.tar.zst
 
-pkgname: binutils
-version: 2.47-4
+pkgname: bzip2
+version: 1.0.8-6-1
 arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/binutils/binutils-2.47-4-x86_64.tango.tar.zst
+depends: glibc sh
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/bzip2/bzip2-1.0.8-6-1-x86_64.tango.tar.zst
 
-pkgname: bison
-version: 3.8.2-8
+pkgname: ca-certificates
+version: 20240618-1-1
 arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/bison/bison-3.8.2-8-x86_64.tango.tar.zst
+depends: ca-certificates-mozilla
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/ca-certificates/ca-certificates-20240618-1-1-x86_64.tango.tar.zst
 
-pkgname: busybox
-version: 1.36.1-4
+pkgname: ca-certificates-mozilla
+version: 3.130-1-1
 arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/busybox/busybox-1.36.1-4-x86_64.tango.tar.zst
+depends: ca-certificates-utils
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/ca-certificates-mozilla/ca-certificates-mozilla-3.130-1-1-x86_64.tango.tar.zst
+
+pkgname: ca-certificates-utils
+version: 20240618-1-1
+arch: x86_64
+depends: bash coreutils findutils p11-kit
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/ca-certificates-utils/ca-certificates-utils-20240618-1-1-x86_64.tango.tar.zst
 
 pkgname: coreutils
-version: 9.11-2
+version: 9.11-2-1
 arch: x86_64
-depends: glibc gmp libcap openssl
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/coreutils/coreutils-9.11-2-x86_64.tango.tar.zst
+depends: acl attr glibc gmp libcap openssl
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/coreutils/coreutils-9.11-2-1-x86_64.tango.tar.zst
+
+pkgname: cryptsetup
+version: 2.8.8-1-1
+arch: x86_64
+depends: device-mapper libdevmapper.so glibc openssl libcrypto.so popt util-linux-libs libblkid.so libuuid.so json-c libjson-c.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/cryptsetup/cryptsetup-2.8.8-1-1-x86_64.tango.tar.zst
 
 pkgname: curl
-version: 8.22.0-1
+version: 8.22.0-1-1
 arch: x86_64
-depends: glibc openssl zlib-ng
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/curl/curl-8.22.0-1-x86_64.tango.tar.zst
+depends: ca-certificates brotli libbrotlidec.so krb5 libgssapi_krb5.so libidn2 libidn2.so libnghttp2 libnghttp2.so libnghttp3 libnghttp3.so libngtcp2 libngtcp2.so libpsl libpsl.so libssh2 libssh2.so openssl libcrypto.so libssl.so zlib libz.so zstd libzstd.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/curl/curl-8.22.0-1-1-x86_64.tango.tar.zst
 
 pkgname: dbus
-version: 1.16.2-1
+version: 1.16.2-1-1
 arch: x86_64
-depends: glibc expat
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus/dbus-1.16.2-1-x86_64.tango.tar.zst
+depends: audit expat glibc libcap-ng systemd-libs libaudit.so libcap-ng.so libexpat.so libsystemd.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus/dbus-1.16.2-1-1-x86_64.tango.tar.zst
 
-pkgname: emacs
-version: 31.1-2
+pkgname: dbus-broker
+version: 37-3-1
 arch: x86_64
-depends: acl at-spi2-core attr cairo dbus fontconfig freetype2 fribidi gdk-pixbuf2 glib2 glibc gmp gnutls gpm gtk3 harfbuzz hicolor-icon-theme icu lcms2 libepoxy libgccjit giflib libice libjpeg-turbo libotf libpng librsvg libsm libtiff libwebp libx11 libxcb libxcomposite libxext libxfixes libxi libxinerama libxml2 libxrandr libxrender ncurses nettle pango pcre2 sqlite systemd-libs tree-sitter zlib-ng zstd
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-31.1-2-x86_64.tango.tar.zst
+depends: audit expat glibc libcap-ng libgcc systemd-libs libaudit.so libcap-ng.so libexpat.so libsystemd.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus-broker/dbus-broker-37-3-1-x86_64.tango.tar.zst
 
-pkgname: emacs-nox
-version: 31.1-2
+pkgname: dbus-broker-units
+version: 37-3-1
 arch: x86_64
-depends: acl attr dbus fontconfig freetype2 glibc gmp gnutls gpm harfbuzz icu lcms2 libotf libxml2 ncurses nettle pcre2 systemd-libs zlib-ng zstd
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs-nox/emacs-nox-31.1-2-x86_64.tango.tar.zst
+depends: dbus dbus-broker
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus-broker-units/dbus-broker-units-37-3-1-x86_64.tango.tar.zst
 
-pkgname: expat
-version: 2.8.5-1
+pkgname: dbus-units
+version: 37-3-1
+arch: x86_64
+depends: dbus-broker-units
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus-units/dbus-units-37-3-1-x86_64.tango.tar.zst
+
+pkgname: device-mapper
+version: 2.03.42-1-1
+arch: x86_64
+depends: bash glibc libgcc libgcc_s.so systemd-libs libudev.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/device-mapper/device-mapper-2.03.42-1-1-x86_64.tango.tar.zst
+
+pkgname: e2fsprogs
+version: 1.47.4-1-1
+arch: x86_64
+depends: sh util-linux-libs
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/e2fsprogs/e2fsprogs-1.47.4-1-1-x86_64.tango.tar.zst
+
+pkgname: file
+version: 5.48-1-1
+arch: x86_64
+depends: glibc bzip2 libbz2.so libseccomp libseccomp.so xz liblzma.so zlib libz.so zstd libzstd.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/file/file-5.48-1-1-x86_64.tango.tar.zst
+
+pkgname: filesystem
+version: 2025.10.12-1-1
+arch: x86_64
+depends: iana-etc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/filesystem/filesystem-2025.10.12-1-1-x86_64.tango.tar.zst
+
+pkgname: findutils
+version: 4.11.0-1-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/expat/expat-2.8.5-1-x86_64.tango.tar.zst
-
-pkgname: fastfetch
-version: 2.68.1-1
-arch: x86_64
-depends: glibc zlib-ng yyjson
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/fastfetch/fastfetch-2.68.1-1-x86_64.tango.tar.zst
-
-pkgname: flex
-version: 2.6.4-6
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/flex/flex-2.6.4-6-x86_64.tango.tar.zst
-
-pkgname: fribidi
-version: 1.0.17-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/fribidi/fribidi-1.0.17-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/findutils/findutils-4.11.0-1-1-x86_64.tango.tar.zst
 
 pkgname: gawk
-version: 5.4.1-1
+version: 5.4.1-1-1
 arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gawk/gawk-5.4.1-1-x86_64.tango.tar.zst
+depends: sh glibc mpfr
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gawk/gawk-5.4.1-1-1-x86_64.tango.tar.zst
 
-pkgname: gcc
-version: 16.2.1+r23+gd564253eb6c8-1
+pkgname: gcc-libs
+version: 16.2.1+r23+gd564253eb6c8-1-1
 arch: x86_64
-depends: glibc binutils gmp mpfr mpc zstd
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gcc/gcc-16.2.1+r23+gd564253eb6c8-1-x86_64.tango.tar.zst
+depends: glibc libasan libatomic libgcc libgfortran libgomp libhwasan liblsan libobjc libquadmath libstdc++ libtsan libubsan
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gcc-libs/gcc-libs-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
 
-pkgname: giflib
-version: 6.1.3-2
+pkgname: gdbm
+version: 1.26-2-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/giflib/giflib-6.1.3-2-x86_64.tango.tar.zst
+depends: glibc sh readline libreadline.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gdbm/gdbm-1.26-2-1-x86_64.tango.tar.zst
 
-pkgname: git
-version: 2.55.0-1
+pkgname: gettext
+version: 1.0-2-1
 arch: x86_64
-depends: glibc curl openssl zlib-ng expat pcre2
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/git/git-2.55.0-1-x86_64.tango.tar.zst
+depends: acl attr curl glibc json-c libgcc libgomp libstdc++ gnulib-l10n libunistring libxml2 ncurses sh
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gettext/gettext-1.0-2-1-x86_64.tango.tar.zst
 
-pkgname: glib2
-version: 2.88.3-1
+pkgname: gnulib-l10n
+version: 20241231-1-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/glib2/glib2-2.88.3-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gnulib-l10n/gnulib-l10n-20241231-1-1-x86_64.tango.tar.zst
 
 pkgname: grep
-version: 3.12-2
+version: 3.12-2-1
 arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/grep/grep-3.12-2-x86_64.tango.tar.zst
+depends: glibc pcre2
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/grep/grep-3.12-2-1-x86_64.tango.tar.zst
 
-pkgname: hicolor-icon-theme
-version: 0.18-1
+pkgname: gzip
+version: 1.15-1-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/hicolor-icon-theme/hicolor-icon-theme-0.18-1-x86_64.tango.tar.zst
+depends: glibc sh coreutils sed
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/gzip/gzip-1.15-1-1-x86_64.tango.tar.zst
 
-pkgname: initramfs-tools
-version: 0.142-1
+pkgname: hwdata
+version: 0.411-1-1
 arch: x86_64
-depends: busybox kmod zstd
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/initramfs-tools/initramfs-tools-0.142-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/hwdata/hwdata-0.411-1-1-x86_64.tango.tar.zst
+
+pkgname: iana-etc
+version: 20260617-1-1
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/iana-etc/iana-etc-20260617-1-1-x86_64.tango.tar.zst
 
 pkgname: iproute2
-version: 7.2.0-1
+version: 7.2.0-1-1
+arch: x86_64
+depends: glibc libxtables.so libcap libcap.so libelf libbpf libbpf.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/iproute2/iproute2-7.2.0-1-1-x86_64.tango.tar.zst
+
+pkgname: iputils
+version: 20250605-1-1
+arch: x86_64
+depends: libcap libidn2
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/iputils/iputils-20250605-1-1-x86_64.tango.tar.zst
+
+pkgname: json-c
+version: 0.19-1-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/iproute2/iproute2-7.2.0-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/json-c/json-c-0.19-1-1-x86_64.tango.tar.zst
+
+pkgname: kbd
+version: 2.10.0-1-1
+arch: x86_64
+depends: glibc gzip pam
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/kbd/kbd-2.10.0-1-1-x86_64.tango.tar.zst
+
+pkgname: keyutils
+version: 1.6.3-4-1
+arch: x86_64
+depends: glibc sh
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/keyutils/keyutils-1.6.3-4-1-x86_64.tango.tar.zst
 
 pkgname: kmod
-version: 34.2-1
+version: 34.2-1-1
 arch: x86_64
-depends: glibc zstd openssl
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/kmod/kmod-34.2-1-x86_64.tango.tar.zst
+depends: glibc zlib openssl xz zstd
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/kmod/kmod-34.2-1-1-x86_64.tango.tar.zst
 
-pkgname: libcap
-version: 2.78-1
+pkgname: krb5
+version: 1.22.2-1-1
+arch: x86_64
+depends: bash e2fsprogs glibc keyutils libldap libverto-module-base openssl lmdb libcom_err.so libkeyutils.so libss.so libverto.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/krb5/krb5-1.22.2-1-1-x86_64.tango.tar.zst
+
+pkgname: leancrypto
+version: 1.9.0-1-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/libcap/libcap-2.78-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/leancrypto/leancrypto-1.9.0-1-1-x86_64.tango.tar.zst
 
-pkgname: libepoxy
-version: 1.5.10-3
+pkgname: licenses
+version: 20240728-1-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/libepoxy/libepoxy-1.5.10-3-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/licenses/licenses-20240728-1-1-x86_64.tango.tar.zst
 
-pkgname: libgccjit
-version: 16.2.1+r23+gd564253eb6c8-1
+pkgname: linux-api-headers
+version: 7.2-1-1
 arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/libgccjit/libgccjit-16.2.1+r23+gd564253eb6c8-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/linux-api-headers/linux-api-headers-7.2-1-1-x86_64.tango.tar.zst
 
-pkgname: libice
-version: 1.1.2-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/libice/libice-1.1.2-1-x86_64.tango.tar.zst
-
-pkgname: libxcb
-version: 1.17.0-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/libxcb/libxcb-1.17.0-1-x86_64.tango.tar.zst
-
-pkgname: linux
-version: 7.2.7-1
-arch: x86_64
-depends: kmod initramfs-tools
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/linux/linux-7.2.7-1-x86_64.tango.tar.zst
-
-pkgname: linux-headers
-version: 7.2.7.arch1-1
+pkgname: lmdb
+version: 0.9.35-1-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/linux-headers/linux-headers-7.2.7.arch1-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/lmdb/lmdb-0.9.35-1-1-x86_64.tango.tar.zst
 
-pkgname: m4
-version: 1.4.21-2
+pkgname: lz4
+version: 1:1.10.0-2-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/m4/m4-1.4.21-2-x86_64.tango.tar.zst
-
-pkgname: make
-version: 4.4.1-3
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/make/make-4.4.1-3-x86_64.tango.tar.zst
-
-pkgname: mpc
-version: 0.35-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/mpc/mpc-0.35-2-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/lz4/lz4-1:1.10.0-2-1-x86_64.tango.tar.zst
 
 pkgname: mpfr
-version: 4.2.2-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/mpfr/mpfr-4.2.2-1-x86_64.tango.tar.zst
-
-pkgname: openssl
-version: 3.6.4-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/openssl/openssl-3.6.4-1-x86_64.tango.tar.zst
-
-pkgname: patch
-version: 2.8-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/patch/patch-2.8-1-x86_64.tango.tar.zst
-
-pkgname: pcre2
-version: 10.48-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/pcre2/pcre2-10.48-1-x86_64.tango.tar.zst
-
-pkgname: pkgconf
-version: 3.0.7-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/pkgconf/pkgconf-3.0.7-1-x86_64.tango.tar.zst
-
-pkgname: procps-ng
-version: 4.0.7-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/procps-ng/procps-ng-4.0.7-1-x86_64.tango.tar.zst
-
-pkgname: readline
-version: 8.3.6-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/readline/readline-8.3.6-1-x86_64.tango.tar.zst
-
-pkgname: sed
-version: 4.10-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/sed/sed-4.10-2-x86_64.tango.tar.zst
-
-pkgname: shadow
-version: 4.20.0.arch1-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/shadow/shadow-4.20.0.arch1-1-x86_64.tango.tar.zst
-
-pkgname: sqlite
-version: 3.53.4-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/sqlite/sqlite-3.53.4-1-x86_64.tango.tar.zst
-
-pkgname: systemd
-version: 262-1
-arch: x86_64
-depends: glibc systemd-libs libcap kmod util-linux dbus attr
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd/systemd-262-1-x86_64.tango.tar.zst
-
-pkgname: systemd-libs
-version: 262-1
-arch: x86_64
-depends: glibc libcap
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd-libs/systemd-libs-262-1-x86_64.tango.tar.zst
-
-pkgname: systemd-resolvconf
-version: 262-1
-arch: x86_64
-depends: systemd
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd-resolvconf/systemd-resolvconf-262-1-x86_64.tango.tar.zst
-
-pkgname: tar
-version: 1.35-5
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/tar/tar-1.35-5-x86_64.tango.tar.zst
-
-pkgname: tree-sitter
-version: 0.26.9-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/tree-sitter/tree-sitter-0.26.9-1-x86_64.tango.tar.zst
-
-pkgname: util-linux
-version: 2.42.4-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.4-1-x86_64.tango.tar.zst
-
-pkgname: yyjson
-version: 0.13.0-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/yyjson/yyjson-0.13.0-1-x86_64.tango.tar.zst
-
-pkgname: zlib-ng
-version: 2.3.3-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/zlib-ng/zlib-ng-2.3.3-1-x86_64.tango.tar.zst
-
-pkgname: zstd
-version: 1.5.7-3
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/zstd/zstd-1.5.7-3-x86_64.tango.tar.zst
-
-pkgname: alsa-lib
-version: 1.2.16.1-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/alsa-lib/alsa-lib-1.2.16.1-1-x86_64.tango.tar.zst
-
-pkgname: cairo
-version: 1.18.6-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/cairo/cairo-1.18.6-1-x86_64.tango.tar.zst
-
-pkgname: dav1d
-version: 1.5.4-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/dav1d/dav1d-1.5.4-1-x86_64.tango.tar.zst
-
-pkgname: fontconfig
-version: 2:2.18.3-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/fontconfig/fontconfig-2:2.18.3-2-x86_64.tango.tar.zst
-
-pkgname: freetype2
-version: 2.14.3-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/freetype2/freetype2-2.14.3-1-x86_64.tango.tar.zst
-
-pkgname: gdk-pixbuf2
-version: 2.44.7-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gdk-pixbuf2/gdk-pixbuf2-2.44.7-1-x86_64.tango.tar.zst
-
-pkgname: giflib
-version: 6.1.3-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/giflib/giflib-6.1.3-2-x86_64.tango.tar.zst
-
-pkgname: glibc
-version: 2.44+r24+g16be1518495f-1
-arch: x86_64
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/glibc/glibc-2.44+r24+g16be1518495f-1-x86_64.tango.tar.zst
-
-pkgname: gmp
-version: 6.3.0-3
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gmp/gmp-6.3.0-3-x86_64.tango.tar.zst
-
-pkgname: gnutls
-version: 3.8.13-3
-arch: x86_64
-depends: glibc nettle gmp
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gnutls/gnutls-3.8.13-3-x86_64.tango.tar.zst
-
-pkgname: gpm
-version: 1.20.7.r38.ge82d1a6-7
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gpm/gpm-1.20.7.r38.ge82d1a6-7-x86_64.tango.tar.zst
-
-pkgname: gtk3
-version: 1:3.24.52-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gtk3/gtk3-1:3.24.52-1-x86_64.tango.tar.zst
-
-pkgname: harfbuzz
-version: 14.5.0-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/harfbuzz/harfbuzz-14.5.0-1-x86_64.tango.tar.zst
-
-pkgname: icu
-version: 78.3-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/icu/icu-78.3-1-x86_64.tango.tar.zst
-
-pkgname: jbigkit
-version: 2.1-8
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/jbigkit/jbigkit-2.1-8-x86_64.tango.tar.zst
-
-pkgname: lcms2
-version: 2.19.1-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/lcms2/lcms2-2.19.1-1-x86_64.tango.tar.zst
-
-pkgname: libjpeg-turbo
-version: 3.2.0-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libjpeg-turbo/libjpeg-turbo-3.2.0-2-x86_64.tango.tar.zst
-
-pkgname: libotf
-version: 0.9.16-6
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libotf/libotf-0.9.16-6-x86_64.tango.tar.zst
-
-pkgname: libpng
-version: 1.6.58-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libpng/libpng-1.6.58-2-x86_64.tango.tar.zst
-
-pkgname: librsvg
-version: 2:2.62.3-1
-arch: x86_64
-depends: glibc libpng
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/librsvg/librsvg-2:2.62.3-1-x86_64.tango.tar.zst
-
-pkgname: libsm
-version: 1.2.6-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libsm/libsm-1.2.6-1-x86_64.tango.tar.zst
-
-pkgname: libtiff
-version: 4.7.2-1
-arch: x86_64
-depends: glibc libjpeg-turbo
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtiff/libtiff-4.7.2-1-x86_64.tango.tar.zst
-
-pkgname: libwebp
-version: 1.6.0-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libwebp/libwebp-1.6.0-2-x86_64.tango.tar.zst
-
-pkgname: libx11
-version: 1.8.13-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libx11/libx11-1.8.13-1-x86_64.tango.tar.zst
-
-pkgname: libxcomposite
-version: 0.4.7-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxcomposite/libxcomposite-0.4.7-1-x86_64.tango.tar.zst
-
-pkgname: libxext
-version: 1.3.7-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxext/libxext-1.3.7-1-x86_64.tango.tar.zst
-
-pkgname: libxfixes
-version: 6.0.2-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxfixes/libxfixes-6.0.2-1-x86_64.tango.tar.zst
-
-pkgname: libxi
-version: 1.8.3-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxi/libxi-1.8.3-1-x86_64.tango.tar.zst
-
-pkgname: libxinerama
-version: 1.1.6-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxinerama/libxinerama-1.1.6-1-x86_64.tango.tar.zst
-
-pkgname: libxml2
-version: 2.15.4-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxml2/libxml2-2.15.4-1-x86_64.tango.tar.zst
-
-pkgname: libxrandr
-version: 1.5.5-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxrandr/libxrandr-1.5.5-1-x86_64.tango.tar.zst
-
-pkgname: libxrender
-version: 0.9.12-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxrender/libxrender-0.9.12-1-x86_64.tango.tar.zst
-
-pkgname: m17n-lib
-version: 1.8.6-1
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/m17n-lib/m17n-lib-1.8.6-1-x86_64.tango.tar.zst
-
-pkgname: ncurses
-version: 6.6-2
-arch: x86_64
-depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/ncurses/ncurses-6.6-2-x86_64.tango.tar.zst
-
-pkgname: nettle
-version: 4.0-1
+version: 4.2.2-1-1
 arch: x86_64
 depends: glibc gmp
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/nettle/nettle-4.0-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/mpfr/mpfr-4.2.2-1-1-x86_64.tango.tar.zst
 
-pkgname: pango
-version: 1:1.58.2-1
+pkgname: musl
+version: 1.2.6-2-1
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/musl/musl-1.2.6-2-1-x86_64.tango.tar.zst
+
+pkgname: nano
+version: 9.2-1-1
+arch: x86_64
+depends: ncurses file glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/nano/nano-9.2-1-1-x86_64.tango.tar.zst
+
+pkgname: p11-kit
+version: 0.26.5-1-1
+arch: x86_64
+depends: coreutils glibc libtasn1 libp11-kit libp11-kit.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/p11-kit/p11-kit-0.26.5-1-1-x86_64.tango.tar.zst
+
+pkgname: pam
+version: 1.7.2-2-1
+arch: x86_64
+depends: audit glibc libaudit.so libcrypt.so libnsl libtirpc libxcrypt pambase systemd-libs
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/pam/pam-1.7.2-2-1-x86_64.tango.tar.zst
+
+pkgname: pambase
+version: 20260616-1-1
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/pambase/pambase-20260616-1-1-x86_64.tango.tar.zst
+
+pkgname: pciutils
+version: 3.15.0-1-1
+arch: x86_64
+depends: glibc hwdata kmod systemd-libs
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/pciutils/pciutils-3.15.0-1-1-x86_64.tango.tar.zst
+
+pkgname: popt
+version: 1.19-2-1
 arch: x86_64
 depends: glibc
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/pango/pango-1:1.58.2-1-x86_64.tango.tar.zst
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/popt/popt-1.19-2-1-x86_64.tango.tar.zst
+
+pkgname: procps-ng
+version: 4.0.7-1-1
+arch: x86_64
+depends: glibc ncurses libncursesw.so systemd-libs
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/procps-ng/procps-ng-4.0.7-1-1-x86_64.tango.tar.zst
+
+pkgname: psmisc
+version: 23.7-2-1
+arch: x86_64
+depends: ncurses
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/psmisc/psmisc-23.7-2-1-x86_64.tango.tar.zst
+
+pkgname: sed
+version: 4.10-2-1
+arch: x86_64
+depends: glibc acl
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/sed/sed-4.10-2-1-x86_64.tango.tar.zst
+
+pkgname: shadow
+version: 4.20.0.arch1-1-1
+arch: x86_64
+depends: glibc acl libacl.so audit libaudit.so libxcrypt libcrypt.so pam libpam.so libpam_misc.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/shadow/shadow-4.20.0.arch1-1-1-x86_64.tango.tar.zst
+
+pkgname: sqlite
+version: 3.53.4-1-1
+arch: x86_64
+depends: readline zlib glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/sqlite/sqlite-3.53.4-1-1-x86_64.tango.tar.zst
+
+pkgname: systemd
+version: 262-1-1
+arch: x86_64
+depends: systemd-libs acl bash cryptsetup dbus dbus-units glibc kbd kmod hwdata libgcrypt libxcrypt libidn2 lz4 pam libelf libgcc libseccomp util-linux xz pcre2 audit openssl
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd/systemd-262-1-1-x86_64.tango.tar.zst
+
+pkgname: systemd-libs
+version: 262-1-1
+arch: x86_64
+depends: glibc libgcc libgcc_s.so libgcrypt lz4 xz zstd
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd-libs/systemd-libs-262-1-1-x86_64.tango.tar.zst
+
+pkgname: systemd-sysvcompat
+version: 262-1-1
+arch: x86_64
+depends: systemd
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/systemd-sysvcompat/systemd-sysvcompat-262-1-1-x86_64.tango.tar.zst
+
+pkgname: tar
+version: 1.35-5-1
+arch: x86_64
+depends: glibc acl
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/tar/tar-1.35-5-1-x86_64.tango.tar.zst
+
+pkgname: tzdata
+version: 2026d-1-1
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/tzdata/tzdata-2026d-1-1-x86_64.tango.tar.zst
+
+pkgname: util-linux
+version: 2.42.4-1-1
+arch: x86_64
+depends: util-linux-libs coreutils file libmagic.so glibc libcap-ng libgcc libgcc_s.so libxcrypt libcrypt.so ncurses libncursesw.so pam readline shadow systemd-libs libsystemd.so libudev.so zlib
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux/util-linux-2.42.4-1-1-x86_64.tango.tar.zst
+
+pkgname: util-linux-libs
+version: 2.42.4-1-1
+arch: x86_64
+depends: glibc sqlite
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/util-linux-libs/util-linux-libs-2.42.4-1-1-x86_64.tango.tar.zst
+
+pkgname: xz
+version: 5.8.4-1-1
+arch: x86_64
+depends: glibc sh
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/xz/xz-5.8.4-1-1-x86_64.tango.tar.zst
+
+pkgname: expat
+version: 2.8.5-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/expat/expat-2.8.5-1-1-x86_64.tango.tar.zst
+
+pkgname: glibc
+version: 2.44+r24+g16be1518495f-1-1
+arch: x86_64
+depends: linux-api-headers tzdata filesystem
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/glibc/glibc-2.44+r24+g16be1518495f-1-1-x86_64.tango.tar.zst
+
+pkgname: gmp
+version: 6.3.0-3-1
+arch: x86_64
+depends: libgcc libstdc++ glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gmp/gmp-6.3.0-3-1-x86_64.tango.tar.zst
+
+pkgname: gnutls
+version: 3.8.13-3-1
+arch: x86_64
+depends: glibc gmp libtasn1 zlib nettle leancrypto libstdc++ libgcc libp11-kit libidn2 zstd libidn2.so libunistring brotli
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/gnutls/gnutls-3.8.13-3-1-x86_64.tango.tar.zst
+
+pkgname: icu
+version: 78.3-1-1
+arch: x86_64
+depends: glibc libstdc++ libgcc sh
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/icu/icu-78.3-1-1-x86_64.tango.tar.zst
+
+pkgname: libasan
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc libstdc++
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libasan/libasan-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libatomic
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libatomic/libatomic-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libbpf
+version: 1.7.0-1-1
+arch: x86_64
+depends: glibc libelf linux-api-headers zlib
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libbpf/libbpf-1.7.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libcap
+version: 2.78-1-1
+arch: x86_64
+depends: glibc pam
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libcap/libcap-2.78-1-1-x86_64.tango.tar.zst
+
+pkgname: libcap-ng
+version: 0.9.6-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libcap-ng/libcap-ng-0.9.6-1-1-x86_64.tango.tar.zst
+
+pkgname: libelf
+version: 0.196-1-1
+arch: x86_64
+depends: bzip2 libbz2.so curl libcurl.so glibc json-c xz liblzma.so zlib zstd libzstd.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libelf/libelf-0.196-1-1-x86_64.tango.tar.zst
+
+pkgname: libffi
+version: 3.8.0-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libffi/libffi-3.8.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libgcc
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libgcc/libgcc-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libgcrypt
+version: 1.12.4-1-1
+arch: x86_64
+depends: libgpg-error glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libgcrypt/libgcrypt-1.12.4-1-1-x86_64.tango.tar.zst
+
+pkgname: libgfortran
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libgfortran/libgfortran-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libgomp
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libgomp/libgomp-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libgpg-error
+version: 1.61-1-1
+arch: x86_64
+depends: glibc sh
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libgpg-error/libgpg-error-1.61-1-1-x86_64.tango.tar.zst
+
+pkgname: libhwasan
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc libstdc++
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libhwasan/libhwasan-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libidn2
+version: 2.3.8-1-1
+arch: x86_64
+depends: libunistring libunistring.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libidn2/libidn2-2.3.8-1-1-x86_64.tango.tar.zst
+
+pkgname: libldap
+version: 2.7.1-1-1
+arch: x86_64
+depends: libsasl
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libldap/libldap-2.7.1-1-1-x86_64.tango.tar.zst
+
+pkgname: liblsan
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc libstdc++
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/liblsan/liblsan-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libnghttp2
+version: 1.70.0-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libnghttp2/libnghttp2-1.70.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libnghttp3
+version: 1.18.0-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libnghttp3/libnghttp3-1.18.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libngtcp2
+version: 1.25.0-1-1
+arch: x86_64
+depends: glibc openssl libssl.so gnutls
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libngtcp2/libngtcp2-1.25.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libnsl
+version: 2.0.1-2-1
+arch: x86_64
+depends: glibc libtirpc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libnsl/libnsl-2.0.1-2-1-x86_64.tango.tar.zst
+
+pkgname: libobjc
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libobjc/libobjc-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libp11-kit
+version: 0.26.5-1-1
+arch: x86_64
+depends: glibc libffi libtasn1
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libp11-kit/libp11-kit-0.26.5-1-1-x86_64.tango.tar.zst
+
+pkgname: libpsl
+version: 0.21.5-2-1
+arch: x86_64
+depends: libidn2 libunistring libidn2.so libunistring.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libpsl/libpsl-0.21.5-2-1-x86_64.tango.tar.zst
+
+pkgname: libquadmath
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libquadmath/libquadmath-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libsasl
+version: 2.1.28-5-1
+arch: x86_64
+depends: glibc gdbm libgdbm.so openssl libcrypto.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libsasl/libsasl-2.1.28-5-1-x86_64.tango.tar.zst
+
+pkgname: libseccomp
+version: 2.6.0-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libseccomp/libseccomp-2.6.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libssh2
+version: 1.11.1-7-1
+arch: x86_64
+depends: glibc openssl zlib
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libssh2/libssh2-1.11.1-7-1-x86_64.tango.tar.zst
+
+pkgname: libstdc++
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libstdc++/libstdc++-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libtasn1
+version: 4.21.0-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtasn1/libtasn1-4.21.0-1-1-x86_64.tango.tar.zst
+
+pkgname: libtirpc
+version: 1.3.8-1-1
+arch: x86_64
+depends: krb5 glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtirpc/libtirpc-1.3.8-1-1-x86_64.tango.tar.zst
+
+pkgname: libtsan
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc libstdc++
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libtsan/libtsan-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libubsan
+version: 16.2.1+r23+gd564253eb6c8-1-1
+arch: x86_64
+depends: glibc libgcc libstdc++
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libubsan/libubsan-16.2.1+r23+gd564253eb6c8-1-1-x86_64.tango.tar.zst
+
+pkgname: libunistring
+version: 1.4.2-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libunistring/libunistring-1.4.2-1-1-x86_64.tango.tar.zst
+
+pkgname: libxcrypt
+version: 4.5.2-1-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxcrypt/libxcrypt-4.5.2-1-1-x86_64.tango.tar.zst
+
+pkgname: libxml2
+version: 2.15.4-1-1
+arch: x86_64
+depends: bash glibc icu readline zlib libicuuc.so
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/libxml2/libxml2-2.15.4-1-1-x86_64.tango.tar.zst
+
+pkgname: ncurses
+version: 6.6-2-1
+arch: x86_64
+depends: glibc libgcc libstdc++
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/ncurses/ncurses-6.6-2-1-x86_64.tango.tar.zst
+
+pkgname: nettle
+version: 4.0-1-1
+arch: x86_64
+depends: glibc gmp
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/nettle/nettle-4.0-1-1-x86_64.tango.tar.zst
+
+pkgname: openssl
+version: 3.6.4-1-1
+arch: x86_64
+depends: brotli glibc zlib zstd
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/openssl/openssl-3.6.4-1-1-x86_64.tango.tar.zst
+
+pkgname: pcre2
+version: 10.48-1-1
+arch: x86_64
+depends: bzip2 glibc readline zlib
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/pcre2/pcre2-10.48-1-1-x86_64.tango.tar.zst
+
+pkgname: readline
+version: 8.3.6-1-1
+arch: x86_64
+depends: glibc libncursesw.so ncurses
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/readline/readline-8.3.6-1-1-x86_64.tango.tar.zst
+
+pkgname: zlib
+version: 1:1.3.2-3-1
+arch: x86_64
+depends: glibc
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/zlib/zlib-1:1.3.2-3-1-x86_64.tango.tar.zst
+
+pkgname: zstd
+version: 1.5.7-3-1
+arch: x86_64
+depends: glibc libgcc libstdc++ zlib xz lz4
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/libs/zstd/zstd-1.5.7-3-1-x86_64.tango.tar.zst
 

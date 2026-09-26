@@ -1,8 +1,8 @@
 pkgname="bash"
-pkgver="5.3.20"
+pkgver="5.3.20-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "ncurses" "readline")
+depends=("readline" "libreadline.so" "glibc" "ncurses")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/bash-5.3.20-1-x86_64.pkg.tar.zst")
 
 build() {

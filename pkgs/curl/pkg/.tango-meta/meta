@@ -1,4 +1,0 @@
-pkgname: curl
-version: 8.22.0-1
-arch: x86_64
-depends: glibc,openssl,zlib

@@ -1,8 +1,8 @@
 pkgname="gmp"
-pkgver="6.3.0"
-pkgrel="3"
+pkgver="6.3.0-3"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("libgcc" "libstdc++" "glibc")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/gmp-6.3.0-3-x86_64.pkg.tar.zst")
 
 build() {

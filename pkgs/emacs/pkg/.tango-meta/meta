@@ -1,4 +1,0 @@
-pkgname: emacs
-version: 31.1-2
-arch: x86_64
-depends: acl,at-spi2-core,attr,cairo,dbus,fontconfig,freetype2,fribidi,gdk-pixbuf2,giflib,glib2,glibc,gmp,gnutls,gpm,gtk3,harfbuzz,hicolor-icon-theme,icu,lcms2,libepoxy,libgccjit,libice,libjpeg-turbo,libotf,libpng,librsvg,libsm,libtiff,libwebp,libx11,libxcb,libxcomposite,libxext,libxfixes,libxi,libxinerama,libxml2,libxrandr,libxrender,ncurses,nettle,pango,pcre2,sqlite,systemd-libs,tree-sitter,zlib,zlib-ng,zstd

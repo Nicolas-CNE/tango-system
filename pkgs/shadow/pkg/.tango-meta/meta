@@ -1,4 +1,0 @@
-pkgname: shadow
-version: 4.20.0.arch1-1
-arch: x86_64
-depends: glibc

@@ -1,4 +1,0 @@
-pkgname: git
-version: 2.55.0-1
-arch: x86_64
-depends: glibc,curl,openssl,zlib,expat,pcre2

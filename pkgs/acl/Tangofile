@@ -1,8 +1,8 @@
 pkgname="acl"
-pkgver="2.4.0"
+pkgver="2.4.0-1"
 pkgrel="1"
 arch="x86_64"
-depends=()
+depends=("glibc")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/acl-2.4.0-1-x86_64.pkg.tar.zst")
 
 build() {

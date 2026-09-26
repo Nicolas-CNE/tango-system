@@ -1,4 +1,0 @@
-pkgname: initramfs-tools
-version: 0.142-1
-arch: x86_64
-depends: busybox,kmod,zstd

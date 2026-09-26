@@ -1,0 +1,20 @@
+pkgname="libpsl"
+pkgver="0.21.5-2"
+pkgrel="1"
+arch="x86_64"
+depends=("libidn2" "libunistring" "libidn2.so" "libunistring.so")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/libpsl-0.21.5-2-x86_64.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

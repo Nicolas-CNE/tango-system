@@ -1,4 +1,0 @@
-pkgname: m4
-version: 1.4.21-2
-arch: x86_64
-depends: glibc

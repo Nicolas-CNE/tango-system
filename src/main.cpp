@@ -22,6 +22,20 @@ std::string root_dir = "/";
 const std::string REPO_URL = "https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/ROGERINDEX";
 const std::string INDEX_PATH = "/tmp/ROGERINDEX";
 
+enum class PackageFormat {
+    TANGO_TAR,
+    XBPS,
+    APK,
+    DEB
+};
+
+PackageFormat detect_format(const std::string& path) {
+    if (path.size() >= 4 && path.substr(path.size() - 4) == ".deb") return PackageFormat::DEB;
+    if (path.size() >= 4 && path.substr(path.size() - 4) == ".apk") return PackageFormat::APK;
+    if (path.size() >= 5 && path.substr(path.size() - 5) == ".xbps") return PackageFormat::XBPS;
+    return PackageFormat::TANGO_TAR;
+}
+
 std::string get_db_path() {
     fs::path p = fs::path(root_dir) / "var/lib/roger/installed";
     return p.string() + "/";
@@ -48,7 +62,14 @@ std::string clean_path(std::string path) {
 bool is_meta_or_dir(const std::string& path) {
     if (path.empty()) return true;
     if (path.back() == '/') return true;
+    if (path == "." || path == "./") return true;
+
+    // Metadatos de Tango, Alpine, Void y Debian
     if (path.rfind(".tango-meta", 0) == 0 || path.find("/.tango-meta") != std::string::npos) return true;
+    if (path == ".PKGINFO" || path.rfind(".SIGN.", 0) == 0 || path.find("/.PKGINFO") != std::string::npos) return true;
+    if (path == "props.plist" || path == "files.plist" || path.find("/props.plist") != std::string::npos || path.find("/files.plist") != std::string::npos) return true;
+    if (path == "control.tar.gz" || path == "control.tar.xz" || path == "control.tar.zst" || path == "debian-binary") return true;
+
     return false;
 }
 
@@ -96,6 +117,30 @@ void update_ldconfig() {
     }
 }
 
+std::string get_archive_path(const std::string& pkg_name, const std::string& url) {
+    if (url.rfind("local:", 0) == 0) {
+        return url.substr(6);
+    }
+    if (url.find(".deb") != std::string::npos) return "/tmp/" + pkg_name + ".deb";
+    if (url.find(".apk") != std::string::npos) return "/tmp/" + pkg_name + ".apk";
+    if (url.find(".xbps") != std::string::npos) return "/tmp/" + pkg_name + ".xbps";
+    if (url.find(".tar.gz") != std::string::npos) return "/tmp/" + pkg_name + ".tar.gz";
+    if (url.find(".tar.xz") != std::string::npos) return "/tmp/" + pkg_name + ".tar.xz";
+    return "/tmp/" + pkg_name + ".tango.tar.zst";
+}
+
+std::string extract_pkg_name_from_path(const std::string& path) {
+    fs::path p(path);
+    std::string stem = p.stem().string();
+    if (stem.size() > 4 && stem.substr(stem.size() - 4) == ".tar") {
+        stem = fs::path(stem).stem().string();
+    }
+    if (stem.size() > 6 && stem.substr(stem.size() - 6) == ".tango") {
+        stem = fs::path(stem).stem().string();
+    }
+    return stem;
+}
+
 std::vector<std::string> inspect_archive_files(const std::string& archive_path) {
     std::vector<std::string> files;
     int pipefd[2];
@@ -106,7 +151,15 @@ std::vector<std::string> inspect_archive_files(const std::string& archive_path) 
         dup2(pipefd[1], STDOUT_FILENO);
         close(pipefd[0]);
         close(pipefd[1]);
-        execlp("tar", "tar", "-I", "zstd", "-tf", archive_path.c_str(), nullptr);
+
+        PackageFormat fmt = detect_format(archive_path);
+        if (fmt == PackageFormat::DEB) {
+            // Extrae el stream de data.tar.* dentro del ar contenedor y lista su contenido con tar
+            execlp("sh", "sh", "-c", "ar p \"$1\" $(ar t \"$1\" | grep '^data\\.tar') | tar -tf -", "_", archive_path.c_str(), nullptr);
+        } else {
+            // tar autodetecta compresión para .tar.zst (Tango), .xbps (zstd) y .apk (gzip/zstd)
+            execlp("tar", "tar", "-tf", archive_path.c_str(), nullptr);
+        }
         _exit(127);
     }
 
@@ -138,6 +191,26 @@ std::vector<std::string> inspect_archive_files(const std::string& archive_path) 
     return files;
 }
 
+bool extract_package_archive(const std::string& archive_path, const std::string& target_root) {
+    PackageFormat fmt = detect_format(archive_path);
+    if (fmt == PackageFormat::DEB) {
+        std::string cmd = "ar p \"" + archive_path + "\" $(ar t \"" + archive_path + "\" | grep '^data\\.tar') | tar --exclude=./.tango-meta --exclude=.tango-meta -Pxf - -C \"" + target_root + "\"";
+        return exec_safe({"sh", "-c", cmd});
+    } else {
+        return exec_safe({
+            "tar", 
+            "--exclude=./.tango-meta", 
+            "--exclude=.tango-meta", 
+            "--exclude=props.plist", 
+            "--exclude=files.plist", 
+            "--exclude=.PKGINFO", 
+            "--exclude=.SIGN.*", 
+            "-Pxf", archive_path, 
+            "-C", target_root
+        });
+    }
+}
+
 std::map<std::string, std::string> build_system_file_map() {
     std::map<std::string, std::string> file_owner;
     std::string db_path = get_db_path();
@@ -158,7 +231,7 @@ std::map<std::string, std::string> build_system_file_map() {
 }
 
 bool validate_transaction_safety(const std::vector<std::string>& pending_pkgs,
-                                const std::map<std::string, std::vector<std::string>>& pkg_file_lists) {
+                                 const std::map<std::string, std::vector<std::string>>& pkg_file_lists) {
     log_verbose("Verificando colisiones e integridad de archivos en el sistema...");
     auto system_files = build_system_file_map();
 
@@ -331,10 +404,30 @@ bool verify_checksum(const std::string& filepath, const std::string& expected_sh
 
 void cmd_install(const std::vector<std::string>& pkgs) {
     DependencyResolverSAT sat = load_index(INDEX_PATH);
-    std::vector<std::string> to_install;
-    std::set<std::string> explicit_pkgs(pkgs.begin(), pkgs.end());
+    std::vector<std::string> actual_targets;
 
+    // Detectar si se pasan archivos de paquetes locales (.deb, .apk, .xbps, .tar.zst)
     for (const auto& pkg : pkgs) {
+        if (fs::exists(pkg) && (pkg.find(".deb") != std::string::npos || 
+                                pkg.find(".apk") != std::string::npos || 
+                                pkg.find(".xbps") != std::string::npos || 
+                                pkg.find(".tar") != std::string::npos)) {
+            std::string name = extract_pkg_name_from_path(pkg);
+            PackageSpec spec;
+            spec.name = name;
+            spec.version = "local";
+            spec.url = "local:" + fs::absolute(pkg).string();
+            sat.addPackage(spec);
+            actual_targets.push_back(name);
+        } else {
+            actual_targets.push_back(pkg);
+        }
+    }
+
+    std::vector<std::string> to_install;
+    std::set<std::string> explicit_pkgs(actual_targets.begin(), actual_targets.end());
+
+    for (const auto& pkg : actual_targets) {
         std::vector<std::string> sub_plan;
         if (!sat.resolveInstall(pkg, sub_plan)) {
             CLI::printError("No se pudieron resolver las dependencias para '" + pkg + "'");
@@ -367,22 +460,25 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         return;
     }
 
-    CLI::printTransactionSummary(pkgs, deps_list, 0, 0);
+    CLI::printTransactionSummary(actual_targets, deps_list, 0, 0);
     if (!CLI::confirm("¿Desea proceder con la instalación?")) {
         CLI::printWarning("Operación cancelada por el usuario.");
         return;
     }
 
-    std::cout << "\n[1/3] Descargando paquetes...\n";
+    std::cout << "\n[1/3] Preparando / descargando paquetes...\n";
     size_t curr = 0;
     for (const auto& p : pending_execution) {
         curr++;
-        CLI::showProgressBar(curr, pending_execution.size(), "Descargando: " + p);
+        CLI::showProgressBar(curr, pending_execution.size(), "Procesando: " + p);
         
         PackageSpec spec = sat.getPackageSpec(p);
         if (spec.url.empty()) continue;
 
-        std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
+        // Omitir descarga curl si es un paquete local
+        if (spec.url.rfind("local:", 0) == 0) continue;
+
+        std::string archive_name = get_archive_path(p, spec.url);
         if (!exec_safe({"curl", "-f", "-sL", spec.url, "-o", archive_name})) {
             CLI::printError("Falló la descarga del paquete " + p);
             return;
@@ -399,7 +495,8 @@ void cmd_install(const std::vector<std::string>& pkgs) {
     std::map<std::string, std::vector<std::string>> pkg_file_map;
 
     for (const auto& p : pending_execution) {
-        std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
+        PackageSpec spec = sat.getPackageSpec(p);
+        std::string archive_name = get_archive_path(p, spec.url);
         if (fs::exists(archive_name)) {
             pkg_file_map[p] = inspect_archive_files(archive_name);
         }
@@ -407,7 +504,10 @@ void cmd_install(const std::vector<std::string>& pkgs) {
 
     if (!validate_transaction_safety(pending_execution, pkg_file_map)) {
         for (const auto& p : pending_execution) {
-            fs::remove("/tmp/" + p + ".tango.tar.zst");
+            PackageSpec spec = sat.getPackageSpec(p);
+            if (spec.url.rfind("local:", 0) != 0) {
+                fs::remove(get_archive_path(p, spec.url));
+            }
         }
         return;
     }
@@ -419,7 +519,7 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         CLI::showProgressBar(curr, pending_execution.size(), "Instalando:  " + p);
 
         PackageSpec spec = sat.getPackageSpec(p);
-        std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
+        std::string archive_name = get_archive_path(p, spec.url);
         std::string meta_path = db_path + p + ".meta";
         std::string file_list = db_path + p + ".files";
         std::string manifest_path = db_path + p + ".manifest";
@@ -441,7 +541,7 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         for (const auto& f : files) f_list << f << "\n";
         f_list.close();
 
-        if (exec_safe({"tar", "--exclude=./.tango-meta", "--exclude=.tango-meta", "-I", "zstd", "-Pxf", archive_name, "-C", root_dir})) {
+        if (extract_package_archive(archive_name, root_dir)) {
             std::ofstream meta(meta_path);
             meta << "pkgname: " << p << "\nversion: " << spec.version << "\nexplicit: " << (explicit_pkgs.count(p) ? "1" : "0") << "\ndepends: ";
             for (size_t i = 0; i < spec.depends.size(); ++i) meta << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
@@ -454,7 +554,10 @@ void cmd_install(const std::vector<std::string>& pkgs) {
             fs::remove(file_list);
         }
 
-        fs::remove(archive_name);
+        // Limpiar archivo temporal solo si fue descargado
+        if (spec.url.rfind("local:", 0) != 0) {
+            fs::remove(archive_name);
+        }
     }
 
     update_ldconfig();
@@ -632,7 +735,7 @@ int main(int argc, char* argv[]) {
     if (!root_dir.empty() && root_dir.back() != '/') root_dir += "/";
 
     if (arg_start >= argc) {
-        std::cout << "Uso: roger [--verbose] [--root <ruta>] <sync|install|delete|bomb|update|list> [paquetes...]\n";
+        std::cout << "Uso: roger [--verbose] [--root <ruta>] <sync|install|delete|bomb|update|list> [paquetes|archivos...]\n";
         return 1;
     }
 

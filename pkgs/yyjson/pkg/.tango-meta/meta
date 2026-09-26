@@ -1,4 +1,0 @@
-pkgname: yyjson
-version: 0.13.0-1-1
-arch: x86_64
-depends: glibc

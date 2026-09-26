@@ -1,0 +1,20 @@
+pkgname="pam"
+pkgver="1.7.2-2"
+pkgrel="1"
+arch="x86_64"
+depends=("audit" "glibc" "libaudit.so" "libcrypt.so" "libnsl" "libtirpc" "libxcrypt" "pambase" "systemd-libs")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/pam-1.7.2-2-x86_64.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

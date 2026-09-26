@@ -1,12 +1,18 @@
 pkgname="base"
-pkgver="1.0"
+pkgver="3-3"
 pkgrel="1"
 arch="x86_64"
-depends=("bash" "coreutils" "glibc" "busybox" "iproute2" "procps-ng" "tar" "zstd" "kmod" "shadow" "util-linux")
-sources=()
+depends=("filesystem" "gcc-libs" "glibc" "bash" "coreutils" "file" "findutils" "gawk" "grep" "procps-ng" "sed" "tar" "gettext" "pciutils" "psmisc" "shadow" "util-linux" "bzip2" "gzip" "xz" "licenses" "systemd" "systemd-sysvcompat" "iputils" "iproute2")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/base-3-3-any.pkg.tar.zst")
 
 build() {
-    :
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
 }
 
 package() {

@@ -1,5 +1,5 @@
 pkgname="nettle"
-pkgver="4.0"
+pkgver="4.0-1"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc" "gmp")

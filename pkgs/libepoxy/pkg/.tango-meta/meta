@@ -1,4 +1,0 @@
-pkgname: libepoxy
-version: 1.5.10-3
-arch: x86_64
-depends: glibc

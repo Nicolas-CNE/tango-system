@@ -1,8 +1,8 @@
 pkgname="icu"
-pkgver="78.3"
+pkgver="78.3-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "libstdc++" "libgcc" "sh")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/icu-78.3-1-x86_64.pkg.tar.zst")
 
 build() {

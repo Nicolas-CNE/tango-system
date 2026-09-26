@@ -1,0 +1,20 @@
+pkgname="filesystem"
+pkgver="2025.10.12-1"
+pkgrel="1"
+arch="x86_64"
+depends=("iana-etc")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/filesystem-2025.10.12-1-any.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

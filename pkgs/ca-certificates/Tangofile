@@ -1,0 +1,20 @@
+pkgname="ca-certificates"
+pkgver="20240618-1"
+pkgrel="1"
+arch="x86_64"
+depends=("ca-certificates-mozilla")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/ca-certificates-20240618-1-any.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

@@ -1,4 +1,0 @@
-pkgname: openssl
-version: 3.6.4-1
-arch: x86_64
-depends: glibc

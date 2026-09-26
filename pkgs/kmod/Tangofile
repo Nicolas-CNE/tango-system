@@ -1,8 +1,8 @@
 pkgname="kmod"
-pkgver="34.2"
+pkgver="34.2-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "zstd" "openssl")
+depends=("glibc" "zlib" "openssl" "xz" "zstd")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/kmod-34.2-1-x86_64.pkg.tar.zst")
 
 build() {

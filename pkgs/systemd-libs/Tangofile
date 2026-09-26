@@ -1,8 +1,8 @@
 pkgname="systemd-libs"
-pkgver="262"
+pkgver="262-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "libcap")
+depends=("glibc" "libgcc" "libgcc_s.so" "libgcrypt" "lz4" "xz" "zstd")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/systemd-libs-262-1-x86_64.pkg.tar.zst")
 
 build() {

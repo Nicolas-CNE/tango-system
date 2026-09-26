@@ -1,4 +1,0 @@
-pkgname: coreutils
-version: 9.11-2
-arch: x86_64
-depends: glibc,gmp,libcap,openssl

@@ -1,4 +1,0 @@
-pkgname: glib2
-version: 2.88.3-1
-arch: x86_64
-depends: glibc,libffi,pcre2,util-linux-libs,zlib

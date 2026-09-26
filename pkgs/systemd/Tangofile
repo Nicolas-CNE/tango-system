@@ -1,8 +1,8 @@
 pkgname="systemd"
-pkgver="262"
+pkgver="262-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc" "systemd-libs" "libcap" "kmod" "util-linux" "dbus" "attr")
+depends=("systemd-libs" "acl" "bash" "cryptsetup" "dbus" "dbus-units" "glibc" "kbd" "kmod" "hwdata" "libgcrypt" "libxcrypt" "libidn2" "lz4" "pam" "libelf" "libgcc" "libseccomp" "util-linux" "xz" "pcre2" "audit" "openssl")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/systemd-262-1-x86_64.pkg.tar.zst")
 
 build() {

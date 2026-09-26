@@ -1,9 +1,9 @@
 pkgname="glibc"
-pkgver="2.44+r24+g16be1518495f"
+pkgver="2.44+r24+g16be1518495f-1"
 pkgrel="1"
 arch="x86_64"
-depends=()
-sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/glibc-2.44%2Br24%2Bg16be1518495f-1-x86_64.pkg.tar.zst")
+depends=("linux-api-headers" "tzdata" "filesystem")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/glibc-2.44+r24+g16be1518495f-1-x86_64.pkg.tar.zst")
 
 build() {
     echo "==> Extrayendo paquete fuente genérico..."

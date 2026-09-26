@@ -1,4 +1,0 @@
-pkgname: bison
-version: 3.8.2-8
-arch: x86_64
-depends: glibc

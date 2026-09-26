@@ -1,8 +1,8 @@
 pkgname="mpfr"
-pkgver="4.2.2"
+pkgver="4.2.2-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "gmp")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/mpfr-4.2.2-1-x86_64.pkg.tar.zst")
 
 build() {

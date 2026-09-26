@@ -1,8 +1,8 @@
 pkgname="util-linux"
-pkgver="2.42.4"
+pkgver="2.42.4-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("util-linux-libs" "coreutils" "file" "libmagic.so" "glibc" "libcap-ng" "libgcc" "libgcc_s.so" "libxcrypt" "libcrypt.so" "ncurses" "libncursesw.so" "pam" "readline" "shadow" "systemd-libs" "libsystemd.so" "libudev.so" "zlib")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/util-linux-2.42.4-1-x86_64.pkg.tar.zst")
 
 build() {

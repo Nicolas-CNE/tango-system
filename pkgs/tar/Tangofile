@@ -1,8 +1,8 @@
 pkgname="tar"
-pkgver="1.35"
-pkgrel="5"
+pkgver="1.35-5"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "acl")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/tar-1.35-5-x86_64.pkg.tar.zst")
 
 build() {

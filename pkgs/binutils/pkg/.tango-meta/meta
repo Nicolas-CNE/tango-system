@@ -1,4 +1,0 @@
-pkgname: binutils
-version: 2.47-4
-arch: x86_64
-depends: glibc

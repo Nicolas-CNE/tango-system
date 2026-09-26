@@ -1,4 +1,0 @@
-pkgname: systemd-libs
-version: 262-1
-arch: x86_64
-depends: glibc,libcap,libgcc

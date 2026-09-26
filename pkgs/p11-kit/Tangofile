@@ -1,0 +1,20 @@
+pkgname="p11-kit"
+pkgver="0.26.5-1"
+pkgrel="1"
+arch="x86_64"
+depends=("coreutils" "glibc" "libtasn1" "libp11-kit" "libp11-kit.so")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/p11-kit-0.26.5-1-x86_64.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

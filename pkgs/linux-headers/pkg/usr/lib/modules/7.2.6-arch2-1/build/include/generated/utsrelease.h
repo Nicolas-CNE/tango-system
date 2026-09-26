@@ -1,1 +1,0 @@
-#define UTS_RELEASE "7.2.6-arch2-1"

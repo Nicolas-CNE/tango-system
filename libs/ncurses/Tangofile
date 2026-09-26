@@ -1,8 +1,8 @@
 pkgname="ncurses"
-pkgver="6.6"
-pkgrel="2"
+pkgver="6.6-2"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "libgcc" "libstdc++")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/ncurses-6.6-2-x86_64.pkg.tar.zst")
 
 build() {

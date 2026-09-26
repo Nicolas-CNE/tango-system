@@ -1,8 +1,8 @@
 pkgname="iproute2"
-pkgver="7.2.0"
+pkgver="7.2.0-1"
 pkgrel="1"
 arch="x86_64"
-depends=("glibc")
+depends=("glibc" "libxtables.so" "libcap" "libcap.so" "libelf" "libbpf" "libbpf.so")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/iproute2-7.2.0-1-x86_64.pkg.tar.zst")
 
 build() {

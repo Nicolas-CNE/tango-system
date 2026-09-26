@@ -1,8 +1,8 @@
 pkgname="coreutils"
-pkgver="9.11"
-pkgrel="2"
+pkgver="9.11-2"
+pkgrel="1"
 arch="x86_64"
-depends=("glibc" "gmp" "libcap" "openssl")
+depends=("acl" "attr" "glibc" "gmp" "libcap" "openssl")
 sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/coreutils-9.11-2-x86_64.pkg.tar.zst")
 
 build() {

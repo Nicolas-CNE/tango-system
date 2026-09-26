@@ -1,4 +1,0 @@
-pkgname: mpc
-version: 0.35-2
-arch: x86_64
-depends: glibc
