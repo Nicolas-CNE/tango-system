@@ -1,0 +1,4 @@
+pkgname: libice
+version: 1.1.2-1
+arch: x86_64
+depends: glibc

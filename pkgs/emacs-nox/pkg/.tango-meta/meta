@@ -1,0 +1,4 @@
+pkgname: emacs-nox
+version: 31.1-2
+arch: x86_64
+depends: acl,attr,dbus,fontconfig,freetype2,glibc,gmp,gnutls,gpm,harfbuzz,icu,lcms2,libotf,libxml2,ncurses,nettle,pcre2,systemd-libs,zlib-ng,zstd

@@ -1,0 +1,4 @@
+pkgname: libxcb
+version: 1.17.0-1
+arch: x86_64
+depends: glibc

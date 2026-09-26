@@ -1,0 +1,4 @@
+pkgname: hicolor-icon-theme
+version: 0.18-1
+arch: any
+depends: 

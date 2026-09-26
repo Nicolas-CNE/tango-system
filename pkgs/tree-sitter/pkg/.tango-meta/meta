@@ -1,0 +1,4 @@
+pkgname: tree-sitter
+version: 0.26.9-1
+arch: x86_64
+depends: glibc

@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include "RogerSAT.hpp"
+#include "cli.hpp"
 
 namespace fs = std::filesystem;
 
@@ -36,7 +37,6 @@ void ensure_db_dir() {
     }
 }
 
-// Normaliza las rutas de archivos eliminando ./ o / iniciales y retornos de carro
 std::string clean_path(std::string path) {
     while (path.rfind("./", 0) == 0) path = path.substr(2);
     while (!path.empty() && path.front() == '/') path = path.substr(1);
@@ -44,7 +44,6 @@ std::string clean_path(std::string path) {
     return path;
 }
 
-// Determina si una ruta es un directorio o forma parte de la metadata interna de empaquetado
 bool is_meta_or_dir(const std::string& path) {
     if (path.empty()) return true;
     if (path.back() == '/') return true;
@@ -52,7 +51,6 @@ bool is_meta_or_dir(const std::string& path) {
     return false;
 }
 
-// Comprueba si un paquete es un componente base del sistema
 bool is_base_system_pkg(const std::string& pkg) {
     static const std::set<std::string> base_pkgs = {
         "glibc", "zstd", "bash", "coreutils", "gcc-libs", "linux-api-headers", "shadow"
@@ -61,7 +59,6 @@ bool is_base_system_pkg(const std::string& pkg) {
     return base_pkgs.count(pkg) > 0 || sat.isProtected(pkg);
 }
 
-// Ejecución segura de comandos sin pasar por la Shell
 bool exec_safe(const std::vector<std::string>& args) {
     if (args.empty()) return false;
     
@@ -85,19 +82,12 @@ bool exec_safe(const std::vector<std::string>& args) {
 
 void update_ldconfig() {
     log_verbose("Actualizando la caché de librerías del sistema (ldconfig)...");
-    bool ok = false;
-    if (root_dir == "/" || root_dir.empty()) {
-        ok = exec_safe({"ldconfig"});
-    } else {
-        ok = exec_safe({"ldconfig", "-r", root_dir});
-    }
-
+    bool ok = (root_dir == "/" || root_dir.empty()) ? exec_safe({"ldconfig"}) : exec_safe({"ldconfig", "-r", root_dir});
     if (!ok) {
-        std::cerr << "[WARNING] No se pudo ejecutar ldconfig correctamente.\n";
+        CLI::printWarning("No se pudo ejecutar ldconfig correctamente.");
     }
 }
 
-// Extrae la lista de archivos de un tarball excluyendo la carpeta .tango-meta
 std::vector<std::string> inspect_archive_files(const std::string& archive_path) {
     std::vector<std::string> files;
     int pipefd[2];
@@ -122,9 +112,7 @@ std::vector<std::string> inspect_archive_files(const std::string& archive_path) 
         for (ssize_t i = 0; i < bytes_read; ++i) {
             if (buffer[i] == '\n') {
                 std::string cleaned = clean_path(current_line);
-                if (!is_meta_or_dir(cleaned)) {
-                    files.push_back(cleaned);
-                }
+                if (!is_meta_or_dir(cleaned)) files.push_back(cleaned);
                 current_line.clear();
             } else {
                 current_line += buffer[i];
@@ -133,9 +121,7 @@ std::vector<std::string> inspect_archive_files(const std::string& archive_path) 
     }
     if (!current_line.empty()) {
         std::string cleaned = clean_path(current_line);
-        if (!is_meta_or_dir(cleaned)) {
-            files.push_back(cleaned);
-        }
+        if (!is_meta_or_dir(cleaned)) files.push_back(cleaned);
     }
     close(pipefd[0]);
 
@@ -144,7 +130,6 @@ std::vector<std::string> inspect_archive_files(const std::string& archive_path) 
     return files;
 }
 
-// Mapea qué paquete es dueño de cada archivo instalado en el sistema
 std::map<std::string, std::string> build_system_file_map() {
     std::map<std::string, std::string> file_owner;
     std::string db_path = get_db_path();
@@ -157,16 +142,13 @@ std::map<std::string, std::string> build_system_file_map() {
             std::string file;
             while (std::getline(f, file)) {
                 std::string cleaned = clean_path(file);
-                if (!is_meta_or_dir(cleaned)) {
-                    file_owner[cleaned] = pkg;
-                }
+                if (!is_meta_or_dir(cleaned)) file_owner[cleaned] = pkg;
             }
         }
     }
     return file_owner;
 }
 
-// Comprueba conflictos de archivos antes de la instalación
 bool validate_transaction_safety(const std::vector<std::string>& pending_pkgs,
                                 const std::map<std::string, std::vector<std::string>>& pkg_file_lists) {
     log_verbose("Verificando colisiones e integridad de archivos en el sistema...");
@@ -180,18 +162,14 @@ bool validate_transaction_safety(const std::vector<std::string>& pending_pkgs,
             file = clean_path(file);
             if (is_meta_or_dir(file)) continue;
 
-            // Si el archivo ya pertenece a otro paquete
             if (system_files.count(file)) {
                 std::string owner = system_files[file];
-
-                // Si el dueño es distinto, no está en la transacción y NO es paquete base
                 if (owner != pkg && !is_base_system_pkg(owner)) {
                     bool in_tx = (std::find(pending_pkgs.begin(), pending_pkgs.end(), owner) != pending_pkgs.end());
                     if (!in_tx) {
-                        std::cerr << "\n[CONFLICTO DE INTEGRIDAD] El paquete '" << pkg 
-                                  << "' intenta sobreescribir '" << file 
-                                  << "' perteneciente a '" << owner << "'.\n";
-                        std::cerr << "[CANCELADO] Transacción descartada para evitar romper componentes del sistema.\n";
+                        CLI::printError("Conflicto de integridad: El paquete '" + pkg + 
+                                        "' intenta sobreescribir '" + file + 
+                                        "' perteneciente a '" + owner + "'.");
                         return false;
                     }
                 }
@@ -201,7 +179,6 @@ bool validate_transaction_safety(const std::vector<std::string>& pending_pkgs,
     return true;
 }
 
-// Crea el archivo .manifest con metadatos
 void write_manifest_file(const std::string& manifest_path, const std::string& pkg, 
                          const PackageSpec& spec, const std::vector<std::string>& files) {
     std::ofstream mf(manifest_path);
@@ -214,20 +191,12 @@ void write_manifest_file(const std::string& manifest_path, const std::string& pk
     for (size_t i = 0; i < spec.depends.size(); ++i) {
         mf << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
     }
-    mf << "\n\n";
-
-    mf << "[LIBRARIES]\n";
+    mf << "\n\n[LIBRARIES]\n";
     for (const auto& f : files) {
-        if (f.find(".so") != std::string::npos) {
-            mf << f << "\n";
-        }
+        if (f.find(".so") != std::string::npos) mf << f << "\n";
     }
-
     mf << "\n[MANIFEST_FILES]\n";
-    for (const auto& f : files) {
-        mf << f << "\n";
-    }
-
+    for (const auto& f : files) mf << f << "\n";
     mf.close();
 }
 
@@ -235,7 +204,6 @@ std::map<std::string, PackageSpec> load_installed_packages() {
     std::map<std::string, PackageSpec> installed;
     ensure_db_dir();
     std::string db_path = get_db_path();
-
     if (!fs::exists(db_path)) return installed;
 
     for (const auto& entry : fs::directory_iterator(db_path)) {
@@ -265,9 +233,7 @@ std::map<std::string, PackageSpec> load_installed_packages() {
                     }
                 }
             }
-            if (!pkg.name.empty()) {
-                installed[pkg.name] = pkg;
-            }
+            if (!pkg.name.empty()) installed[pkg.name] = pkg;
         }
     }
     return installed;
@@ -290,11 +256,7 @@ DependencyResolverSAT load_index(const std::string& filepath) {
 
     while (std::getline(file, line)) {
         if (!line.empty() && line.back() == '\r') line.pop_back();
-
-        if (line.empty() || line[0] == '#') {
-            push_current();
-            continue;
-        }
+        if (line.empty() || line[0] == '#') { push_current(); continue; }
 
         size_t colon = line.find(':');
         if (colon != std::string::npos) {
@@ -306,10 +268,7 @@ DependencyResolverSAT load_index(const std::string& filepath) {
             val.erase(0, val.find_first_not_of(" \t"));
             val.erase(val.find_last_not_of(" \t") + 1);
 
-            if (key == "pkgname") {
-                push_current();
-                current_pkg.name = val;
-            }
+            if (key == "pkgname") { push_current(); current_pkg.name = val; }
             else if (key == "version") current_pkg.version = val;
             else if (key == "url") current_pkg.url = val;
             else if (key == "sha256") current_pkg.sha256 = val;
@@ -319,24 +278,21 @@ DependencyResolverSAT load_index(const std::string& filepath) {
                 std::string dep;
                 while (ss >> dep) {
                     dep.erase(std::remove(dep.begin(), dep.end(), ','), dep.end());
-                    if (!dep.empty()) {
-                        current_pkg.depends.push_back(dep);
-                    }
+                    if (!dep.empty()) current_pkg.depends.push_back(dep);
                 }
             }
         }
     }
     push_current();
-
     return sat;
 }
 
 void cmd_sync() {
     log_verbose("Descargando ROGERINDEX desde " + REPO_URL);
     if (exec_safe({"curl", "-sL", REPO_URL, "-o", INDEX_PATH})) {
-        std::cout << "Sincronización completa. Índice guardado en " << INDEX_PATH << "\n";
+        CLI::printSuccess("Sincronización completa. Índice actualizado.");
     } else {
-        std::cerr << "[ERROR] Falló la sincronización del repositorio.\n";
+        CLI::printError("Falló la sincronización del repositorio.");
     }
 }
 
@@ -365,60 +321,6 @@ bool verify_checksum(const std::string& filepath, const std::string& expected_sh
     return WIFEXITED(status) && WEXITSTATUS(status) == 0;
 }
 
-void cmd_download(const std::vector<std::string>& pkgs) {
-    DependencyResolverSAT sat = load_index(INDEX_PATH);
-    std::vector<std::string> to_download;
-
-    for (const auto& pkg : pkgs) {
-        std::vector<std::string> sub_plan;
-        log_verbose("Llamando a MiniSAT para resolver dependencias de descarga: " + pkg);
-        if (!sat.resolveInstall(pkg, sub_plan)) {
-            std::cout << "[ERROR] No se pudo resolver el paquete '" << pkg << "'.\n";
-            return;
-        }
-        for (const auto& p : sub_plan) {
-            if (std::find(to_download.begin(), to_download.end(), p) == to_download.end()) {
-                to_download.push_back(p);
-            }
-        }
-    }
-
-    std::cout << "Plan de descarga (" << to_download.size() << " paquetes):\n";
-    for (const auto& p : to_download) {
-        std::cout << "  - " << p << "\n";
-    }
-
-    std::cout << "\nDescargando paquetes a /tmp/...\n";
-    for (const auto& p : to_download) {
-        PackageSpec spec = sat.getPackageSpec(p);
-
-        if (spec.url.empty()) {
-            log_verbose("El paquete '" + p + "' no tiene URL definida. Omitiendo descarga.");
-            continue;
-        }
-
-        std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
-
-        std::cout << "  Downloading " << p << "...\n";
-        if (!exec_safe({"curl", "-f", "-sL", spec.url, "-o", archive_name})) {
-            std::cerr << "[ERROR CRÍTICO] Falló la descarga de " << p << ".\n";
-            return;
-        }
-
-        if (!verify_checksum(archive_name, spec.sha256)) {
-            std::cerr << "[ERROR CRÍTICO] Checksum SHA256 inválido para " << p << ".\n";
-            fs::remove(archive_name);
-            return;
-        }
-
-        std::vector<std::string> files = inspect_archive_files(archive_name);
-        std::string manifest_path = "/tmp/" + p + ".manifest";
-        write_manifest_file(manifest_path, p, spec, files);
-    }
-
-    std::cout << "\n¡Descarga completada con éxito!\n";
-}
-
 void cmd_install(const std::vector<std::string>& pkgs) {
     DependencyResolverSAT sat = load_index(INDEX_PATH);
     std::vector<std::string> to_install;
@@ -426,9 +328,8 @@ void cmd_install(const std::vector<std::string>& pkgs) {
 
     for (const auto& pkg : pkgs) {
         std::vector<std::string> sub_plan;
-        log_verbose("Llamando a MiniSAT para resolver dependencias de: " + pkg);
         if (!sat.resolveInstall(pkg, sub_plan)) {
-            std::cout << "[ERROR] No se pudo resolver la instalación de '" << pkg << "'.\n";
+            CLI::printError("No se pudieron resolver las dependencias para '" + pkg + "'");
             return;
         }
         for (const auto& p : sub_plan) {
@@ -441,49 +342,55 @@ void cmd_install(const std::vector<std::string>& pkgs) {
     ensure_db_dir();
     std::string db_path = get_db_path();
     std::vector<std::string> pending_execution;
+    std::vector<std::string> deps_list;
 
     for (const auto& p : to_install) {
         std::string meta_path = db_path + p + ".meta";
-        if (fs::exists(meta_path) && explicit_pkgs.find(p) == explicit_pkgs.end()) {
-            log_verbose("La dependencia '" + p + "' ya está instalada. Omitiendo.");
-            continue;
-        }
+        if (fs::exists(meta_path) && explicit_pkgs.find(p) == explicit_pkgs.end()) continue;
+        
         pending_execution.push_back(p);
+        if (explicit_pkgs.find(p) == explicit_pkgs.end()) {
+            deps_list.push_back(p);
+        }
     }
 
     if (pending_execution.empty()) {
-        std::cout << "Los paquetes solicitados ya están instalados en el sistema.\n";
+        CLI::printInfo("Los paquetes solicitados ya están instalados.");
         return;
     }
 
-    std::cout << "Plan de instalación (" << pending_execution.size() << " paquetes):\n";
-    for (const auto& p : pending_execution) {
-        std::cout << "  - " << p << "\n";
+    // RESUMEN Y CONFIRMACIÓN
+    CLI::printTransactionSummary(pkgs, deps_list, 0, 0);
+    if (!CLI::confirm("¿Desea proceder con la instalación?")) {
+        CLI::printWarning("Operación cancelada por el usuario.");
+        return;
     }
 
-    // FASE 1: DESCARGA EN LOTE
+    // FASE 1: DESCARGA
     std::cout << "\n[1/3] Descargando paquetes...\n";
+    size_t curr = 0;
     for (const auto& p : pending_execution) {
+        curr++;
+        CLI::showProgressBar(curr, pending_execution.size(), "Descargando: " + p);
+        
         PackageSpec spec = sat.getPackageSpec(p);
         if (spec.url.empty()) continue;
 
         std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
-
-        std::cout << "  Downloading " << p << "...\n";
         if (!exec_safe({"curl", "-f", "-sL", spec.url, "-o", archive_name})) {
-            std::cerr << "[ERROR CRÍTICO] Falló la descarga de " << p << ". Abortando transacción.\n";
+            CLI::printError("Falló la descarga del paquete " + p);
             return;
         }
 
         if (!verify_checksum(archive_name, spec.sha256)) {
-            std::cerr << "[ERROR CRÍTICO] Checksum SHA256 inválido para " << p << ". Abortando instalación.\n";
+            CLI::printError("Checksum SHA256 inválido para " + p);
             fs::remove(archive_name);
             return;
         }
     }
 
-    // FASE 2: VERIFICACIÓN DE INTEGRIDAD Y MANIFESTS EN MEMORIA
-    std::cout << "\n[2/3] Verificando integridad y seguridad del sistema...\n";
+    // FASE 2: VERIFICACIÓN
+    std::cout << "\n[2/3] Verificando colisiones e integridad de archivos...\n";
     std::map<std::string, std::vector<std::string>> pkg_file_map;
 
     for (const auto& p : pending_execution) {
@@ -500,80 +407,54 @@ void cmd_install(const std::vector<std::string>& pkgs) {
         return;
     }
 
-    // FASE 3: EXTRACCIÓN Y REGISTRO DE META, FILES Y MANIFEST
-    std::cout << "\n[3/3] Instalando en el sistema raíz (" << root_dir << ")...\n";
-    bool installed_any = false;
-
+    // FASE 3: EXTRACCIÓN
+    std::cout << "\n[3/3] Extrayendo e instalando paquetes en el sistema...\n";
+    curr = 0;
     for (const auto& p : pending_execution) {
+        curr++;
+        CLI::showProgressBar(curr, pending_execution.size(), "Instalando:  " + p);
+
         PackageSpec spec = sat.getPackageSpec(p);
         std::string archive_name = "/tmp/" + p + ".tango.tar.zst";
         std::string meta_path = db_path + p + ".meta";
         std::string file_list = db_path + p + ".files";
         std::string manifest_path = db_path + p + ".manifest";
 
-        // Si es meta-paquete/virtual sin archivo
         if (!fs::exists(archive_name)) {
             std::ofstream meta(meta_path);
-            meta << "pkgname: " << p << "\n";
-            meta << "version: " << spec.version << "\n";
-            meta << "explicit: " << (explicit_pkgs.count(p) ? "1" : "0") << "\n";
-            meta << "depends: ";
-            for (size_t i = 0; i < spec.depends.size(); ++i) {
-                meta << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
-            }
+            meta << "pkgname: " << p << "\nversion: " << spec.version << "\nexplicit: " << (explicit_pkgs.count(p) ? "1" : "0") << "\ndepends: ";
+            for (size_t i = 0; i < spec.depends.size(); ++i) meta << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
             meta << "\n";
             meta.close();
 
-            std::ofstream files(file_list);
-            files.close();
-
+            std::ofstream files(file_list); files.close();
             write_manifest_file(manifest_path, p, spec, {});
-            std::cout << "  -> " << p << " (meta-paquete) registrado correctamente.\n";
-            installed_any = true;
             continue;
         }
 
         const auto& files = pkg_file_map[p];
-
-        // Guardar lista .files
         std::ofstream f_list(file_list);
-        for (const auto& f : files) {
-            f_list << f << "\n";
-        }
+        for (const auto& f : files) f_list << f << "\n";
         f_list.close();
 
-        // Extraer en el directorio raíz excluyendo metadatos de empaquetado
         if (exec_safe({"tar", "--exclude=./.tango-meta", "--exclude=.tango-meta", "-I", "zstd", "-Pxf", archive_name, "-C", root_dir})) {
-            std::cout << "  -> " << p << " instalado correctamente.\n";
-            installed_any = true;
-
-            // Escribir metadata .meta
             std::ofstream meta(meta_path);
-            meta << "pkgname: " << p << "\n";
-            meta << "version: " << spec.version << "\n";
-            meta << "explicit: " << (explicit_pkgs.count(p) ? "1" : "0") << "\n";
-            meta << "depends: ";
-            for (size_t i = 0; i < spec.depends.size(); ++i) {
-                meta << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
-            }
+            meta << "pkgname: " << p << "\nversion: " << spec.version << "\nexplicit: " << (explicit_pkgs.count(p) ? "1" : "0") << "\ndepends: ";
+            for (size_t i = 0; i < spec.depends.size(); ++i) meta << spec.depends[i] << (i + 1 < spec.depends.size() ? ", " : "");
             meta << "\n";
             meta.close();
 
-            // Escribir .manifest
             write_manifest_file(manifest_path, p, spec, files);
-
         } else {
-            std::cerr << "[ERROR] Falló la extracción de " << p << "\n";
+            CLI::printError("Falló la extracción del archivo para " + p);
             fs::remove(file_list);
         }
 
         fs::remove(archive_name);
     }
 
-    if (installed_any) {
-        update_ldconfig();
-        std::cout << "\n¡Proceso de instalación completado con éxito!\n";
-    }
+    update_ldconfig();
+    CLI::printSuccess("¡Instalación completada con éxito!");
 }
 
 void cmd_delete(const std::vector<std::string>& pkgs) {
@@ -581,22 +462,26 @@ void cmd_delete(const std::vector<std::string>& pkgs) {
     DependencyResolverSAT sat;
     std::string db_path = get_db_path();
 
+    if (!CLI::confirm("¿Está seguro de que desea eliminar los paquetes seleccionados?")) {
+        CLI::printWarning("Operación cancelada.");
+        return;
+    }
+
     for (const auto& pkg : pkgs) {
         std::string files_path = db_path + pkg + ".files";
         std::string meta_path = db_path + pkg + ".meta";
         std::string manifest_path = db_path + pkg + ".manifest";
 
         if (sat.isProtected(pkg)) {
-            std::cerr << "[BLINDAJE DE SEGURIDAD] El paquete '" << pkg << "' pertenece a la base crítica del sistema. No se puede eliminar.\n";
+            CLI::printError("El paquete '" + pkg + "' está protegido por el sistema y no se puede eliminar.");
             continue;
         }
 
         if (!fs::exists(meta_path)) {
-            std::cerr << "[ERROR] El paquete '" << pkg << "' no está instalado en Tango Linux.\n";
+            CLI::printError("El paquete '" + pkg + "' no está instalado.");
             continue;
         }
 
-        log_verbose("Eliminando archivos de " + pkg);
         std::ifstream files_file(files_path);
         std::string file_to_remove;
         std::set<fs::path> candidate_dirs;
@@ -606,21 +491,17 @@ void cmd_delete(const std::vector<std::string>& pkgs) {
             if (is_meta_or_dir(cleaned)) continue;
             
             fs::path p = fs::path(root_dir) / cleaned;
-
             std::error_code ec;
             auto status = fs::symlink_status(p, ec);
             if (!ec && fs::exists(status) && !fs::is_directory(status)) {
                 fs::remove(p, ec);
-                if (!ec) {
-                    candidate_dirs.insert(p.parent_path());
-                }
+                if (!ec) candidate_dirs.insert(p.parent_path());
             }
         }
 
         for (const auto& dir : candidate_dirs) {
             std::error_code ec;
             if (fs::exists(dir) && fs::is_empty(dir, ec) && dir != fs::path(root_dir)) {
-                log_verbose("Removiendo directorio vacío: " + dir.string());
                 fs::remove_all(dir, ec);
             }
         }
@@ -628,32 +509,27 @@ void cmd_delete(const std::vector<std::string>& pkgs) {
         fs::remove(files_path);
         fs::remove(meta_path);
         fs::remove(manifest_path);
-        std::cout << "Paquete '" << pkg << "' eliminado exitosamente.\n";
+        CLI::printSuccess("Paquete '" + pkg + "' eliminado correctamente.");
     }
 
     update_ldconfig();
 }
 
 void cmd_bomb() {
-    log_verbose("Iniciando escaneo de huérfanos (roger bomb)...");
     auto installed = load_installed_packages();
     DependencyResolverSAT sat;
 
     auto orphans = sat.findOrphans(installed);
 
     if (orphans.empty()) {
-        std::cout << "[roger bomb] No se encontraron dependencias huérfanas en el sistema.\n";
+        CLI::printSuccess("No se encontraron paquetes huérfanos.");
         return;
     }
 
-    std::cout << "[roger bomb] Se encontraron las siguientes dependencias huérfanas:\n";
-    for (const auto& orphan : orphans) {
-        std::cout << "  - " << orphan << "\n";
-    }
+    std::cout << "Se encontraron las siguientes dependencias huérfanas:\n";
+    for (const auto& orphan : orphans) std::cout << "  - " << orphan << "\n";
 
-    std::cout << "Eliminando dependencias huérfanas...\n";
     cmd_delete(orphans);
-    std::cout << "[roger bomb] Limpieza completada con éxito.\n";
 }
 
 void cmd_update() {
@@ -661,23 +537,19 @@ void cmd_update() {
     auto installed = load_installed_packages();
     DependencyResolverSAT sat = load_index(INDEX_PATH);
 
-    std::cout << "\nComprobando actualizaciones de paquetes...\n";
     std::vector<std::string> to_upgrade;
-
     for (const auto& [name, spec] : installed) {
         PackageSpec repo_spec = sat.getPackageSpec(name);
         if (!repo_spec.name.empty() && repo_spec.version != spec.version) {
-            std::cout << "  - " << name << " (" << spec.version << " -> " << repo_spec.version << ")\n";
             to_upgrade.push_back(name);
         }
     }
 
     if (to_upgrade.empty()) {
-        std::cout << "Todos los paquetes instalados están actualizados a la última versión.\n";
+        CLI::printSuccess("Todos los paquetes están actualizados a la última versión.");
         return;
     }
 
-    std::cout << "\nActualizando paquetes requeridos...\n";
     cmd_install(to_upgrade);
 }
 
@@ -700,29 +572,23 @@ int main(int argc, char* argv[]) {
         }
     }
 
-    if (!root_dir.empty() && root_dir.back() != '/') {
-        root_dir += "/";
-    }
+    if (!root_dir.empty() && root_dir.back() != '/') root_dir += "/";
 
     if (arg_start >= argc) {
-        std::cout << "Uso: roger [--verbose] [--root <ruta>] <sync|download|install|delete|bomb|update> [paquetes...]\n";
+        std::cout << "Uso: roger [--verbose] [--root <ruta>] <sync|install|delete|bomb|update> [paquetes...]\n";
         return 1;
     }
 
     std::string command = argv[arg_start];
     std::vector<std::string> targets;
-
-    for (int i = arg_start + 1; i < argc; ++i) {
-        targets.push_back(argv[i]);
-    }
+    for (int i = arg_start + 1; i < argc; ++i) targets.push_back(argv[i]);
 
     if (command == "sync") cmd_sync();
-    else if (command == "download" && !targets.empty()) cmd_download(targets);
     else if (command == "install" && !targets.empty()) cmd_install(targets);
     else if (command == "delete" && !targets.empty()) cmd_delete(targets);
     else if (command == "bomb") cmd_bomb();
     else if (command == "update") cmd_update();
-    else std::cout << "Uso o comando desconocido: " << command << "\n";
+    else std::cout << "Comando o parámetros no válidos: " << command << "\n";
 
     return 0;
 }

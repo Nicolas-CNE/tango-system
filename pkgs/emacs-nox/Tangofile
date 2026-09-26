@@ -1,0 +1,44 @@
+pkgname="emacs-nox"
+pkgver="31.1"
+pkgrel="2"
+arch="x86_64"
+
+# Dependencias directas e indirectas para la versión de terminal (sin GUI/X11)
+depends=(
+    "acl"
+    "attr"
+    "dbus"
+    "fontconfig"
+    "freetype2"
+    "glibc"
+    "gmp"
+    "gnutls"
+    "gpm"
+    "harfbuzz"
+    "icu"
+    "lcms2"
+    "libotf"
+    "libxml2"
+    "ncurses"
+    "nettle"
+    "pcre2"
+    "systemd-libs"
+    "zlib-ng"
+    "zstd"
+)
+
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/emacs-nox-31.1-2-x86_64.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

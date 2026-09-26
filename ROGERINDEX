@@ -70,7 +70,7 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/dbus
 pkgname: emacs
 version: 31.1-2
 arch: x86_64
-depends: glibc ncurses gnutls gmp nettle libxml2 gpm lcms2 icu
+depends: depends: gnutls, gpm, icu, lcms2, libxml2, nettle, libice, libsm, libxcb, fribidi, epoxy, atk, wayland, libxkbcommon
 url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/emacs/emacs-31.1-2-x86_64.tango.tar.zst
 
 pkgname: expat

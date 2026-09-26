@@ -1,9 +1,9 @@
 pkgname="cairo"
-pkgver="1.18.4"
+pkgver="1.18.6"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc")
-sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/cairo-1.18.4-1-x86_64.pkg.tar.zst")
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/cairo-1.18.6-1-x86_64.pkg.tar.zst")
 
 build() {
     echo "==> Extrayendo paquete fuente genérico..."

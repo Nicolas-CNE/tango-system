@@ -1,9 +1,9 @@
 pkgname="systemd-libs"
-pkgver="261.3"
+pkgver="262"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc" "libcap")
-sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/systemd-libs-261.3-1-x86_64.pkg.tar.zst")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/systemd-libs-262-1-x86_64.pkg.tar.zst")
 
 build() {
     echo "==> Extrayendo paquete fuente genérico..."

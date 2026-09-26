@@ -1,0 +1,14 @@
+./usr
+./usr/share
+./usr/share/info
+./usr/share/info/libgccjit.info.gz
+./usr/share/licenses
+./usr/share/licenses/libgccjit
+./usr/share/licenses/libgccjit/RUNTIME.LIBRARY.EXCEPTION
+./usr/include
+./usr/include/libgccjit++.h
+./usr/include/libgccjit.h
+./usr/lib
+./usr/lib/libgccjit.so.0.0.1
+./usr/lib/libgccjit.so.0
+./usr/lib/libgccjit.so

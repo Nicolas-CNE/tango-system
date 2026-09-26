@@ -1,0 +1,20 @@
+pkgname="hicolor-icon-theme"
+pkgver="0.18"
+pkgrel="1"
+arch="any"
+depends=()
+sources=("https://geo.mirror.pkgbuild.com/extra/os/x86_64/hicolor-icon-theme-0.18-1-any.pkg.tar.zst")
+
+build() {
+    echo "==> Extrayendo paquete fuente genérico..."
+    for pkg in "$SRC_DIR"/*.pkg.tar.zst; do
+        if [ -f "$pkg" ]; then
+            tar -I zstd -xf "$pkg" -C "$PKG_DIR"
+        fi
+    done
+    rm -rf "$PKG_DIR"/.PKGINFO "$PKG_DIR"/.BUILDINFO "$PKG_DIR"/.MTREE
+}
+
+package() {
+    :
+}

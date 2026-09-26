@@ -1,9 +1,9 @@
 pkgname="util-linux"
-pkgver="2.42.3"
+pkgver="2.42.4"
 pkgrel="1"
 arch="x86_64"
 depends=("glibc")
-sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/util-linux-2.42.3-1-x86_64.pkg.tar.zst")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/util-linux-2.42.4-1-x86_64.pkg.tar.zst")
 
 build() {
     echo "==> Extrayendo paquete fuente genérico..."

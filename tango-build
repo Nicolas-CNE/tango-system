@@ -1,5 +1,5 @@
 #!/bin/bash
-# tango-build - Generador de paquetes .tango.tar.zst para Tango Linux
+# tango-build - Generador de paquetes .tango.tar.zst para Tango Linux con Autodetect
 
 set -e
 
@@ -24,7 +24,7 @@ for src in "${sources[@]}"; do
     curl -sL "$src" -o "$BUILD_DIR/$(basename "$src")"
 done
 
-# Exportar variables para que la funcion package() en los Tangofiles las use directamente
+# Exportar variables para que la funcion build() o package() las usen
 export SRC_DIR="$BUILD_DIR"
 export PKG_DIR="$PKG_DIR"
 
@@ -34,6 +34,52 @@ build
 cd "$ROOT_DIR"
 package
 
+# ==============================================================================
+# FUNCIÓN DE AUTODETECCIÓN DE DEPENDENCIAS (.so)
+# ==============================================================================
+autodetect_depends() {
+    echo "==> Analizando dependencias de librerías compartidas (.so)..."
+    local auto_deps=()
+    
+    # 1. Buscar todos los archivos ELF (ejecutables y librerías) dentro de PKG_DIR
+    local elf_files
+    elf_files=$(find "$PKG_DIR" -type f \( -perm -111 -o -name "*.so*" \))
+
+    if [ -n "$elf_files" ]; then
+        # Extractores de librerías .so requeridas usando readelf
+        local needed_libs
+        needed_libs=$(echo "$elf_files" | xargs readelf -d 2>/dev/null | grep NEEDED | awk -F'[' '{print $2}' | tr -d ']' | sort -u)
+
+        for lib in $needed_libs; do
+            # Ignorar librerías propias que el mismo paquete incluye en su construcción
+            if find "$PKG_DIR" -name "$lib" | grep -q .; then
+                continue
+            fi
+
+            # Mapear la librería .so al paquete propietario usando pacman o pkgfile
+            local owner_pkg
+            owner_pkg=$(pacman -Qo "/usr/lib/$lib" 2>/dev/null | awk '{print $5}')
+            
+            if [ -z "$owner_pkg" ] && command -v pkgfile &>/dev/null; then
+                owner_pkg=$(pkgfile -q "$lib" | head -n 1)
+            fi
+
+            if [ -n "$owner_pkg" ]; then
+                auto_deps+=("$owner_pkg")
+            fi
+        done
+    fi
+
+    # 2. Combinar dependencias explícitas de Tangofile + las autodetectadas
+    all_deps=($(printf "%s\n" "${depends[@]}" "${auto_deps[@]}" | sort -u))
+}
+
+# Ejecutar autodetección
+autodetect_depends
+
+# ==============================================================================
+# GENERACIÓN DE METADATOS Y EMPAQUETADO
+# ==============================================================================
 cd "$PKG_DIR"
 mkdir -p .tango-meta
 
@@ -41,7 +87,7 @@ cat << EOF > .tango-meta/meta
 pkgname: ${pkgname}
 version: ${pkgver}-${pkgrel}
 arch: ${arch}
-depends: $(IFS=, ; echo "${depends[*]}")
+depends: $(IFS=, ; echo "${all_deps[*]}")
 EOF
 
 find . -mindepth 1 -not -path './.tango-meta*' > .tango-meta/files.list
