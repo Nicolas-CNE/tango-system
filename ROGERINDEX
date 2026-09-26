@@ -1,5 +1,5 @@
 # ROGERINDEX - Repositorio Oficial de Tango Linux
-# Generado automáticamente: Sat Sep 26 02:45:00 PM UTC 2026
+# Generado automáticamente: Sat Sep 26 02:48:39 PM UTC 2026
 
 pkgname: acl
 version: 2.4.0-1
@@ -148,8 +148,8 @@ url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/grep
 
 pkgname: hicolor-icon-theme
 version: 0.18-1
-arch: any
-url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/hicolor-icon-theme/hicolor-icon-theme-0.18-1-any.tango.tar.zst
+arch: x86_64
+url: https://raw.githubusercontent.com/Nicolas-CNE/tango-packages/main/pkgs/hicolor-icon-theme/hicolor-icon-theme-0.18-1-x86_64.tango.tar.zst
 
 pkgname: initramfs-tools
 version: 0.142-1

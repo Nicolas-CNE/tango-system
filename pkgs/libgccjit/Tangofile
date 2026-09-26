@@ -3,7 +3,7 @@ pkgver="16.2.1+r23+gd564253eb6c8"
 pkgrel="1"
 arch="x86_64"
 depends=()
-sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/libgccjit-16.2.1+r23+gd564253eb6c8-1-x86_64.pkg.tar.zst")
+sources=("https://geo.mirror.pkgbuild.com/core/os/x86_64/libgccjit-16.2.1%2Br23%2Bgd564253eb6c8-1-x86_64.pkg.tar.zst")
 
 build() {
     echo "==> Extrayendo paquete fuente genérico..."
